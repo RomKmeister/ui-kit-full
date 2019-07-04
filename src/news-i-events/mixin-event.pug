@@ -1,0 +1,9 @@
+mixin eventBlock(content)
+	div(class="news news-and-events__event")
+		img(class="event__image", src=content.imgPath, alt="")
+		div(class="event__block")
+			h2(class="event__date")= content.day
+				span(class="event__date--month")= content.month
+			p(class="event__title")= content.title 
+			p(class="event__text")= content.text
+			+stdButton({title: "Add to calendar", parentName: "event", color: "green", isSmall: false })

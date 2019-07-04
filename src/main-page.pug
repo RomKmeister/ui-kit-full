@@ -1,0 +1,50 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		link(
+			rel="stylesheet",
+			href="style.css"
+		)
+		title I'm a title
+	body
+		article(class="main")
+			include stages-bar/mixin-stages
+			ul(class="progressbar stages-bar__progressbar")
+				+progressbarItem('1', 'active')
+				+progressbarItem('2', 'active')
+				+progressbarItem('3', 'active')
+				+progressbarItem('4')
+				+progressbarItem('5')
+
+			include standart-buttons/mixin-buttons
+			+stdButton({title: "Button", parentName: "standart-buttons", color: "green", isSmall: true })
+			+stdButton({title: "Button", parentName: "standart-buttons", color: "green", isSmall: true })
+
+			include news-i-events/mixin-news
+			div(style="display:flex")
+				+newsBlock({
+					title: "It’s all going downhill",
+					date: "24  august  2013",
+					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.",
+					imgPath: "news-i-events/news-image.jpg"
+				})
+				+newsBlock({
+					title: "It’s all going downhill",
+					date: "24  august  2013",
+					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.",
+					imgPath: "news-i-events/news-image.jpg"
+				})
+				+newsBlock({
+					title: "It’s all going downhill",
+					date: "24  august  2013",
+					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.",
+					imgPath: "news-i-events/news-image.jpg"
+				})
+				+newsBlock({
+					title: "It’s all going downhill",
+					date: "24  august  2013",
+					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.",
+					imgPath: "news-i-events/news-image.jpg"
+				})
+			script(src="main.bundle.js")

@@ -1,0 +1,7 @@
+mixin newsBlock(content)
+	div(class="news news-and-events__news")
+		img(class="news__image", src=content.imgPath, alt="")
+		div(class="news__block")
+			h2(class="news__title")= content.title
+			p(class="news__date")= content.date 
+			p(class="news__text")= content.text

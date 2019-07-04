@@ -1,0 +1,9 @@
+section(class="messaging page__messaging")
+    h1(class="title") Messaging
+    include mixin-messaging
+    +messaging({
+		title: "Sarah Brown",
+		income: "Hey! So are we cool to meet at the art gallery? Say 8pm",
+		message: "Yeah that sounds great. See you then.",
+		imgPath: "messaging/user-1.jpg"
+	})

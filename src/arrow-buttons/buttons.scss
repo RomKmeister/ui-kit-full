@@ -1,0 +1,70 @@
+.arrow-buttons {
+    width: 290px;
+}
+
+.main__arrow-buttons {
+    margin: 154px auto 0;
+}
+
+.arrow-buttons__arrow-button {
+     margin: 26px 11px 0;
+}
+
+.arrow-button {
+    position: relative;
+    padding: 22px;
+
+    background: #ffffff;
+    border-width: 1px;
+    border: 3px solid #4eb7a8;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow-button:hover,
+.arrow-button:focus {
+    outline: 0;
+    background: #4eb7a8;
+    color: #ffffff;
+}
+
+.arrow-button:disabled {
+    background: #e5e5e5;
+    color: #ffffff;
+    border: 3px solid #e5e5e5;
+    cursor: default;
+}
+
+.arrow-button::after {
+    content: "";
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+
+    border-top: 3px solid #4eb7a8;
+    border-right: 3px solid #4eb7a8;
+}
+
+.arrow-button--left::after {
+    top: 15px;
+    left: 17px;
+    transform: rotate(-135deg);
+}
+
+.arrow-button--right::after {
+    top: 15px;
+    left: 12px;
+    transform: rotate(45deg);
+}
+
+.arrow-button:hover::after,
+.arrow-button:focus::after {
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+}
+
+.arrow-button:disabled::after {
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+}

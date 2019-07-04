@@ -1,0 +1,6 @@
+mixin toggle(isChecked)
+    - var toggleChecked = isChecked ? true : false;
+    label(class="switch toggles__switch")
+        input(type="checkbox", class="switch__input", checked=toggleChecked)
+        span(class="switch__label", data-on="On", data-off="Off")
+        span(class="switch__handle")

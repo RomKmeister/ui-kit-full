@@ -1,0 +1,5 @@
+mixin progressbarItem(number, isActive)
+    - var itemIsActive = isActive ? " progressbar__item--active" : "";
+    - var classes = "progressbar__item" + itemIsActive;
+        li(class=classes)
+            span= number

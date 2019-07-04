@@ -1,0 +1,76 @@
+.main__charts {
+  margin: 34px auto 0;
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+
+&__title {
+  width: 100%;
+}
+
+&__pie-chart {
+  margin-top: 15px;
+  margin-right: 22px;
+}
+
+&__container {
+  position: relative;
+}
+
+&__pie-scale {
+    width: 97px;
+    height: 97px;
+    margin: auto;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    fill: none;
+  }
+
+&__pie-scale circle{
+  animation: show100 2s;
+  }
+
+&__pie-number {
+  position: absolute;
+  background: #fff;
+  width: 86px;
+  height: 64px;
+  top: 5px;
+  left: 5px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 300;
+  border-radius: 50%;
+  padding-top: 23px;
+}
+
+&__donut-chart {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+&__donut {
+  margin: 0;
+  margin-top: 13px;
+  margin-left: 20px;
+  width: 98px;
+  height: 98px;
+  margin: auto;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  fill: none;
+}
+
+&__donut circle {
+  animation: show100 2s;
+}
+}
+
+@keyframes show100 {
+  from {
+    stroke-dasharray: 0 100;
+  }
+}

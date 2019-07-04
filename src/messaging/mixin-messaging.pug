@@ -1,0 +1,16 @@
+mixin messaging(content)
+    div(class="message messaging__message")
+        div(class="message__header") 
+            h2(class="message__title")= content.title
+                div(class="user-profile__wrap messaging__user-profile")
+                    img(class="user-profile__photo", src=content.imgPath, alt="")
+        div(class="message__body")
+            div(class="message__icons")
+                svg(xmlns="http://www.w3.org/2000/svg", width="20", height="21", viewBox="0 0 20 21")
+                    path(d="M5.105 0.898h9.93a4.965 4.965 0 0 1 4.965 4.965v6.207a4.965 4.965 0 0 1-4.965 4.965h-.154c-.528 2.113-.378 4.965-.378 4.965-2.483-.93-4.558-4.17-5.038-4.965h-4.36a4.965 4.965 0 0 1-4.966-4.965v-6.207a4.965 4.965 0 0 1 4.966-4.965z", fill="#8e8d8d")
+                svg(xmlns="http://www.w3.org/2000/svg", width="25", height="20", viewBox="0 0 25 20")
+                    path(d="M1.61 3.902h4.024v-1.61c0-.889.72-1.61 1.61-1.61h9.658c.89 0 1.61.721 1.61 1.61v1.61h4.025c.889 0 1.61.721 1.61 1.61v12.878c0 .89-.721 1.61-1.61 1.61H0.61a1.61 1.61 0 0 1-1.61-1.61v-12.878c0-.889.72-1.61 1.61-1.61zm5.03 7.848a5.433 5.433 0 1 0 10.866 0 5.433 5.433 0 0 0-10.866 0zm5.433-3.42a3.42 3.42 0 1 1 0 6.84 3.42 3.42 0 0 1 0-6.84z", fill="#8e8d8d")
+            div(class="message__income")= content.income
+            form
+                textarea(class="message__new")= content.message
+                +stdButton({title: "Reply", parentName: "message", color: "green", isSmall: false })

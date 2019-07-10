@@ -8,43 +8,72 @@ html(lang="ru")
 		)
 		title I'm a title
 	body
-		article(class="main")
-			include stages-bar/mixin-stages
-			ul(class="progressbar stages-bar__progressbar")
-				+progressbarItem('1', 'active')
-				+progressbarItem('2', 'active')
-				+progressbarItem('3', 'active')
-				+progressbarItem('4')
-				+progressbarItem('5')
-
+		aside
+			include toggles/mixin-toggles
 			include standart-buttons/mixin-buttons
-			+stdButton({title: "Button", parentName: "standart-buttons", color: "green", isSmall: true })
-			+stdButton({title: "Button", parentName: "standart-buttons", color: "green", isSmall: true })
-
-			include news-i-events/mixin-news
-			div(style="display:flex")
-				+newsBlock({
-					title: "It’s all going downhill",
-					date: "24  august  2013",
-					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.",
-					imgPath: "news-i-events/news-image.jpg"
+			+toggle() 
+			p Интересные
+			+toggle("checked")
+			p Неинтересные
+			p Поиск
+			form(class="search-form search-drop-down__search-form", action="")
+				input(class="search-form__input", type="search", id="search", placeholder="Search")
+				label(class="visually-hidden", for="search") Search
+				button(class="search-form__submit", type="submit")
+					svg(xmlns="http://www.w3.org/2000/svg", width="14", height="14", viewBox="0 0 14 14")
+						path(fill="#ffffff", d="M1.731 2.03a5.079 5.079 0 0 1 8.146 5.843l3.597 3.598c.549.548.467 1.52-.082 2.068a1.404 1.404 0 0 1-1.986 0l-3.527-3.527a5.081 5.081 0 0 1-6.148-7.982zm1.283 5.9a3.265 3.265 0 1 0 4.617-4.618 3.265 3.265 0 0 0-4.617 4.618z")
+			+stdButton({title: "Предложить свое", parentName: "standart-buttons", color: "green", isSmall: false })
+		main
+			section(class="main")
+				h1 Мероприятия
+				include news-i-events/mixin-event
+				+eventBlock({
+					day: "24",
+					month: "Aug",
+					title: "This is the title",
+					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+					imgPath: "news-i-events/event-image.jpg"
 				})
-				+newsBlock({
-					title: "It’s all going downhill",
-					date: "24  august  2013",
-					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.",
-					imgPath: "news-i-events/news-image.jpg"
+				+eventBlock({
+					day: "24",
+					month: "Aug",
+					title: "This is the title",
+					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+					imgPath: "news-i-events/event-image.jpg"
 				})
-				+newsBlock({
-					title: "It’s all going downhill",
-					date: "24  august  2013",
-					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.",
-					imgPath: "news-i-events/news-image.jpg"
+				+eventBlock({
+					day: "24",
+					month: "Aug",
+					title: "This is the title",
+					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+					imgPath: "news-i-events/event-image.jpg"
 				})
-				+newsBlock({
-					title: "It’s all going downhill",
-					date: "24  august  2013",
-					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.",
-					imgPath: "news-i-events/news-image.jpg"
+				+eventBlock({
+					day: "24",
+					month: "Aug",
+					title: "This is the title",
+					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+					imgPath: "news-i-events/event-image.jpg"
 				})
-			script(src="main.bundle.js")
+				+eventBlock({
+					day: "24",
+					month: "Aug",
+					title: "This is the title",
+					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+					imgPath: "news-i-events/event-image.jpg"
+				})
+				+eventBlock({
+					day: "24",
+					month: "Aug",
+					title: "This is the title",
+					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+					imgPath: "news-i-events/event-image.jpg"
+				})
+				+eventBlock({
+					day: "24",
+					month: "Aug",
+					title: "This is the title",
+					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+					imgPath: "news-i-events/event-image.jpg"
+				})
+				script(src="main.bundle.js")

@@ -61,7 +61,6 @@
 
 &--small {
     width: 78px;
-    margin: 61px 10px 0;
     padding: 4px 10px;
 
     font-size: 10px;
@@ -77,7 +76,8 @@
     color: #ffffff;
 }
 }
-.c-ripple {
+
+.button-ripple {
     position: absolute;
     top: 0;
     left: 0;
@@ -85,9 +85,9 @@
     height: 100%;
     overflow: hidden;
     background: transparent;
-  }
+
   
-.c-ripple__circle {
+&__circle {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -99,9 +99,11 @@
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.25);
 }
-.c-ripple.is-active .c-ripple__circle {
+&.is-active 
+&__circle {
     -webkit-animation: a-ripple .4s ease-in;
             animation: a-ripple .4s ease-in;
+}
 }
 
 /**

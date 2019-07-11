@@ -1,6 +1,17 @@
 section(class="standart-buttons main__standart-buttons")
     h1.title Standart buttons
-    +stdButton({title: "Button", parentName: "standart-buttons", color: "green", isSmall: true })
-    +stdButton({title: "Button", parentName: "standart-buttons", color: "green", isSmall: false })
-    +stdButton({title: "Button", parentName: "standart-buttons", color: "orange", isSmall: false })
-    +stdButton({title: "Button", parentName: "standart-buttons", color: "orange", isSmall: true })
+        .buttons_row
+            +stdButton({color: "green", size: "small", type: "button", title: "Button"})
+            +stdButton({color: "green", size: "", type: "button", title: "Button"})
+            +stdButton({color: "orange", size: "", type: "button", title: "Button"})
+            +stdButton({color: "orange", size: "small", type: "button", title: "Button"})
+        .buttons_row
+            +stdButton({color: "green", size: "small", type: "button", title: "Button"})
+            +stdButton({color: "green", size: "", type: "button", title: "Button"})
+            +stdButton({color: "orange", size: "", type: "button", title: "Button"})
+            +stdButton({color: "orange", size: "small", type: "button", title: "Button"})
+        .buttons_row
+            +stdButton({color: "green", size: "small", type: "button", title: "Button"})
+            +stdButton({color: "green", size: "", type: "button", title: "Button"})
+            +stdButton({color: "orange", size: "", type: "button", title: "Button"})
+            +stdButton({color: "orange", size: "small", type: "button", title: "Button"})

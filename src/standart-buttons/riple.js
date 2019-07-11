@@ -8,7 +8,7 @@
   
       var $this = $(this);
       var $offset = $this.parent().offset();
-      var $circle = $this.find('.c-ripple__circle');
+      var $circle = $this.find('.button-ripple__circle');
   
       var x = e.pageX - $offset.left;
       var y = e.pageY - $offset.top;

@@ -1,8 +1,7 @@
 mixin stdButton(options)
-  - var buttonElement = options.parentName ? options.parentName + "__button" : "";
   - var buttonColor = "button--" + options.color
-  - var buttonSize = options.isSmall ? "button--small" : "";
-  - var classes = "button " + buttonElement + " " + buttonColor + " " + buttonSize;
-  button(class=classes, type='button')= options.title
-    div(class="c-ripple js-ripple")
-      span(class="c-ripple__circle")
+  - var buttonSize = options.size ? "button--" + options.size : "";
+  - var classes = "button " + buttonColor + " " + buttonSize;
+  button(class=classes, type=type)= options.title
+    div(class="button-ripple js-ripple")
+      span(class="button-ripple__circle")

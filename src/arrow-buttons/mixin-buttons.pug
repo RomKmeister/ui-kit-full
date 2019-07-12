@@ -1,6 +1,6 @@
 mixin arrowButton(options)
-  - var buttonElement = options.parentName ? options.parentName + "__arrow-button" : "";
-  - var buttonDirection = "arrow-button--" + options.direction
-  - var classes = "arrow-button " + buttonElement + " " + buttonDirection;
+  - var buttonDirection = "arrow-button_" + options.direction
+  - var buttonColor = "arrow-button_" + options.color
   - var buttonDisabled = options.isDisabled ? true : false;
+  - var classes = "arrow-button " + buttonDirection + " " + buttonColor;
   button(class=classes, type='button', disabled=buttonDisabled)

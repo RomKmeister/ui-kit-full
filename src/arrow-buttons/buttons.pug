@@ -1,6 +1,9 @@
 section(class="arrow-buttons main__arrow-buttons")
     h1(class="title") Arrow buttons
-    +arrowButton({parentName: "arrow-buttons", direction: "left", isDisabled: false })
-    +arrowButton({parentName: "arrow-buttons", direction: "right", isDisabled: false })
-    +arrowButton({parentName: "arrow-buttons", direction: "left", isDisabled: true })
-    +arrowButton({parentName: "arrow-buttons", direction: "right", isDisabled: true })
+    .arrow-buttons__row
+        +arrowButton({direction: "left", color: "white", isDisabled: false})
+        +arrowButton({direction: "right", color: "white", isDisabled: false})
+        +arrowButton({direction: "left", color: "white", isDisabled: true})
+        +arrowButton({direction: "right", color: "white", isDisabled: true})
+        +arrowButton({direction: "left", color: "green", isDisabled: false})
+        +arrowButton({direction: "right", color: "green", isDisabled: false})

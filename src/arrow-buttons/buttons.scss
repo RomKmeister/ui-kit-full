@@ -1,70 +1,95 @@
-.arrow-buttons {
-    width: 290px;
-}
-
 .main__arrow-buttons {
-    margin: 154px auto 0;
+    margin: 46px auto 0;
 }
-
-.arrow-buttons__arrow-button {
-     margin: 26px 11px 0;
+.arrow-buttons__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 422px;
+    margin: 25px auto 0;
 }
 
 .arrow-button {
     position: relative;
-    padding: 22px;
+    width: 50px;
+    height: 50px;
 
-    background: #ffffff;
-    border-width: 1px;
-    border: 3px solid #4eb7a8;
     border-radius: 50%;
     cursor: pointer;
-}
 
-.arrow-button:hover,
-.arrow-button:focus {
-    outline: 0;
-    background: #4eb7a8;
-    color: #ffffff;
-}
+    &::after {
+        content: "";
+        position: absolute;
 
-.arrow-button:disabled {
-    background: #e5e5e5;
-    color: #ffffff;
-    border: 3px solid #e5e5e5;
-    cursor: default;
-}
+        width: 12px;
+        height: 12px;
+    }
 
-.arrow-button::after {
-    content: "";
-    position: absolute;
+    &_left::after {
+        top: 15px;
+        left: 17px;
+        transform: rotate(-135deg);
+    }
 
-    width: 12px;
-    height: 12px;
+    &_right::after {
+        top: 15px;
+        left: 12px;
+        transform: rotate(45deg);
+    }
 
-    border-top: 3px solid #4eb7a8;
-    border-right: 3px solid #4eb7a8;
-}
+    &_white {
+        background: #ffffff;
+        border: 3px solid #4eb7a8;
 
-.arrow-button--left::after {
-    top: 15px;
-    left: 17px;
-    transform: rotate(-135deg);
-}
+        &::after {
+            border-top: 3px solid #4eb7a8;
+            border-right: 3px solid #4eb7a8;
+        }
 
-.arrow-button--right::after {
-    top: 15px;
-    left: 12px;
-    transform: rotate(45deg);
-}
+        &:hover,
+        &:focus {
+            outline: 0;
+            background: #4eb7a8;
 
-.arrow-button:hover::after,
-.arrow-button:focus::after {
-    border-top: 3px solid #ffffff;
-    border-right: 3px solid #ffffff;
-}
+            &::after,
+            &::after {
+            border-top: 3px solid #ffffff;
+            border-right: 3px solid #ffffff;
+            }
+        }
+    }
 
-.arrow-button:disabled::after {
-    border-top: 3px solid #ffffff;
-    border-right: 3px solid #ffffff;
+    &_green {
+        background: #4eb7a8;
+        border: 3px solid #4eb7a8;
+        
+        &::after {
+            border-top: 3px solid #ffffff;
+            border-right: 3px solid #ffffff;
+        }
+
+        &:hover,
+        &:focus {
+            outline: 0;
+            background: #ffffff;
+
+            &::after,
+            &::after {
+            border-top: 3px solid #4eb7a8;
+            border-right: 3px solid #4eb7a8;
+            }
+        }
+    }
+
+    &:disabled {
+        background: #e5e5e5;
+        border: 3px solid #e5e5e5;
+        cursor: default;
+
+        &::after {
+            border-top: 3px solid #ffffff;
+            border-right: 3px solid #ffffff;
+        }
+    }
 }

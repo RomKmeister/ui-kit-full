@@ -2,13 +2,13 @@
 
     'use strict';
   
-    var $ripple = $('.js-ripple');
+    var $ripple = $('.button__ripple-js');
   
     $ripple.on('click.ui.ripple', function(e) {
   
       var $this = $(this);
       var $offset = $this.parent().offset();
-      var $circle = $this.find('.button-ripple__circle');
+      var $circle = $this.find('.button__ripple-circle');
   
       var x = e.pageX - $offset.left;
       var y = e.pageY - $offset.top;
@@ -18,12 +18,12 @@
         left: x + 'px'
       });
   
-      $this.addClass('is-active');
+      $this.addClass('button__ripple_active');
   
     });
   
     $ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(e) {
-        $(this).removeClass('is-active');
+        $(this).removeClass('button__ripple_active');
     });
   
   })(jQuery, window, document);

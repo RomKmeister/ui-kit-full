@@ -1,0 +1,19 @@
+.donut-chart {
+  &__scale {
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    fill: none;
+  }
+
+  &__circle {
+    animation: show100 2s;
+  }
+}
+
+@keyframes show100 {
+  from {
+    stroke-dasharray: 0 100;
+  }
+}

@@ -1,7 +1,0 @@
-mixin pieChart(number, parentName)
-    - var pieScale = number + " 100";
-    div(class="charts__container")&attributes(attributes)
-        svg(class="charts__pie-scale" viewBox="0 0 32 32" stroke-dasharray=pieScale)
-            circle(r="16" cx="16" cy="16" stroke="#e75735" stroke-width="32")
-            circle(r="14" cx="16" cy="16" fill="#fff")
-        div(class="charts__pie-number")= number

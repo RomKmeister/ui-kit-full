@@ -1,5 +1,6 @@
 section(class="sliders main__sliders")
     h1(class="title sliders__title") Sliders
     div(class="sliders__wrap")
-        include ../sliders/slider
-        include ../sliders/slider-with-scale
+        include ../slider-with-bubble/mixin-slider
+        +slider({value: "40", min: "0", max: "100"})
+        include ../slider-with-scale/slider-with-scale

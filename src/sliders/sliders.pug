@@ -1,6 +1,10 @@
+include ../slider-with-bubble/mixin-slider
+include ../slider-with-scale/slider-with-scale
+
 section(class="sliders main__sliders")
     h1(class="title sliders__title") Sliders
-    div(class="sliders__wrap")
-        include ../slider-with-bubble/mixin-slider
-        +slider({value: "40", min: "0", max: "100"})
-        include ../slider-with-scale/slider-with-scale
+    .sliders__wrap
+        .sliders__left-column
+            +sliderWithBubble({value: "40", min: "0", max: "110"})
+        .sliders__right-column
+            +sliderWithScale({value: "75", min: "0", max: "100", stepsNumber: "5"})

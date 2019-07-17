@@ -1,6 +1,8 @@
-div(class="slider-with-scale sliders__slider-with-scale")
-    div(id="slider-with-scale__handle" class="ui-slider-handle")
-    div(class="slider-scale")
-        - var i = 0;
-        while i < 5
-            span= i++ * 25
+mixin sliderWithScale(options)
+    div(class="slider-with-scale" data-value=options.value data-min=options.min data-max=options.max)
+        .ui-slider-handle
+        .slider-with-scale__scale
+            - var i = 0;
+            - var stapRange = options.max / (options.stepsNumber - 1)
+            while i < options.stepsNumber
+                span= i++ * stapRange

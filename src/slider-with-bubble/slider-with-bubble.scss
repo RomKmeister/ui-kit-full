@@ -1,59 +1,49 @@
-.slider {
+.slider-with-bubble {
     height: 5px;
     background: #e5e5e5;
-}
 
-.slider__handle {
-    position: relative;
-    top: -4px;
-    width: 19.6px;
-    height: 19.6px;
-    margin-top: -4px;
-    padding: 0;
-    line-height: 1.6em;
-    border-radius: 50%;
-    border: none;
-}
+    &.ui-widget.ui-widget-content {
+        border: 0
+    }
 
-.sliders .slider__handle--orange,
-.sliders .slider__handle--orange:active {
-    background: #e75735;
-}
+    & &__handle {
+        position: relative;
+        top: -7px;
+        width: 19.6px;
+        height: 19.6px;
+        padding: 0;
+        line-height: 1.6em;
+        border-radius: 50%;
+        border: none;
 
-.slider {
-&__buble {
-    position: absolute;
-    width: 22px;
-    bottom: 27px;
-    left: -50%;
-    background: #e75735;
-    padding: 4px 7px;
-    border: 1px solid #e75735;
-    font-family: "Lato", Arial, sans-serif;
-    font-weight: 900;
-    font-size: 13px;
-    line-height: 1.2;
-    color: #ffffff;
-    border-radius: 4px;
-    text-align: center;
-}
+        &_orange,
+        &_orange:active {
+            background: #e75735;
+        }
+    }
 
-&__buble::after {
-    content: "";
-    position: absolute;
-    left: 14px;
-    bottom: -4px;
-    border: 4px solid #e75735;
-    transform: rotate(45deg);
-}
+    &__buble {
+        position: absolute;
+        width: 22px;
+        bottom: 27px;
+        left: -50%;
+        background: #e75735;
+        padding: 5px 8px;
+        font-family: "Lato", Arial, sans-serif;
+        font-weight: 900;
+        font-size: 13px;
+        line-height: 1.2;
+        color: #ffffff;
+        border-radius: 4px;
+        text-align: center;
+    }
 
-&-scale {
-    display: flex;
-    justify-content: space-between;
-    font-family: "Lato", Arial, sans-serif;
-    font-weight: 900;
-    font-size: 11px;
-    line-height: 1.2;
-    color: #d1d1d1;
-}
+    &__buble::after {
+        content: "";
+        position: absolute;
+        left: 15px;
+        bottom: -4px;
+        border: 4px solid #e75735;
+        transform: rotate(45deg);
+    }
 }

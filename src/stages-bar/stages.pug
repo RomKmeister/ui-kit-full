@@ -1,9 +1,7 @@
+include ../progressbar/mixin-progressbar
+
 section(class="stages-bar main__stages-bar")
     h1(class="title") Stages
-    ul(class="progressbar stages-bar__progressbar")
-        +progressbarItem('1', 'active')
-        +progressbarItem('2', 'active')
-        +progressbarItem('3', 'active')
-        +progressbarItem('4')
-        +progressbarItem('5')
+    .stages-bar__wrap
+        +progressbar({steps: "5", activeStep: "3"})
 

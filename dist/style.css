@@ -1447,7 +1447,7 @@ a.ui-button:active,
 .main__stages-bar {
   margin-top: 48px; }
 
-.stages-bar__progressbar {
+.stages-bar__wrap {
   margin: 18px 0 0; }
 
 .progressbar {
@@ -1459,35 +1459,32 @@ a.ui-button:active,
     display: flex;
     align-items: center;
     flex-grow: 1; }
-  .progressbar__item span {
+    .progressbar__item:before {
+      content: "";
+      flex-grow: 1;
+      flex-shrink: 0;
+      width: 50px;
+      height: 5px;
+      background: #e5e5e5; }
+    .progressbar__item:first-child {
+      flex-grow: 0; }
+    .progressbar__item:first-child:before {
+      content: none; }
+    .progressbar__item_active::before {
+      background: #e75735; }
+    .progressbar__item_active .progressbar__step {
+      background: #e75735;
+      color: #ffffff; }
+  .progressbar__step {
     width: 28px;
     height: 28px;
-    margin: 0 auto 10px auto;
-    padding: 1px 0 0 0;
     border-radius: 50%;
-    line-height: 25px;
+    line-height: 1.9;
     background: #e5e5e5;
-    font-size: 14px;
+    font-size: 1.167rem;
     color: #888888;
     text-align: center;
     font-weight: bold; }
-  .progressbar__item:before {
-    content: "";
-    flex-grow: 1;
-    flex-shrink: 0;
-    width: 50px;
-    height: 5px;
-    margin-top: -10px;
-    background: #e5e5e5; }
-  .progressbar__item:first-child {
-    flex-grow: 0; }
-  .progressbar__item:first-child:before {
-    content: none; }
-  .progressbar__item--active::before {
-    background: #e75735; }
-  .progressbar__item--active span {
-    background: #e75735;
-    color: #ffffff; }
 
 .main__form-elements {
   margin-top: 31px; }

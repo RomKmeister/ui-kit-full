@@ -2,60 +2,6 @@
     margin-top: 48px;
 }
 
-.stages-bar__progressbar {
+.stages-bar__wrap {
     margin: 18px 0 0;
-}
-
-.progressbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    list-style: none;
-
-&__item {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-}
-
-&__item span {
-    width: 28px;
-    height: 28px;
-    margin: 0 auto 10px auto;
-    padding: 1px 0 0 0;
-    border-radius: 50%;
-    line-height: 25px;
-    background: #e5e5e5;
-    font-size: 14px;
-    color: #888888;
-    text-align: center;
-    font-weight: bold;
-}
-
-&__item:before {
-    content: "";
-    flex-grow: 1;
-    flex-shrink: 0;
-    width: 50px;
-    height: 5px;
-    margin-top: -10px;
-    background: #e5e5e5;
-  }
-
-&__item:first-child{
-    flex-grow: 0;
-}
-
-&__item:first-child:before{
-    content: none;
-}
-
-&__item--active::before{
-    background: #e75735;
-}
-
-&__item--active span {
-    background: #e75735;
-    color: #ffffff;
-}
 }

@@ -1,0 +1,19 @@
+.tick-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  text-align: center;
+
+  &_enabled {
+    background: #4eb7a8;
+    color: #ffffff;
+  }
+
+  &_disabled {
+    background: #e5e5e5;
+    color: #c0c0c0;
+  }
+}

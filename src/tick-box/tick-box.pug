@@ -1,6 +1,9 @@
-include mixin-tick-box
+include ../tick/mixin-tick-box
+
 section(class="tick-boxes main__tick-boxes")
 	h1(class="title") Tick boxes
-	div.tick-boxes__wrap
-		+tickBox()
-		+tickBox("disabled")
+	.tick-boxes__row
+		.tick-boxes__wrap
+			+tickBox()
+		.tick-boxes__wrap
+			+tickBox("disabled")

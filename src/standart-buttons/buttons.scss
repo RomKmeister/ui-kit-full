@@ -74,6 +74,28 @@
         }
     }
 
+    &_fullgreen {
+        color: #ffffff;
+        border-color: #4eb7a8;
+        background: #4eb7a8;
+        box-shadow: 0 3px 0 0 #28a290;
+        
+        &:hover,
+        &:focus {
+            color: #ffffff;
+            background: #28a290;
+            box-shadow: 0 3px 0 0 #28a290;
+            outline: 0;
+        }
+
+        &:active {
+            color: #ffffff;
+            background: #28a290;
+            box-shadow: none;
+            outline: 0;
+        }
+    }
+
     &_small {
         width: 78px;
         padding: 4px 10px;

@@ -1,0 +1,18 @@
+.main__form-elements {
+    margin-top: 43px;
+}
+
+.form-elements {
+    &__row {
+    display: flex;
+    }
+
+    &__left-column,
+    &__right-column {
+        width: 50%;
+    }
+
+    &_margin-for-first-block {
+        margin-top: 40px;
+    }
+}

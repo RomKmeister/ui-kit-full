@@ -1,5 +1,10 @@
-section(class="toggles form-elements__toggles")
-	h1(class="title") Toggles
-	div.toggles__wrap
-		+toggle()
-		+toggle("checked")
+include ../toggle/mixin-toggles
+
+mixin togglesBlock()
+	section(class="toggles form-elements__toggles")
+		h1.title Toggles
+		.toggles__row
+			.toggles__wrap
+				+toggle()
+			.toggles__wrap
+				+toggle("checked")

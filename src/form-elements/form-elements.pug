@@ -1,0 +1,16 @@
+include ../form/form
+include ../toggles/toggles
+
+section(class="form-elements main__form-elements")
+	h1(class="title form-elements__title") Form elements
+	.form-elements__row
+		.form-elements__left-column.form-elements_margin-for-first-block
+			+newForm()
+		.form-elements__right-column
+			+togglesBlock()
+			include ../tick-box/tick-box
+	.form-elements__row
+		.form-elements__left-column
+			include ../search/search
+		.form-elements__right-column
+			include ../user-profile/profile

@@ -1,0 +1,22 @@
+mixin userInfo(options)
+    - var bgColor = "user-info";
+    - var userName = "user-info__name";
+    - var userJob = "user-info__job";
+    - var fbItemsColor = "user-info__item user-info__item_fb";
+    - var twItemsColor = "user-info__item user-info__item_tw";
+    - var dbItemsColor = "user-info__item user-info__item_db";
+    if (options.theme)
+        - var bgColor = "user-info user-info_" + options.theme;
+        - var userName = "user-info__name user-info__name_" + options.theme;
+        - var userJob = "user-info__job user-info__job_" + options.theme;
+        - var fbItemsColor = "user-info__item user-info__item_fb-" + options.theme;
+        - var twItemsColor = "user-info__item user-info__item_tw-" + options.theme;
+        - var dbItemsColor = "user-info__item user-info__item_db-" + options.theme;
+
+    div(class=bgColor)
+        h2(class=userName)= options.name
+        p(class=userJob)= options.job
+        ul(class="user-info__links")
+            li(class=fbItemsColor)
+            li(class=twItemsColor)
+            li(class=dbItemsColor)

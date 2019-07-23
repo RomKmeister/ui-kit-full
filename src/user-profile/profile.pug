@@ -1,5 +1,13 @@
+include ../user-photo/mixin-user-photo
+include ../user-info/mixin-user-info
+
 section(class="user-profiles form-elements__user-profile")
 	h1(class="title") User profile
-	include mixin-user-profile
-	+userProfile("John Smith", "Ux designer", "user-profile/user.jpg", "", true, true)
-	+userProfile("Sarah Brown", "Developer", "user-profile/user-1.jpg", "", false, true)
+	.user-profiles__item.user-profiles__item_first-margin
+		.user-profile
+			+userPhoto({imagePath: "user-profile/user.jpg", imageAlt: ""})
+			+userInfo({name: "John Smith", job: "Ux designer", theme: "hovered"})
+	.user-profiles__item
+		.user-profile
+			+userPhoto({imagePath: "user-profile/user-1.jpg", imageAlt: ""})
+			+userInfo({name: "Sarah Brown", job: "Developer", theme: ""})

@@ -1568,26 +1568,27 @@ a.ui-button:active,
   margin-top: 57px;
   margin-left: 25px; }
 
-.user-profiles__user-profile {
-  margin-top: 29px;
-  margin-left: 9px; }
-
-.user-profiles__user-profile:nth-child(2) {
-  margin-top: 18px; }
+.user-profiles__item {
+  margin-top: 29px; }
+  .user-profiles__item_first-margin {
+    margin-top: 20px; }
 
 .user-profile {
   display: flex;
-  flex-wrap: wrap; }
-  .user-profile__wrap {
-    position: relative;
-    width: 85px;
-    height: 85px;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 4px solid #e5e5e5; }
-  .user-profile__photo {
-    width: 85px;
-    height: auto; }
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.user-photo__wrap {
+  position: relative;
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid #e5e5e5; }
+
+.user-photo__image {
+  width: 85px;
+  height: auto; }
 
 .user-info {
   position: relative;
@@ -1605,7 +1606,7 @@ a.ui-button:active,
     background: inherit;
     border-radius: 0 0 0 2px;
     transform: rotate(45deg); }
-  .user-info--hovered {
+  .user-info_hovered {
     background: #e5e5e5; }
   .user-info__name {
     margin: 0;
@@ -1615,8 +1616,8 @@ a.ui-button:active,
     font-size: 18px;
     color: #ffffff;
     text-align: center; }
-  .user-info__name--hovered {
-    color: #e75735; }
+    .user-info__name_hovered {
+      color: #e75735; }
   .user-info__job {
     margin: 0;
     font-size: 11px;
@@ -1624,39 +1625,31 @@ a.ui-button:active,
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.7px; }
-  .user-info__job--hovered {
-    color: #4f4f4f; }
-
-.links {
-  margin: 14px 17px 0;
-  padding: 0;
-  display: flex;
-  list-style: none; }
-
-.link__item {
-  width: 25px;
-  height: 21px;
-  margin-left: 15px;
-  background-position: center center;
-  background-repeat: no-repeat; }
-
-.link__item--fb {
-  background-image: url(images/fb.png); }
-
-.link__item--tw {
-  background-image: url(images/twitter.png); }
-
-.link__item--db {
-  background-image: url(images/dribbble.png); }
-
-.link__item--fb-hovered {
-  background-image: url(images/fb-grey.png); }
-
-.link__item--tw-hovered {
-  background-image: url(images/twitter-orange.png); }
-
-.link__item--db-hovered {
-  background-image: url(images/dribbble-grey.png); }
+    .user-info__job_hovered {
+      color: #4f4f4f; }
+  .user-info__links {
+    margin: 14px 17px 0;
+    padding: 0;
+    display: flex;
+    list-style: none; }
+  .user-info__item {
+    width: 25px;
+    height: 21px;
+    margin-left: 15px;
+    background-position: center center;
+    background-repeat: no-repeat; }
+    .user-info__item_fb {
+      background-image: url(images/fb.png); }
+    .user-info__item_tw {
+      background-image: url(images/twitter.png); }
+    .user-info__item_db {
+      background-image: url(images/dribbble.png); }
+    .user-info__item_fb-hovered {
+      background-image: url(images/fb-grey.png); }
+    .user-info__item_tw-hovered {
+      background-image: url(images/twitter-orange.png); }
+    .user-info__item_db-hovered {
+      background-image: url(images/dribbble-grey.png); }
 
 .page__news-and-events {
   margin-top: 82px; }

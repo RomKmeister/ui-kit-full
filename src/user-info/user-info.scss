@@ -1,0 +1,90 @@
+.user-info {
+  position: relative;
+  width: 165px;
+  margin-left: 12px;
+  border-radius: 6px;
+  background: #4eb7a8;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 46%;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    background: inherit;
+    border-radius: 0 0 0 2px;
+    transform: rotate(45deg);
+  }
+
+  &_hovered {
+    background: #e5e5e5;
+  }
+
+  &__name {
+    margin: 0;
+    margin-top: 10px;
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+  
+    &_hovered {
+      color: #e75735;
+    }
+  }
+
+  &__job {
+    margin: 0;
+    font-size: 11px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+
+    &_hovered {
+      color: #4f4f4f;
+    }
+  }
+
+  &__links {
+    margin: 14px 17px 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    width: 25px;
+    height: 21px;
+    margin-left: 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &_fb {
+      background-image: url("fb.png");
+    }
+
+    &_tw {
+      background-image: url("twitter.png");
+    }
+
+    &_db {
+      background-image: url("dribbble.png");
+    }
+
+    &_fb-hovered {
+      background-image: url("fb-grey.png");
+    }
+
+    &_tw-hovered {
+      background-image: url("twitter-orange.png");
+    }
+
+    &_db-hovered {
+      background-image: url("dribbble-grey.png");
+    }
+  }
+}
+

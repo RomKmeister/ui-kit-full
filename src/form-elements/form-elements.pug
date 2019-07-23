@@ -1,5 +1,7 @@
 include ../form/form
 include ../toggles/toggles
+include ../tick-box/tick-box
+include ../searches/searches
 
 section(class="form-elements main__form-elements")
 	h1(class="title form-elements__title") Form elements
@@ -8,9 +10,9 @@ section(class="form-elements main__form-elements")
 			+newForm()
 		.form-elements__right-column
 			+togglesBlock()
-			include ../tick-box/tick-box
+			+tickBlock()
 	.form-elements__row
 		.form-elements__left-column
-			include ../search/search
+			+searchBlock()
 		.form-elements__right-column
 			include ../user-profile/profile

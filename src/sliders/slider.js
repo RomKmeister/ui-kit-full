@@ -12,7 +12,7 @@ $( function() {
                 $( this ).find(".slider__handle").html( "<span class='slider__buble'>" + ui.value  + "</span>");
             }
         });
-      });
+    });
 });
 
 $( function() {

@@ -1,7 +1,11 @@
-$(document).ready(function() {
-    $('.select').select2({
-        width: 'element',
-        placeholder: 'Select an option',
-        minimumResultsForSearch: Infinity
+$( function() {
+    $(".select").each(function() {
+        $(this).selectmenu({
+            width: "100%",
+            classes: {
+                "ui-selectmenu-button": "ui-selectmenu-button_" + $( this ).data("theme"),
+                "ui-selectmenu-menu": "ui-selectmenu-menu_" + $( this ).data("theme")
+            }
+        });
     });
 });

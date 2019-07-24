@@ -1029,6 +1029,20 @@ a.ui-button:active,
       background: #28a290;
       box-shadow: none;
       outline: 0; }
+  .button_darkgreen {
+    color: #43ac9d;
+    border-color: #43ac9d;
+    box-shadow: 0 3px 0 0 #379285; }
+    .button_darkgreen:hover, .button_darkgreen:focus {
+      color: #ffffff;
+      background: #43ac9d;
+      box-shadow: 0 3px 0 0 #379285;
+      outline: 0; }
+    .button_darkgreen:active {
+      color: #ffffff;
+      background: #43ac9d;
+      box-shadow: none;
+      outline: 0; }
   .button_small {
     width: 78px;
     padding: 4px 10px;
@@ -1037,6 +1051,10 @@ a.ui-button:active,
     width: 118px;
     padding: 7px 10px 8px;
     font-size: 1rem; }
+  .button_custom {
+    width: 128px;
+    padding: 5px 10px 5px;
+    font-size: 0.833rem; }
   .button__ripple {
     position: absolute;
     top: 0;
@@ -1654,12 +1672,11 @@ a.ui-button:active,
 .page__news-and-events {
   margin-top: 82px; }
 
-.news-and-events {
+.news-and-events__wrap {
+  margin-top: 23px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
-  .news-and-events__news {
-    margin-top: 23px; }
 
 .news {
   position: relative;
@@ -1698,17 +1715,6 @@ a.ui-button:active,
     font-size: 11px;
     font-weight: 400;
     line-height: 1.2; }
-  .news__button {
-    margin-top: 10px;
-    font-size: 10px;
-    color: #43ac9d; }
-
-.news-and-events {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .news-and-events__event {
-    margin-top: 23px; }
 
 .event {
   position: relative;
@@ -1736,7 +1742,7 @@ a.ui-button:active,
     margin: 10px 0 0;
     font-size: 73px;
     line-height: 26px; }
-  .event__date--month {
+  .event__month {
     display: inline-block;
     font-size: 28px; }
   .event__title {
@@ -1751,11 +1757,8 @@ a.ui-button:active,
     font-size: 11px;
     font-weight: 400;
     line-height: 1.2; }
-  .event__button {
-    margin: 16px 7px 0;
-    font-size: 10px;
-    color: #43ac9d;
-    letter-spacing: 0; }
+  .event__button-wrap {
+    margin: 18px 8px; }
 
 .page__location {
   margin-top: 37px; }

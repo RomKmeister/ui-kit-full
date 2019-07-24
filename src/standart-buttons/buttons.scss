@@ -96,6 +96,27 @@
         }
     }
 
+    &_darkgreen {
+        color: #43ac9d;
+        border-color: #43ac9d;
+        box-shadow: 0 3px 0 0 #379285;
+        
+        &:hover,
+        &:focus {
+            color: #ffffff;
+            background: #43ac9d;
+            box-shadow: 0 3px 0 0 #379285;
+            outline: 0;
+        }
+
+        &:active {
+            color: #ffffff;
+            background: #43ac9d;
+            box-shadow: none;
+            outline: 0;
+        }
+    }
+
     &_small {
         width: 78px;
         padding: 4px 10px;
@@ -106,6 +127,12 @@
         width: 118px;
         padding: 7px 10px 8px;
         font-size: 1rem;
+    }
+
+    &_custom {
+        width: 128px;
+        padding: 5px 10px 5px;
+        font-size: 0.833rem;
     }
 
     &__ripple {

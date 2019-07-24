@@ -1,5 +1,5 @@
-mixin newsBlock(content)
-	div(class="news news-and-events__news")
+mixin newsItem(content)
+	div(class="news")
 		img(class="news__image", src=content.imgPath, alt="")
 		div(class="news__block")
 			h2(class="news__title")= content.title

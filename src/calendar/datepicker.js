@@ -8,7 +8,7 @@ $( function() {
       firstDay: 1,
       showButtonPanel: true,
       showOtherMonths: true,
-      constrainInput: true
+      constrainInput: true,
     });
   });
 });

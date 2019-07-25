@@ -1051,6 +1051,10 @@ a.ui-button:active,
     width: 118px;
     padding: 7px 10px 8px;
     font-size: 1rem; }
+  .button_wide {
+    width: 100%;
+    padding: 7px 10px 8px;
+    font-size: 1rem; }
   .button_custom {
     width: 128px;
     padding: 5px 10px 5px;
@@ -1805,7 +1809,7 @@ a.ui-button:active,
 .page__calendar {
   margin-top: 38px; }
 
-.calendar__datepicker {
+.calendar__wrap {
   margin-top: 16px; }
 
 .datepicker__date {
@@ -1947,14 +1951,8 @@ a.ui-button:active,
   margin-top: 38px;
   margin-left: 28px; }
 
-.messaging__message {
+.messaging__wrap {
   margin-top: 16px; }
-
-.messaging__user-profile {
-  position: absolute;
-  top: 70px;
-  left: 50%;
-  margin-left: -50px; }
 
 .message {
   width: 285px;
@@ -1974,6 +1972,11 @@ a.ui-button:active,
     font-size: 34px;
     line-height: 42px;
     font-weight: 300; }
+  .message__user-profile {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    margin-left: -50px; }
   .message__body {
     padding: 24px 23px 20px; }
   .message__icons {
@@ -1999,8 +2002,7 @@ a.ui-button:active,
     color: #777777;
     background: #e5e5e5;
     border: 3px solid #ffffff; }
-  .message__button {
-    width: 100%;
+  .message__wrap-for-button {
     margin: 12px 0;
     background: #4eb7a8;
     color: #fff; }

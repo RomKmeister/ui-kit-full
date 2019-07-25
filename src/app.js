@@ -30,6 +30,7 @@ import './location/location.scss'
 import './datepicker/datepicker.scss'
 import './calendar/datepicker.scss'
 import './messaging/messaging.scss'
+import './message/message.scss'
 import './video/video.scss'
 
 import './fonts/Lato-Black.ttf'

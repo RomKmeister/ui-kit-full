@@ -1,7 +1,8 @@
-include ../progressbar/mixin-progressbar
+include ../progressbar/progressbar
 
-section(class="stages-bar main__stages-bar")
-    h1(class="title") Stages
-    .stages-bar__wrap
-        +progressbar({steps: "5", activeStep: "3"})
+mixin stagesBarBlock()
+    section.stages-bar
+        h1.title Stages
+        .stages-bar__wrap
+            +progressbar({steps: "5", activeStep: "3"})
 

@@ -71,13 +71,46 @@ body {
     margin: 0 auto;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+.main {
+    &__standart-buttons {
+        margin: 71px auto 0;
+    }
+
+    &__arrow-buttons {
+        margin: 46px auto 0;
+    }
+
+    &__charts {
+        margin: 34px auto 0;
+    }
+
+    &__sliders {
+        margin-top: 1.67rem;
+    }
+
+    &__stages-bar {
+        margin-top: 48px;
+    }
+
+    &__form-elements {
+        margin-top: 43px;
+    }
+
+    &__news-and-events {
+        margin-top: 82px;
+      }
+
+    &__location {
+        margin-top: 37px;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 38px;
+    }
+
+    &__videos {
+        margin-top: 40px;
+    }
 }

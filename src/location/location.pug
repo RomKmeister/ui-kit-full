@@ -1,3 +1,6 @@
-section(class="location page__location")
-    h1(class="title") Location
-    div(class="location__map", id="map")
+include ../map/map
+
+mixin locationBlock()
+    section.location
+        h1.title Location
+        +map()

@@ -1,9 +1,10 @@
-include ../calendar/datepicker
+include ../calendar/calendar
 
-section(class="calendar page__calendar")
-    h1(class="title") Calendar
-    .calendar__wrap
-        +newCalendar()
+mixin datepickerBlock()
+    section.calendar
+        h1.title Calendar
+        .calendar__wrap
+            +newCalendar()
 
 
 

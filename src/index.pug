@@ -1,28 +1,44 @@
+include standart-buttons/buttons
+include arrow-buttons/buttons
+include charts/charts
+include sliders/sliders
+include stages-bar/stages
+include form-elements/form-elements
+include news-and-events/news-and-events
+include location/location
+include datepicker/datepicker
+include messaging/messaging
+include videos/videos
+
 doctype html
 html(lang="ru")
 	head
 		meta(charset="utf-8")
-		link(
-			rel="stylesheet",
-			href="style.css"
-		)
+		link(rel="stylesheet", href="style.css")
 		title I'm a title
 	body
-		article(class="main")
-			include standart-buttons/mixin-buttons
-			include standart-buttons/buttons
-			include arrow-buttons/mixin-buttons
-			include arrow-buttons/buttons
-			include charts/charts
-			include sliders/sliders
-			include stages-bar/stages
-			include form-elements/form-elements
-			include news-i-events/news
-			include location/location
-			div(class="page__wrap" style="display:flex;")
-				include datepicker/datepicker
-				include messaging/messaging
-			include videos/video
+		article.main
+			.main__standart-buttons
+				+standartButtonsBlock()
+			.main__arrow-buttons
+				+arrowButtonsBlock()
+			.main__charts
+				+chartsBlock()
+			.main__sliders
+				+slidersBlock()
+			.main__stages-bar
+				+stagesBarBlock()
+			.main__form-elements
+				+formBlock()
+			.main__news-and-events
+				+newsandeventsBlock()
+			.main__location
+				+locationBlock()
+			.main__wrap
+				+datepickerBlock()
+				+messagingBlock()
+			.main__videos
+				+videosBlock()
 			script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
 			script(src="https://api-maps.yandex.ru/2.1/?apikey=4ddfe254-a524-4b68-a64b-af1b457f35c6&lang=en_US")
 			script(src="main.bundle.js")

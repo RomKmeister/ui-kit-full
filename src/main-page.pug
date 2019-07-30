@@ -1,3 +1,7 @@
+include toggle/toggle
+include standart-button/button
+include event/event
+
 doctype html
 html(lang="ru")
 	head
@@ -9,8 +13,6 @@ html(lang="ru")
 		title I'm a title
 	body
 		aside
-			include toggle/mixin-toggles
-			include standart-buttons/mixin-buttons
 			+toggle() 
 			p Интересные
 			+toggle("checked")
@@ -22,11 +24,10 @@ html(lang="ru")
 				button(class="search-form__submit", type="submit")
 					svg(xmlns="http://www.w3.org/2000/svg", width="14", height="14", viewBox="0 0 14 14")
 						path(fill="#ffffff", d="M1.731 2.03a5.079 5.079 0 0 1 8.146 5.843l3.597 3.598c.549.548.467 1.52-.082 2.068a1.404 1.404 0 0 1-1.986 0l-3.527-3.527a5.081 5.081 0 0 1-6.148-7.982zm1.283 5.9a3.265 3.265 0 1 0 4.617-4.618 3.265 3.265 0 0 0-4.617 4.618z")
-			+stdButton({title: "Предложить свое", parentName: "standart-buttons", color: "green", isSmall: false })
+			+stdButton({title: "Предложить свое", color: "green", size: "big", type: "button"})
 		main
 			section(class="main")
 				h1 Мероприятия
-				include event/mixin-event
 				+eventItem({
 					day: "24",
 					month: "Aug",

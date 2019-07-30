@@ -1,16 +1,17 @@
-include ../pie-chart/mixin-pie-chart
-include ../donut-chart/mixin-donut-chart
+include ../pie-chart/pie-chart
+include ../donut-chart/donut-chart
 
-section(class="charts main__charts")
-    h1(class="title charts__title") Percentages / Pie chart
-    .charts__row
-        +pieChart({value: "0"})
-        +pieChart({value:"38"})
-        +pieChart({value:"62"})
-        +pieChart({value:"89"})  
-        +donutChart([
-        {value: "100", color: "#e5e5e5"},
-        {value: "65", color: "#4eb7a8"},
-        {value: "35", color: "#e75735"},
-        {value: "10", color: "#747474"}
-        ])
+mixin chartsBlock()
+    section.charts
+        h1.title Percentages / Pie chart
+        .charts__row
+            +pieChart({value: "0"})
+            +pieChart({value:"38"})
+            +pieChart({value:"62"})
+            +pieChart({value:"89"})  
+            +donutChart([
+            {value: "100", color: "#e5e5e5"},
+            {value: "65", color: "#4eb7a8"},
+            {value: "35", color: "#e75735"},
+            {value: "10", color: "#747474"}
+            ])

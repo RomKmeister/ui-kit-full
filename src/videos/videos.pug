@@ -1,0 +1,7 @@
+include ../video/video
+
+mixin videosBlock()
+    section.videos
+        h1.title Video
+        .videos__wrap
+            +newVideo({src: "https://www.youtube.com/embed/rPmGtZAUxNs"})

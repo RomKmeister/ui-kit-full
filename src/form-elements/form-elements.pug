@@ -1,18 +1,23 @@
 include ../form/form
 include ../toggles/toggles
-include ../tick-box/tick-box
+include ../tick-boxes/tick-boxes
 include ../searches/searches
+include ../user-profile/profile
 
-section(class="form-elements main__form-elements")
-	h1(class="title form-elements__title") Form elements
-	.form-elements__row
-		.form-elements__left-column.form-elements_margin-for-first-block
-			+newForm()
-		.form-elements__right-column
-			+togglesBlock()
-			+tickBlock()
-	.form-elements__row
-		.form-elements__left-column
-			+searchBlock()
-		.form-elements__right-column
-			include ../user-profile/profile
+mixin formBlock()
+	section.form-elements
+		h1.title Form elements
+		.form-elements__row.form-elements__row_margin-for-first-row 
+			.form-elements__left-column.form-elements_margin-for-form-block
+				+newForm()
+			.form-elements__right-column
+				.form-elements__toggles
+					+togglesBlock()
+				.form-elements__tick-boxes
+					+tickBlock()
+		.form-elements__row.form-elements__row_margin-for-second-row 
+			.form-elements__left-column
+				+searchBlock()
+			.form-elements__right-column
+				.form-elements__user-profile
+					+userProfileBlock()

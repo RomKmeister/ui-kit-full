@@ -1,9 +1,12 @@
-section(class="arrow-buttons main__arrow-buttons")
-    h1(class="title") Arrow buttons
-    .arrow-buttons__row
-        +arrowButton({direction: "left", color: "white", isDisabled: false})
-        +arrowButton({direction: "right", color: "white", isDisabled: false})
-        +arrowButton({direction: "left", color: "white", isDisabled: true})
-        +arrowButton({direction: "right", color: "white", isDisabled: true})
-        +arrowButton({direction: "left", color: "green", isDisabled: false})
-        +arrowButton({direction: "right", color: "green", isDisabled: false})
+include ../arrow-button/button
+
+mixin arrowButtonsBlock()
+    section.arrow-buttons
+        h1.title Arrow buttons
+        .arrow-buttons__row
+            +arrowButton({direction: "left", color: "white", isDisabled: false})
+            +arrowButton({direction: "right", color: "white", isDisabled: false})
+            +arrowButton({direction: "left", color: "white", isDisabled: true})
+            +arrowButton({direction: "right", color: "white", isDisabled: true})
+            +arrowButton({direction: "left", color: "green", isDisabled: false})
+            +arrowButton({direction: "right", color: "green", isDisabled: false})

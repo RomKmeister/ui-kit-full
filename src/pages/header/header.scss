@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    background: #4eb7a8;
+    padding: 1% 5%;
+   
+    &__logo {
+        font-size: 2rem;
+    }
+}

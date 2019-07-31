@@ -41,41 +41,31 @@ html {
   color: #4f4f4f;
   background: #ffffff; }
 
-body {
+.main {
   width: 594px;
   margin: 0 auto; }
-
-.main__standart-buttons {
-  margin: 71px auto 0; }
-
-.main__arrow-buttons {
-  margin: 46px auto 0; }
-
-.main__charts {
-  margin: 34px auto 0; }
-
-.main__sliders {
-  margin-top: 1.67rem; }
-
-.main__stages-bar {
-  margin-top: 48px; }
-
-.main__form-elements {
-  margin-top: 43px; }
-
-.main__news-and-events {
-  margin-top: 82px; }
-
-.main__location {
-  margin-top: 37px; }
-
-.main__wrap {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 38px; }
-
-.main__videos {
-  margin-top: 40px; }
+  .main__standart-buttons {
+    margin: 71px auto 0; }
+  .main__arrow-buttons {
+    margin: 46px auto 0; }
+  .main__charts {
+    margin: 34px auto 0; }
+  .main__sliders {
+    margin-top: 1.67rem; }
+  .main__stages-bar {
+    margin-top: 48px; }
+  .main__form-elements {
+    margin-top: 43px; }
+  .main__news-and-events {
+    margin-top: 82px; }
+  .main__location {
+    margin-top: 37px; }
+  .main__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px; }
+  .main__videos {
+    margin-top: 40px; }
 
 /*! jQuery UI - v1.12.1 - 2019-07-22
 * http://jqueryui.com
@@ -2036,8 +2026,13 @@ a.ui-button:active,
     height: 212px;
     font-family: "Lato", Arial, sans-serif;
     font-weight: 300;
-    background: #4eb7a8;
     z-index: 1; }
+    .event__block_green {
+      background: #4eb7a8; }
+    .event__block_orange {
+      background: #e75735; }
+    .event__block_gray {
+      background: #666666; }
   .event__date {
     font-weight: 300;
     margin: 10px 0 0;
@@ -2279,6 +2274,71 @@ a.ui-button:active,
     font-weight: 400;
     line-height: 1.2; }
 
+.footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background: #cccccc;
+  padding: 1% 5%; }
+  .footer__logo {
+    font-size: 1.5rem; }
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  background: #4eb7a8;
+  padding: 1% 5%; }
+  .header__logo {
+    font-size: 2rem; }
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .menu__item {
+    margin: 0 28px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff; }
+
+body {
+  margin: 0; }
+
+.content {
+  display: flex;
+  padding: 1% 5%; }
+  .content__left-column {
+    width: 20%;
+    margin-right: 2%; }
+  .content__right-column {
+    width: 78%; }
+  .content__title {
+    margin: 0;
+    font-size: 32px; }
+
+.filter__title {
+  font-size: 24px; }
+
+.filter__toggle {
+  display: flex;
+  justify-content: space-between; }
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.events-block__wrap {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+
+.events-block__item {
+  margin: 20px 20px 0 0; }
+
 .pie-chart__container {
   position: relative; }
 
@@ -2349,7 +2409,6 @@ a.ui-button:active,
     width: 255px;
     height: 28px;
     padding: 10px 14px 9px;
-    margin-bottom: 15px;
     font-family: "SourceSansPro", Arial, sans-serif;
     font-size: 14px;
     background: #e5e5e5;
@@ -2359,7 +2418,7 @@ a.ui-button:active,
       background: #e75735;
       color: #ffffff; }
   .search-form__submit {
-    margin-bottom: 15px;
+    height: 28px;
     padding: 5px 10px 3px;
     background: #e75735;
     border: none;

@@ -66,12 +66,10 @@ html {
     background: #ffffff;
 }
 
-body {
+.main {
     width: 594px;
     margin: 0 auto;
-}
 
-.main {
     &__standart-buttons {
         margin: 71px auto 0;
     }

@@ -44,7 +44,12 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'main-page.html',
-      template: 'src/main-page.pug',
+      template: 'src/pages/main.pug',
+      inject: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'second.html',
+      template: 'src/pages/second.pug',
       inject: false
     }),
     new webpack.ProvidePlugin({

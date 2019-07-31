@@ -6,7 +6,6 @@
     width: 255px;
     height: 28px;
     padding: 10px 14px 9px;
-    margin-bottom: 15px;
     font-family: "SourceSansPro", Arial, sans-serif;
     font-size: 14px;
     background: #e5e5e5;
@@ -20,7 +19,7 @@
   }
 
   &__submit {
-    margin-bottom: 15px;
+    height: 28px;
     padding: 5px 10px 3px;
     background: #e75735;
     border: none;

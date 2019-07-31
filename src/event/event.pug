@@ -1,9 +1,10 @@
 include ../standart-button/button
 
 mixin eventItem(content)
+	-var classes = "event__block event__block_" + content.color
 	div(class="event")
 		img(class="event__image", src=content.imgPath, alt="")
-		div(class="event__block")
+		div(class=classes)
 			h2(class="event__date")= content.day
 				span(class="event__month")= content.month
 			p(class="event__title")= content.title 

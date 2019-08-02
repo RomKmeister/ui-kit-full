@@ -4,8 +4,9 @@ include ../drop-down/drop-down
 mixin searchBlock()
 	section.search-drop-down
 		h1.title Search / Drop down
-		.search__wrap
+		.search__wrap.search__wrap_margin-for-first-item
 			+searchForm({action: "", searchValue:"", placeholder:"Search", emptyResult: false})
+		.search__wrap
 			+searchForm({action: "", searchValue:"I’ve not found what I’m looking for...", placeholder:"", emptyResult: true})
 		.drop-down__wrap
 			+dropDown({theme: "custom", placeholder: "Choose an option", options: ["This is option 1", "This is option 2", "This is option 3", "This is option 4"]})

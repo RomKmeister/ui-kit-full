@@ -1,4 +1,5 @@
 mixin menu(items)
     ul.menu
-        each item in items
-            li.menu__item= item    
+        each href, item in items
+            li
+                a.menu__item(href=href)= item    

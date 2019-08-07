@@ -1,9 +1,11 @@
+include ../standart-button/button
+
 mixin newForm()
 	form(class="form", name="form", action="")
 		input(class="form__input-text", type="text", name="name", placeholder="Your Name")
-		div(class="form__result" id="result-name")
+		.form__result
 		input(class="form__input-text", type="text", name="email", placeholder="Your Email")
-		div(class="form__result" id="result-email")
-		textarea(class="form__textarea" name="message", cols="30", rows="4", placeholder="Your Message" )
+		.form__result
+		textarea(class="form__textarea" name="message", placeholder="Your Message" )
 		.form__button-wrap
 			+stdButton({color: "fullgreen", size: "big", type: "submit", title: "Submit"})

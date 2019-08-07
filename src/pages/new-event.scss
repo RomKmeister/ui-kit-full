@@ -1,0 +1,23 @@
+.new-event {
+    display: flex;
+    padding: 1% 5%;
+
+    &__title {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    &__second-title {
+        margin-top: 5%;
+        font-size: 24px;
+    }
+
+    &__new-date-wrap {
+        display: flex;
+    }
+
+    &__form-wrap {
+        margin-left: 5%;
+        width: 50%;
+    }
+}

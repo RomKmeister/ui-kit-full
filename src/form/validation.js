@@ -1,29 +1,45 @@
 (function($) {
-    $('#name').blur(function(){
-      var name = $("#name").val();
+  function validItem(element) {
+    $(element + "+ .form__result").addClass("form__success").text("thanks!")
+  };
+
+  function invalidItem(element) {
+    $(element + "+ .form__result").addClass("form__error").text("error");
+  };
+
+  function removeError(element) {
+    $(element + "+ .form__result").removeClass("form__error").removeClass("form__success");
+  };
+
+
+  var formName = "input[name='name']";
+  var formEmail ="input[name='email']";
+
+    $(formName).blur(function(){
+      var name = $(this).val();
       if(!name){
-        $("#result-name").addClass("form__error").text("error");
+        invalidItem(formName)
       }
       else {
-        $("#result-name").addClass("form__success").text("thanks!")
+        validItem(formName)
       }
     });
     
-    $('#email').blur(function(){
-      var email = $("#email").val();
+    $(formEmail).blur(function(){
+      var email = $(this).val();
       if(!email.match(/^[\w-\.]+@[\w-]+\.[a-z]{2,3}$/i)){
-        $("#result-email").addClass("form__error").text("error");
+        invalidItem(formEmail)
       }
       else {
-        $("#result-email").addClass("form__success").text("thanks!")
+        validItem(formEmail)
       }
     });
     
-    $('#name').focus(function(){
-      $("#result-name").removeClass("form__error").removeClass("form__success");
+    $(formName).focus(function(){
+      removeError(formName)
     });
     
-    $('#email').focus(function(){
-      $("#result-email").removeClass("form__error").removeClass("form__success");
+    $(formEmail).focus(function(){
+      removeError(formEmail)
     });
 })(jQuery);

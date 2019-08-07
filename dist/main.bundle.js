@@ -306,6 +306,17 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 
 /***/ }),
 
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/pages/add-friends.scss":
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/pages/add-friends.scss ***!
+  \*************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/pages/add-friends.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
+
+/***/ }),
+
 /***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/pages/footer/footer.scss":
 /*!***************************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/pages/footer/footer.scss ***!
@@ -336,6 +347,17 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/pages/menu/menu.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/pages/new-event.scss":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/pages/new-event.scss ***!
+  \***********************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/pages/new-event.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
@@ -621,7 +643,7 @@ eval("var map = {\n\t\"./app.js\": \"./src/app.js\",\n\t\"./calendar/datepicker.
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./arrow-button/button.scss\": \"./src/arrow-button/button.scss\",\n\t\"./arrow-buttons/buttons.scss\": \"./src/arrow-buttons/buttons.scss\",\n\t\"./base.scss\": \"./src/base.scss\",\n\t\"./calendar/calendar.scss\": \"./src/calendar/calendar.scss\",\n\t\"./charts/charts.scss\": \"./src/charts/charts.scss\",\n\t\"./datepicker/datepicker.scss\": \"./src/datepicker/datepicker.scss\",\n\t\"./donut-chart/donut-chart.scss\": \"./src/donut-chart/donut-chart.scss\",\n\t\"./drop-down/drop-down.scss\": \"./src/drop-down/drop-down.scss\",\n\t\"./event/event.scss\": \"./src/event/event.scss\",\n\t\"./form-elements/form-elements.scss\": \"./src/form-elements/form-elements.scss\",\n\t\"./form/form.scss\": \"./src/form/form.scss\",\n\t\"./jquery-ui.scss\": \"./src/jquery-ui.scss\",\n\t\"./jquery-ui.theme.scss\": \"./src/jquery-ui.theme.scss\",\n\t\"./location/location.scss\": \"./src/location/location.scss\",\n\t\"./map/map.scss\": \"./src/map/map.scss\",\n\t\"./message/message.scss\": \"./src/message/message.scss\",\n\t\"./messaging/messaging.scss\": \"./src/messaging/messaging.scss\",\n\t\"./news-and-events/news-and-events.scss\": \"./src/news-and-events/news-and-events.scss\",\n\t\"./news/news.scss\": \"./src/news/news.scss\",\n\t\"./pages/footer/footer.scss\": \"./src/pages/footer/footer.scss\",\n\t\"./pages/header/header.scss\": \"./src/pages/header/header.scss\",\n\t\"./pages/menu/menu.scss\": \"./src/pages/menu/menu.scss\",\n\t\"./pages/pages.scss\": \"./src/pages/pages.scss\",\n\t\"./pie-chart/pie-chart.scss\": \"./src/pie-chart/pie-chart.scss\",\n\t\"./progressbar/progressbar.scss\": \"./src/progressbar/progressbar.scss\",\n\t\"./search/search.scss\": \"./src/search/search.scss\",\n\t\"./searches/searches.scss\": \"./src/searches/searches.scss\",\n\t\"./slider-with-bubble/slider.scss\": \"./src/slider-with-bubble/slider.scss\",\n\t\"./slider-with-scale/slider.scss\": \"./src/slider-with-scale/slider.scss\",\n\t\"./sliders/sliders.scss\": \"./src/sliders/sliders.scss\",\n\t\"./stages-bar/stages.scss\": \"./src/stages-bar/stages.scss\",\n\t\"./standart-button/button.scss\": \"./src/standart-button/button.scss\",\n\t\"./standart-buttons/buttons.scss\": \"./src/standart-buttons/buttons.scss\",\n\t\"./tick-box/tick-box.scss\": \"./src/tick-box/tick-box.scss\",\n\t\"./tick-boxes/tick-boxes.scss\": \"./src/tick-boxes/tick-boxes.scss\",\n\t\"./title/title.scss\": \"./src/title/title.scss\",\n\t\"./toggle/toggle.scss\": \"./src/toggle/toggle.scss\",\n\t\"./toggles/toggles.scss\": \"./src/toggles/toggles.scss\",\n\t\"./user-info/user-info.scss\": \"./src/user-info/user-info.scss\",\n\t\"./user-photo/user-photo.scss\": \"./src/user-photo/user-photo.scss\",\n\t\"./user-profile/profile.scss\": \"./src/user-profile/profile.scss\",\n\t\"./video/video.scss\": \"./src/video/video.scss\",\n\t\"./videos/videos.scss\": \"./src/videos/videos.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack:///./src_sync_\\.scss$?");
+eval("var map = {\n\t\"./arrow-button/button.scss\": \"./src/arrow-button/button.scss\",\n\t\"./arrow-buttons/buttons.scss\": \"./src/arrow-buttons/buttons.scss\",\n\t\"./base.scss\": \"./src/base.scss\",\n\t\"./calendar/calendar.scss\": \"./src/calendar/calendar.scss\",\n\t\"./charts/charts.scss\": \"./src/charts/charts.scss\",\n\t\"./datepicker/datepicker.scss\": \"./src/datepicker/datepicker.scss\",\n\t\"./donut-chart/donut-chart.scss\": \"./src/donut-chart/donut-chart.scss\",\n\t\"./drop-down/drop-down.scss\": \"./src/drop-down/drop-down.scss\",\n\t\"./event/event.scss\": \"./src/event/event.scss\",\n\t\"./form-elements/form-elements.scss\": \"./src/form-elements/form-elements.scss\",\n\t\"./form/form.scss\": \"./src/form/form.scss\",\n\t\"./jquery-ui.scss\": \"./src/jquery-ui.scss\",\n\t\"./jquery-ui.theme.scss\": \"./src/jquery-ui.theme.scss\",\n\t\"./location/location.scss\": \"./src/location/location.scss\",\n\t\"./map/map.scss\": \"./src/map/map.scss\",\n\t\"./message/message.scss\": \"./src/message/message.scss\",\n\t\"./messaging/messaging.scss\": \"./src/messaging/messaging.scss\",\n\t\"./news-and-events/news-and-events.scss\": \"./src/news-and-events/news-and-events.scss\",\n\t\"./news/news.scss\": \"./src/news/news.scss\",\n\t\"./pages/add-friends.scss\": \"./src/pages/add-friends.scss\",\n\t\"./pages/footer/footer.scss\": \"./src/pages/footer/footer.scss\",\n\t\"./pages/header/header.scss\": \"./src/pages/header/header.scss\",\n\t\"./pages/menu/menu.scss\": \"./src/pages/menu/menu.scss\",\n\t\"./pages/new-event.scss\": \"./src/pages/new-event.scss\",\n\t\"./pages/pages.scss\": \"./src/pages/pages.scss\",\n\t\"./pie-chart/pie-chart.scss\": \"./src/pie-chart/pie-chart.scss\",\n\t\"./progressbar/progressbar.scss\": \"./src/progressbar/progressbar.scss\",\n\t\"./search/search.scss\": \"./src/search/search.scss\",\n\t\"./searches/searches.scss\": \"./src/searches/searches.scss\",\n\t\"./slider-with-bubble/slider.scss\": \"./src/slider-with-bubble/slider.scss\",\n\t\"./slider-with-scale/slider.scss\": \"./src/slider-with-scale/slider.scss\",\n\t\"./sliders/sliders.scss\": \"./src/sliders/sliders.scss\",\n\t\"./stages-bar/stages.scss\": \"./src/stages-bar/stages.scss\",\n\t\"./standart-button/button.scss\": \"./src/standart-button/button.scss\",\n\t\"./standart-buttons/buttons.scss\": \"./src/standart-buttons/buttons.scss\",\n\t\"./tick-box/tick-box.scss\": \"./src/tick-box/tick-box.scss\",\n\t\"./tick-boxes/tick-boxes.scss\": \"./src/tick-boxes/tick-boxes.scss\",\n\t\"./title/title.scss\": \"./src/title/title.scss\",\n\t\"./toggle/toggle.scss\": \"./src/toggle/toggle.scss\",\n\t\"./toggles/toggles.scss\": \"./src/toggles/toggles.scss\",\n\t\"./user-info/user-info.scss\": \"./src/user-info/user-info.scss\",\n\t\"./user-photo/user-photo.scss\": \"./src/user-photo/user-photo.scss\",\n\t\"./user-profile/profile.scss\": \"./src/user-profile/profile.scss\",\n\t\"./video/video.scss\": \"./src/video/video.scss\",\n\t\"./videos/videos.scss\": \"./src/videos/videos.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack:///./src_sync_\\.scss$?");
 
 /***/ }),
 
@@ -996,7 +1018,7 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/mini-css-extra
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/* WEBPACK VAR INJECTION */(function(jQuery) {(function($) {\r\n    $('#name').blur(function(){\r\n      var name = $(\"#name\").val();\r\n      if(!name){\r\n        $(\"#result-name\").addClass(\"form__error\").text(\"error\");\r\n      }\r\n      else {\r\n        $(\"#result-name\").addClass(\"form__success\").text(\"thanks!\")\r\n      }\r\n    });\r\n    \r\n    $('#email').blur(function(){\r\n      var email = $(\"#email\").val();\r\n      if(!email.match(/^[\\w-\\.]+@[\\w-]+\\.[a-z]{2,3}$/i)){\r\n        $(\"#result-email\").addClass(\"form__error\").text(\"error\");\r\n      }\r\n      else {\r\n        $(\"#result-email\").addClass(\"form__success\").text(\"thanks!\")\r\n      }\r\n    });\r\n    \r\n    $('#name').focus(function(){\r\n      $(\"#result-name\").removeClass(\"form__error\").removeClass(\"form__success\");\r\n    });\r\n    \r\n    $('#email').focus(function(){\r\n      $(\"#result-email\").removeClass(\"form__error\").removeClass(\"form__success\");\r\n    });\r\n})(jQuery);\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/form/validation.js?");
+eval("/* WEBPACK VAR INJECTION */(function(jQuery) {(function($) {\r\n  function validItem(element) {\r\n    $(element + \"+ .form__result\").addClass(\"form__success\").text(\"thanks!\")\r\n  };\r\n\r\n  function invalidItem(element) {\r\n    $(element + \"+ .form__result\").addClass(\"form__error\").text(\"error\");\r\n  };\r\n\r\n  function removeError(element) {\r\n    $(element + \"+ .form__result\").removeClass(\"form__error\").removeClass(\"form__success\");\r\n  };\r\n\r\n\r\n  var formName = \"input[name='name']\";\r\n  var formEmail =\"input[name='email']\";\r\n\r\n    $(formName).blur(function(){\r\n      var name = $(this).val();\r\n      if(!name){\r\n        invalidItem(formName)\r\n      }\r\n      else {\r\n        validItem(formName)\r\n      }\r\n    });\r\n    \r\n    $(formEmail).blur(function(){\r\n      var email = $(this).val();\r\n      if(!email.match(/^[\\w-\\.]+@[\\w-]+\\.[a-z]{2,3}$/i)){\r\n        invalidItem(formEmail)\r\n      }\r\n      else {\r\n        validItem(formEmail)\r\n      }\r\n    });\r\n    \r\n    $(formName).focus(function(){\r\n      removeError(formName)\r\n    });\r\n    \r\n    $(formEmail).focus(function(){\r\n      removeError(formEmail)\r\n    });\r\n})(jQuery);\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/form/validation.js?");
 
 /***/ }),
 
@@ -1121,6 +1143,17 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/mini-css-extra
 
 /***/ }),
 
+/***/ "./src/pages/add-friends.scss":
+/*!************************************!*\
+  !*** ./src/pages/add-friends.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/lib/loader.js!./add-friends.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/pages/add-friends.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/pages/add-friends.scss?");
+
+/***/ }),
+
 /***/ "./src/pages/footer/footer.scss":
 /*!**************************************!*\
   !*** ./src/pages/footer/footer.scss ***!
@@ -1151,6 +1184,17 @@ eval("\nvar content = __webpack_require__(/*! !../../../node_modules/mini-css-ex
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("\nvar content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js!./menu.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/pages/menu/menu.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/pages/menu/menu.scss?");
+
+/***/ }),
+
+/***/ "./src/pages/new-event.scss":
+/*!**********************************!*\
+  !*** ./src/pages/new-event.scss ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/lib/loader.js!./new-event.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/pages/new-event.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/pages/new-event.scss?");
 
 /***/ }),
 

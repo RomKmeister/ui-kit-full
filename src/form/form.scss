@@ -7,7 +7,7 @@
     }
 
     &__input-text {
-        width: 182px;
+        width: 60.71%;
         margin-bottom: 12px;
         padding: 6px 13px 5px;
         font-family: "SourceSansPro", Arial, sans-serif;
@@ -18,7 +18,8 @@
     }
 
     &__textarea {
-        width: 262px;
+        width: 100%;
+        height: 67px;
         padding: 10px 13px 11px;
         font-family: "SourceSansPro", Arial, sans-serif;
         font-size: 14px;
@@ -31,9 +32,9 @@
     &__result {
         position: relative;
         display: none;
-        width: 73px;
+        width: 27.86%;
         padding: 8px 0;
-        margin-left: 7px;
+        margin-left: 2.68%;
         margin-bottom: 12px;
         font-size: 10px;
         color: #ffffff;
@@ -72,6 +73,6 @@
     }
 
     &__button-wrap {
-        margin: 10px 10px 0 auto;
+        margin: 10px 0 0 auto;
     }
 }

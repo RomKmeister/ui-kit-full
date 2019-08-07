@@ -10,88 +10,90 @@ html(lang="ru")
 		link(rel="stylesheet", href="style.css")
 		title I'm a title
 	body
-		include header/header
-		.content
-			aside.content__left-column
-				.filter
-					h2.filter__title Фильтры
-					.filter__toggle
-						+toggle() 
-						p Интересные
-					.filter__toggle
-						+toggle("checked")
-						p Неинтересные
-					filter__slider
-						p Оценка
-						+sliderWithScale({value: "1", min: "1", max: "5", stepsNumber: "6"})
-			main.content__right-column
-				section
-					.top-bar
-						h1.content__title Мероприятия
-						+stdButton({color: "green", size: "big", type: "button", title: "Добавить свое"})
-					.events-block__wrap
-						.events-block__item
-							+eventItem({
-								color: "green",
-								day: "24",
-								month: "Aug",
-								title: "This is the title",
-								text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-								imgPath: "../event/event-image.jpg"
-							})
-						.events-block__item
-							+eventItem({
-								color: "green",
-								day: "24",
-								month: "Aug",
-								title: "This is the title",
-								text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-								imgPath: "../event/event-image.jpg"
-							})
-						.events-block__item
-							+eventItem({
-								color: "orange",
-								day: "24",
-								month: "Aug",
-								title: "This is the title",
-								text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-								imgPath: "../event/event-image.jpg"
-							})
-						.events-block__item
-							+eventItem({
-								color: "green",
-								day: "24",
-								month: "Aug",
-								title: "This is the title",
-								text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-								imgPath: "../event/event-image.jpg"
-							})
-						.events-block__item
-							+eventItem({
-								color: "green",
-								day: "24",
-								month: "Aug",
-								title: "This is the title",
-								text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-								imgPath: "../event/event-image.jpg"
-							})
-						.events-block__item
-							+eventItem({
-								color: "green",
-								day: "24",
-								month: "Aug",
-								title: "This is the title",
-								text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-								imgPath: "../event/event-image.jpg"
-							})
-						.events-block__item
-							+eventItem({
-								color: "gray",
-								day: "24",
-								month: "Aug",
-								title: "This is the title",
-								text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-								imgPath: "../event/event-image.jpg"
-							})
-		include footer/footer
-	script(src="main.bundle.js")
+		.wrapper
+			include header/header
+			.content
+				aside.content__left-column
+					.filter
+						h2.filter__title Фильтры
+						.filter__toggle
+							+toggle() 
+							p.filter__lable Интересные
+						.filter__toggle
+							+toggle("checked")
+							p.filter__lable Неинтересные
+						.filter__slider
+							p Оценка
+							+sliderWithScale({value: "5", min: "1", max: "5", stepsNumber: "6"})
+				main.content__right-column
+					section
+						.top-bar
+							h1.content__title Мероприятия
+							+stdButton({color: "fullgreen", size: "big-for-events", type: "button", title: "Добавить свое"})
+						.events-block__wrap
+							.events-block__item
+								+eventItem({
+									color: "green",
+									day: "24",
+									month: "Aug",
+									title: "This is the title",
+									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+									imgPath: "../event/event-image.jpg"
+								})
+							.events-block__item
+								+eventItem({
+									color: "green",
+									day: "24",
+									month: "Aug",
+									title: "This is the title",
+									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+									imgPath: "../event/event-image.jpg"
+								})
+							.events-block__item
+								+eventItem({
+									color: "orange",
+									day: "24",
+									month: "Aug",
+									title: "This is the title",
+									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+									imgPath: "../event/event-image.jpg"
+								})
+							.events-block__item
+								+eventItem({
+									color: "green",
+									day: "24",
+									month: "Aug",
+									title: "This is the title",
+									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+									imgPath: "../event/event-image.jpg"
+								})
+							.events-block__item
+								+eventItem({
+									color: "green",
+									day: "24",
+									month: "Aug",
+									title: "This is the title",
+									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+									imgPath: "../event/event-image.jpg"
+								})
+							.events-block__item
+								+eventItem({
+									color: "green",
+									day: "24",
+									month: "Aug",
+									title: "This is the title",
+									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+									imgPath: "../event/event-image.jpg"
+								})
+							.events-block__item
+								+eventItem({
+									color: "gray",
+									day: "24",
+									month: "Aug",
+									title: "This is the title",
+									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+									imgPath: "../event/event-image.jpg"
+								})
+			include footer/footer
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+		script(src="main.bundle.js")

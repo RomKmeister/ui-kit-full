@@ -121,6 +121,12 @@
         font-size: 0.833rem;
     }
 
+    &_big-for-events {
+        width: 150px;
+        padding: 7px 10px 8px;
+        font-size: 1rem;
+    }
+
     &__ripple {
         position: absolute;
         top: 0;

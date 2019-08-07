@@ -19,54 +19,54 @@ html(lang="ru")
 					section
 					h1.new-event__title Новое мероприятие
 						+progressbar({steps: "2", activeStep: "2"})
-						h2.new-event__second-title Добавить друзей
-						.new-event_search-block
+						.new-event__search-block
+							h2.new-event__second-title Добавить друзей
 							+searchForm({action: "", searchValue:"", placeholder: "Search", emptyResult: false})
 						.friends-block
 							.friend-block
-								.button-block
+								.friend-block__button
 									+stdButton({color: "green", size: "small", type: "button", title: "Добавить"})
 									+stdButton({color: "orange", size: "small", type: "button", title: "Удалить"})
-								.user-profile
+								.friend-block__user-profile
 									+userPhoto({imagePath: "../user-profile/user.jpg", imageAlt: ""})
 									+userInfo({name: "John Smith", job: "Ux designer", theme: "hovered"})
-								.chart-block
+								.friend-block__chart
 									+pieChart({value: "99"})
 							.friend-block
-								.button-block
+								.friend-block__button
 									+stdButton({color: "green", size: "small", type: "button", title: "Добавить"})
 									+stdButton({color: "orange", size: "small", type: "button", title: "Удалить"})
-								.user-profile
+								.friend-block__user-profile
 									+userPhoto({imagePath: "img/al.jpg", imageAlt: ""})
 									+userInfo({name: "John Smith", job: "Ux designer", theme: "hovered"})
-								.chart-block
+								.friend-block__chart
 									+pieChart({value: "1"})
 							.friend-block
-								.button-block
+								.friend-block__button
 									+stdButton({color: "green", size: "small", type: "button", title: "Добавить"})
 									+stdButton({color: "orange", size: "small", type: "button", title: "Удалить"})
-								.user-profile
+								.friend-block__user-profile
 									+userPhoto({imagePath: "img/11.jpg", imageAlt: ""})
 									+userInfo({name: "John Smith", job: "Ux designer", theme: "hovered"})
-								.chart-block
+								.friend-block__chart
 									+pieChart({value: "99"})
 							.friend-block
-								.button-block
+								.friend-block__button
 									+stdButton({color: "green", size: "small", type: "button", title: "Добавить"})
 									+stdButton({color: "orange", size: "small", type: "button", title: "Удалить"})
-								.user-profile
+								.friend-block__user-profile
 									+userPhoto({imagePath: "img/12.jpg", imageAlt: ""})
 									+userInfo({name: "John Smith", job: "Ux designer", theme: "hovered"})
-								.chart-block
+								.friend-block__chart
 									+pieChart({value: "57"})
 							.friend-block
-								.button-block
+								.friend-block__button
 									+stdButton({color: "green", size: "small", type: "button", title: "Добавить"})
 									+stdButton({color: "orange", size: "small", type: "button", title: "Удалить"})
-								.user-profile
+								.friend-block__user-profile
 									+userPhoto({imagePath: "img/13.jpg", imageAlt: ""})
 									+userInfo({name: "John Smith", job: "Ux designer", theme: "hovered"})
-								.chart-block
+								.friend-block__chart
 									+pieChart({value: "5"})
 
 						

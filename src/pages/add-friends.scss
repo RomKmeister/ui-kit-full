@@ -1,0 +1,52 @@
+.new-event {
+    display: flex;
+    padding: 1% 5%;
+
+    &__title {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    &__second-title {
+        margin-top: 5%;
+        font-size: 24px;
+    }
+
+    &__new-date-wrap {
+        display: flex;
+    }
+
+    &__form-wrap {
+        margin-left: 5%;
+        width: 50%;
+
+    &__search-block {
+        margin-left: auto;
+    }
+    }
+}
+
+.friends-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.friend-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.button-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+
+.chart-block {
+    margin-left: 10px;
+}

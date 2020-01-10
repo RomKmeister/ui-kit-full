@@ -1,6 +1,3 @@
 mixin arrowButton(options)
-  - var buttonDirection = "arrow-button_" + options.direction
-  - var buttonColor = "arrow-button_" + options.color
   - var buttonDisabled = options.isDisabled ? true : false;
-  - var classes = "arrow-button " + buttonDirection + " " + buttonColor;
-  button(class=classes, type='button', disabled=buttonDisabled)
+  button(class=`arrow-button arrow-button_${options.direction} arrow-button_${options.color}`, type='button', disabled=buttonDisabled)

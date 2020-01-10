@@ -1,7 +1,4 @@
 mixin stdButton(options)
-  - var buttonColor = "button_" + options.color;
-  - var buttonSize = "button_" + options.size;
-  - var classes = "button js-ripple " + buttonColor + " " + buttonSize;
-  button(class=classes, type=type)= options.title
+  button(class=`button js-ripple button_${options.color} button_${options.size}`, type=type)= options.title
     div(class="button__ripple button__ripple-js")
-      span(class="button__ripple-circle")
+      span.button__ripple-circle

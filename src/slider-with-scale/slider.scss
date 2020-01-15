@@ -1,5 +1,5 @@
 .slider-with-scale {
-    height: 5px;
+    height: 0.42rem;
     background: #e5e5e5;
 
     &.ui-widget.ui-widget-content {
@@ -8,18 +8,18 @@
 
     & &__handle {
         position: relative;
-        top: -8px;
-        width: 19.6px;
-        height: 19.6px;
+        top: -0.67rem;
+        width: 1.63rem;
+        height: 1.63rem;
         padding: 0;
-        line-height: 1.6em;
+        line-height: 1.6;
         border-radius: 50%;
         border: none;
         
         &_green,
         &_green:active {
             background: #4eb7a8;
-    }
+        }
     }
 
     & &__range_green {
@@ -31,7 +31,7 @@
         justify-content: space-between;
         font-family: "Lato", Arial, sans-serif;
         font-weight: 900;
-        font-size: 11px;
+        font-size: 0.92rem;
         line-height: 1;
         color: #d1d1d1;
     }

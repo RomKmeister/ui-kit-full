@@ -1,11 +1,7 @@
 .pie-chart {
-  &__container {
-    position: relative;
-  }
-
   &__scale {
-    width: 97px;
-    height: 97px;
+    width: 8.08rem;
+    height: 8.08rem;
     border-radius: 50%;
     transform: rotate(-90deg);
     fill: none;
@@ -13,16 +9,15 @@
   }
 
   &__number {
-    position: absolute;
-    width: 97px;
-    height: 97px;
-    top: 5px;
+    width: 8.08rem;
+    height: 8.08rem;
     text-align: center;
-    font-size: 40px;
+    font-size: 3.33rem;
     line-height: 1;
     font-weight: 300;
     border-radius: 50%;
-    padding-top: 23px;
+    margin-top: 2rem;
+    transform: translateY(-100%);
   }
 }
 

@@ -62,14 +62,12 @@
         
         &:hover,
         &:focus {
-            color: #ffffff;
             background: #28a290;
             box-shadow: 0 3px 0 0 #28a290;
             outline: 0;
         }
 
         &:active {
-            color: #ffffff;
             background: #28a290;
             box-shadow: none;
             outline: 0;
@@ -98,32 +96,32 @@
     }
 
     &_small {
-        width: 78px;
-        padding: 4px 10px;
-        font-size: 0.833rem;
+        width: 6.5rem;
+        padding: 0.33rem 0.83rem;
+        font-size: 0.83rem;
     }
 
     &_big {
-        width: 118px;
-        padding: 7px 10px 8px;
+        width: 9.83rem;
+        padding: 0.58rem 0.83rem 0.67rem;
         font-size: 1rem;
     }
 
     &_wide {
         width: 100%;
-        padding: 7px 10px 8px;
+        padding: 0.58rem 0.83rem 0.67rem;
         font-size: 1rem;
     }
 
     &_custom {
-        width: 128px;
-        padding: 5px 10px 5px;
+        width: 10.67rem;
+        padding: 0.42rem 0.83rem 0.42rem;
         font-size: 0.833rem;
     }
 
     &_big-for-events {
-        width: 150px;
-        padding: 7px 10px 8px;
+        width: 12.5rem;
+        padding: 0.58rem 0.83rem 0.67rem;
         font-size: 1rem;
     }
 
@@ -137,11 +135,11 @@
         background: transparent;
 
         &-circle {
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
             position: absolute;
             top: 50%;
             left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
             opacity: 0;
             width: 0;
             height: 0;
@@ -149,8 +147,7 @@
             background: rgba(255, 255, 255, 0.25);
         }
 
-        &_active 
-        &-circle {
+        &_active &-circle {
             -webkit-animation: a-ripple .4s ease-in;
             animation: a-ripple .4s ease-in;
         }

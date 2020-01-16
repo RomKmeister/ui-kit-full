@@ -14,7 +14,7 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
-        use:  ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        use:  [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
       {
         test: /\.pug$/,
@@ -34,13 +34,11 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.css',
-      template: 'base.scss'
+      filename: 'style.css'
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/index.pug',
-      inject: false
     }),
     new HtmlWebpackPlugin({
       filename: 'main-page.html',
@@ -48,8 +46,13 @@ module.exports = {
       inject: false
     }),
     new HtmlWebpackPlugin({
-      filename: 'second.html',
-      template: 'src/pages/second.pug',
+      filename: 'new-event.html',
+      template: 'src/pages/new-event.pug',
+      inject: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'add-friends.html',
+      template: 'src/pages/add-friends.pug',
       inject: false
     }),
     new webpack.ProvidePlugin({
@@ -59,8 +62,6 @@ module.exports = {
     })
   ],
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 9000
+    contentBase: path.join(__dirname, 'dist')
   }
 };

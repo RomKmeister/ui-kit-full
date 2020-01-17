@@ -2,11 +2,11 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 60px;
-  height: 20px;
-  padding: 3px;
+  width: 5rem;
+  height: 1.67rem;
+  padding: 0.25rem;
   background-color: white;
-  border-radius: 18px;
+  border-radius: 1.5rem;
   cursor: pointer;
 
   &__input {
@@ -17,14 +17,6 @@
   }
 
   &__label {
-    position: relative;
-    display: block;
-    height: inherit;
-    padding: 2px 0;
-    font-size: 12px;
-    text-transform: uppercase;
-    background: #e5e5e5;
-    border-radius: inherit;
     -webkit-transition: 0.15s ease-out;
     -moz-transition: 0.15s ease-out;
     -o-transition: 0.15s ease-out;
@@ -33,12 +25,20 @@
     -o-transition-property: opacity background;
     transition-property: opacity background;
     transition: 0.15s ease-out;
+    position: relative;
+    display: block;
+    height: inherit;
+    padding: 0.17rem 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: #e5e5e5;
+    border-radius: inherit;
 
     &:before, 
     &:after {
       position: absolute;
       top: 50%;
-      margin-top: -.5em;
+      margin-top: -0.5em;
       line-height: 1;
       -webkit-transition: inherit;
       -moz-transition: inherit;
@@ -54,7 +54,7 @@
 
     &:after {
       content: attr(data-on);
-      left: 11px;
+      left: 0.92rem;
       color: white;
       opacity: 0;
     }
@@ -71,20 +71,20 @@
   }
 
   &__handle {
-    position: absolute;
-    top: 6px;
-    left: 7px;
-    width: 18px;
-    height: 18px;
-    background: white;
-    border-radius: 10px;
     -webkit-transition: left 0.15s ease-out;
     -moz-transition: left 0.15s ease-out;
     -o-transition: left 0.15s ease-out;
     transition: left 0.15s ease-out;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.58rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    border-radius: 0.82rem;
   }
 
   &__input:checked ~ &__handle {
-    left: 41px;
+    left: 3.42rem;
   }
 }

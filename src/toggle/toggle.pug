@@ -1,6 +1,6 @@
 mixin toggle(isChecked)
-    - var toggleChecked = isChecked ? true : false;
-    label(class="switch")
-        input(class="switch__input", type="checkbox", checked=toggleChecked)
-        span(class="switch__label", data-on="On", data-off="Off")
-        span(class="switch__handle")
+    - const toggleChecked = isChecked ? true : false;
+    label.switch
+        input.switch__input(type="checkbox", checked=toggleChecked)
+        span.switch__label(data-on="On", data-off="Off")
+        span.switch__handle

@@ -1,8 +1,8 @@
 .event {
   position: relative;
   display: flex;
-  width: 288px;
-  height: 212px;
+  width: 24rem;
+  height: 17.67rem;
   overflow: hidden;
   color: #ffffff;
   border-radius: 3px;
@@ -14,10 +14,10 @@
   }
 
   &__block {
-    margin-left: 95px;
-    padding: 23px;
-    width: 195px;
-    height: 212px;
+    margin-left: 7.92rem;
+    padding: 1.92rem;
+    width: 16.25rem;
+    height: 17.67rem;
     font-family: "Lato", Arial, sans-serif;
     font-weight: 300;
     z-index: 1;
@@ -37,28 +37,28 @@
 
   &__date {
     font-weight: 300;
-    margin: 10px 0 0;
-    font-size: 73px;
-    line-height: 26px;
+    margin: 0.83rem 0 0;
+    font-size: 6.08rem;
+    line-height: 2.17;
   }
 
   &__month {
     display: inline-block;
-    font-size: 28px;
+    font-size: 2.33rem;
   }
 
   &__title {
-    margin: 25px 0 0; 
+    margin: 2.08rem 0 0; 
     font-weight: 900;
-    font-size: 12.5px;
+    font-size: 12rem;
     line-height: 1.2;
     text-transform: uppercase;
   }
 
   &__text {
     margin: 0;
-    margin-top: 4px;
-    font-size: 11px;
+    margin-top: 0.33rem;
+    font-size: 0.92rem;
     font-weight: 400;
     line-height: 1.2;
   }

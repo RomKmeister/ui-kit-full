@@ -1,11 +1,11 @@
 .news {
   position: relative;
   display: flex;
-  width: 288px;
-  height: 212px;
+  width: 24rem;
+  height: 17.67rem;
   overflow: hidden;
   color: #ffffff;
-  border-radius: 3px;
+  border-radius: 0.25rem;
 
   &__image {
     position: absolute;
@@ -14,10 +14,10 @@
   }
 
   &__block {
-    margin-left: 95px;
-    padding: 23px;
-    width: 195px;
-    height: 212px;
+    margin-left: 7.92rem;
+    padding: 1.92rem;
+    width: 16.25rem;
+    height: 17.67rem;
     font-family: "Lato", Arial, sans-serif;
     font-weight: 300;
     background: #e75735;
@@ -27,21 +27,21 @@
   &__title {
     font-weight: 300;
     margin: 0;
-    font-size: 28px;
-    line-height: 26px;
+    font-size: 2.33rem;
+    line-height: 2.17;
   }
 
   &__date {
     font-weight: 900;
-    font-size: 11px;
+    font-size: 0.92rem;
     line-height: 1.2;
     text-transform: uppercase;
   }
 
   &__text {
     margin: 0;
-    margin-top: 15px;
-    font-size: 11px;
+    margin-top: 1.25rem;
+    font-size: 0.92rem;
     font-weight: 400;
     line-height: 1.2;
   }

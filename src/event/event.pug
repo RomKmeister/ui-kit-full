@@ -1,7 +1,7 @@
 include ../standart-button/button
 
 mixin eventItem(content)
-	-var classes = "event__block event__block_" + content.color
+	-const classes = `event__block event__block_${content.color}`
 	.event
 		img.event__image(src=content.imgPath, alt="")
 		div(class=classes)

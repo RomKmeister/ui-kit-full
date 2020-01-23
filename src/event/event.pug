@@ -2,12 +2,12 @@ include ../standart-button/button
 
 mixin eventItem(content)
 	-var classes = "event__block event__block_" + content.color
-	div(class="event")
-		img(class="event__image", src=content.imgPath, alt="")
+	.event
+		img.event__image(src=content.imgPath, alt="")
 		div(class=classes)
-			h2(class="event__date")= content.day
-				span(class="event__month")= content.month
-			p(class="event__title")= content.title 
-			p(class="event__text")= content.text
+			h2.event__date= content.day
+				span.event__month= content.month
+			p.event__title= content.title 
+			p.event__text= content.text
 			.event__button-wrap
 				+stdButton({color: "darkgreen", size: "custom", type: "button", title: "Add to calendar"})

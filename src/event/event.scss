@@ -39,7 +39,7 @@
     font-weight: 300;
     margin: 0.83rem 0 0;
     font-size: 6.08rem;
-    line-height: 2.17;
+    line-height: 0.34;
   }
 
   &__month {
@@ -48,9 +48,9 @@
   }
 
   &__title {
-    margin: 2.08rem 0 0; 
+    margin: 2.7rem 0 0; 
     font-weight: 900;
-    font-size: 12rem;
+    font-size: 1rem;
     line-height: 1.2;
     text-transform: uppercase;
   }
@@ -60,7 +60,7 @@
     margin-top: 0.33rem;
     font-size: 0.92rem;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.25;
   }
 
   &__button-wrap {

@@ -1,6 +1,6 @@
 mixin stages(options)
   ul.progressbar
-    -var i = 1
+    - let i = 1
     while i <= options.steps
       if i <= options.activeStep
         li.progressbar__item.progressbar__item_active

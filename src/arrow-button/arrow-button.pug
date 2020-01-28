@@ -1,0 +1,3 @@
+mixin arrow-button(options)
+  - var buttonDisabled = options.isDisabled ? true : false;
+  button(class=`arrow-button arrow-button_${options.direction} arrow-button_${options.color}`, type='button', disabled=buttonDisabled)

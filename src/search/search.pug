@@ -1,4 +1,4 @@
-mixin searchForm(options)
+mixin search(options)
 	- var classes = options.emptyResult ? "search-form__input search-form__input_empty" : "search-form__input"
 	form(class="search-form", action=options.action)
 		input(class=classes, type="search", placeholder=options.placeholder, value=options.searchValue)

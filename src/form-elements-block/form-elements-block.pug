@@ -1,0 +1,23 @@
+include ../form/form
+include ../toggles-block/toggles-block
+include ../tick-boxes-block/tick-boxes-block
+include ../search-drop-down-block/search-drop-down-block
+include ../user-profile-block/user-profile-block
+
+mixin form-elements-block()
+	section.form-elements
+		h1.title Form elements
+		.form-elements__row.form-elements__row_margin-for-first-row 
+			.form-elements__left-column.form-elements_margin-for-form-block
+				+form()
+			.form-elements__right-column
+				.form-elements__toggles
+					+toggles-block()
+				.form-elements__tick-boxes
+					+tick-block()
+		.form-elements__row.form-elements__row_margin-for-second-row 
+			.form-elements__left-column
+				+search-block()
+			.form-elements__right-column
+				.form-elements__user-profile
+					+user-profile-block()

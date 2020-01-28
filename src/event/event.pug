@@ -1,6 +1,6 @@
-include ../standart-button/button
+include ../standart-button/standart-button
 
-mixin eventItem(content)
+mixin event(content)
 	.event
 		img.event__image(src=content.imgPath, alt="")
 		div(class=`event__block event__block_${content.color}`)
@@ -9,4 +9,4 @@ mixin eventItem(content)
 			p.event__title= content.title 
 			p.event__text= content.text
 			.event__button-wrap
-				+stdButton({color: "darkgreen", size: "custom", type: "button", title: "Add to calendar"})
+				+std-button({color: "darkgreen", size: "custom", type: "button", title: "Add to calendar"})

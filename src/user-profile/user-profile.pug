@@ -1,25 +1,7 @@
-mixin userProfile(name, job, imagePath, imageAlt, isHovered, isFirst)
-    - var bgColorHover = "user-info";
-    - var userName = "user-info__name";
-    - var userJob = "user-info__job";
-    - var fbItemsColor = "link__item link__item--fb"
-    - var twItemsColor = "link__item link__item--tw"
-    - var dbItemsColor = "link__item link__item--db"
-    if (isHovered)
-        - var bgColorHover = "user-info user-info--hovered";
-        - var userName = "user-info__name user-info__name--hovered";
-        - var userJob = "user-info__job user-info__job--hovered";
-        - var fbItemsColor = "link__item link__item--fb-hovered"
-        - var twItemsColor = "link__item link__item--tw-hovered"
-        - var dbItemsColor = "link__item link__item--db-hovered"
+include ../user-photo/user-photo
+include ../user-info/user-info
 
-    section(class="user-profile user-profiles__user-profile")
-        div(class="user-profile__wrap")
-            img(class="user-profile__photo", src=imagePath, alt=imageAlt)
-        div(class=bgColorHover)
-            h2(class=userName)= name
-            p(class=userJob)= job
-            ul(class="links user-info__links")
-                li(class=fbItemsColor)
-                li(class=twItemsColor)
-                li(class=dbItemsColor)
+mixin user-profile(options)
+    .user-profile
+        +user-photo(options)
+        +user-info(options)

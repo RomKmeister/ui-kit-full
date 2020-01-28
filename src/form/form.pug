@@ -1,6 +1,6 @@
-include ../standart-button/button
+include ../standart-button/standart-button
 
-mixin newForm()
+mixin form()
 	form.form(name="form", action="")
 		input.form__input-text(type="text", name="name", placeholder="Your Name")
 		.form__result
@@ -8,4 +8,4 @@ mixin newForm()
 		.form__result
 		textarea.form__textarea(name="message", placeholder="Your Message")
 		.form__button-wrap
-			+stdButton({color: "fullgreen", size: "big", type: "submit", title: "Submit"})
+			+std-button({color: "fullgreen", size: "big", type: "submit", title: "Submit"})

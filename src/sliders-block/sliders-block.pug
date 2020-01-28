@@ -2,10 +2,10 @@ include ../slider-with-bubble/slider-with-bubble
 include ../slider-with-scale/slider-with-scale
 
 mixin sliders-block()
-    section.sliders
-        h1.title Sliders
-        .sliders__wrap
-            .sliders__left-column
-                +slider-with-bubble({value: "40", min: "0", max: "110"})
-            .sliders__right-column
-                +slider-with-scale({value: "75", min: "0", max: "100", stepsNumber: "5"})
+  section.sliders
+    h1.title Sliders
+    .sliders__wrap
+      .sliders__left-column
+        +slider-with-bubble({value: "40", min: "0", max: "110"})
+      .sliders__right-column
+        +slider-with-scale({value: "75", min: "0", max: "100", stepsNumber: "5"})

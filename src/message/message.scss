@@ -1,78 +1,78 @@
 .message {
-    width: 23.75rem;
-    background: #f2f2f2;
+  width: 23.75rem;
+  background: #f2f2f2;
+  border-radius: 0.25rem;
+
+  &__header {
+    position: relative;
+    font-family: 'SourceSansPro', Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    background: #4eb7a8;
+    border-bottom: 2.9rem solid #46ab9d;
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 1.33rem 0 1.83rem;
+    font-size: 2.83rem;
+    line-height: 1.3;
+    font-weight: 300;
+  }
+
+  &__user-profile {
+    position: absolute;
+    top: 5.83rem;
+    left: 50%;
+    margin-left: -4.3rem;
+  }
+
+  &__body {
+    padding: 1.83rem 1.75rem;
+  }
+
+  &__icons {
+    margin: 0 0.42rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__bubble {
+    padding: 1rem;
+    background: url('bubble.svg') 0 0 no-repeat;
+  }
+
+  &__camera {
+    padding: 1rem;
+    background: url('camera.svg') 0 0 no-repeat;
+  }
+
+  &__income {
+    margin-top: 1.5rem;
+    padding: 1.25rem 1.5rem 1.83rem;
+    font-weight: 700;
+    font-size: 1.08rem;
+    color: #868686;
+    background: #ffffff;
     border-radius: 0.25rem;
+  }
 
-    &__header {
-        position: relative;
-        font-family: "SourceSansPro", Arial, sans-serif;
-        color: #ffffff;
-        text-align: center;
-        background: #4eb7a8;
-        border-bottom: 2.9rem solid #46ab9d;
-        border-radius: 0.25rem 0.25rem 0 0;
-    }
+  &__new {
+    width: 100%;
+    height: 7.5rem;
+    box-sizing: border-box;
+    margin-top: 1.33rem;
+    padding: 1.42rem 1.25rem 1.83rem;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.08rem;
+    color: #777777;
+    background: #e5e5e5;
+    border: 0.25rem solid #ffffff;
+  }
 
-    &__title {
-        margin: 0;
-        padding: 1.33rem 0 1.83rem;
-        font-size: 2.83rem;
-        line-height: 1.3;
-        font-weight: 300;
-    }
-
-    &__user-profile {
-        position: absolute;
-        top: 5.83rem;
-        left: 50%;
-        margin-left: -4.3rem;
-    }
-
-    &__body {
-        padding: 1.83rem 1.75rem;
-    }
-
-    &__icons {
-        margin: 0 0.42rem;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    &__bubble {
-        padding: 1rem;
-        background: url("bubble.svg") 0 0 no-repeat;
-    }
-
-    &__camera {
-        padding: 1rem;
-        background: url("camera.svg") 0 0 no-repeat;
-    }
-
-    &__income {
-        margin-top: 1.5rem;
-        padding: 1.25rem 1.5rem 1.83rem;
-        font-weight: 700;
-        font-size: 1.08rem;
-        color: #868686;
-        background: #ffffff;
-        border-radius: 0.25rem;
-    }
-
-    &__new {
-        width: 100%;
-        height: 7.5rem;
-        box-sizing: border-box;
-        margin-top: 1.33rem;
-        padding: 1.42rem 1.25rem 1.83rem;
-        font-family: "Lato", Arial, sans-serif;
-        font-weight: 700;
-        font-size: 1.08rem;
-        color: #777777;
-        background: #e5e5e5;
-        border: 0.25rem solid #ffffff;
-    }
-
-    &__wrap-for-button {
-        margin: 1rem 0;
-    }
+  &__wrap-for-button {
+    margin: 1rem 0;
+  }
 }

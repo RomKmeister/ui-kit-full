@@ -1,8 +1,8 @@
 mixin slider-with-scale(options)
-    .slider-with-scale(data-value=options.value data-min=options.min data-max=options.max)
-        .ui-slider-handle
-        .slider-with-scale__scale
-            - var i = 0;
-            - var stapRange = options.max / (options.stepsNumber - 1)
-            while i < options.stepsNumber
-                span= i++ * stapRange
+  .slider-with-scale(data-value=options.value data-min=options.min data-max=options.max)
+    .ui-slider-handle
+    .slider-with-scale__scale
+      - var i = 0;
+      - var stapRange = options.max / (options.stepsNumber - 1)
+      while i < options.stepsNumber
+        span= i++ * stapRange

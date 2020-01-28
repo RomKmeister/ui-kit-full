@@ -1,17 +1,17 @@
 .sliders {
-    &__wrap {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    
-    &__left-column {
-        width: 44%;
-        margin-top: 3rem;
-    }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  &__left-column {
+    width: 44%;
+    margin-top: 3rem;
+  }
 
-    &__right-column {
-        width: 45%;
-        margin-top: 3rem;
-    }
+  &__right-column {
+    width: 45%;
+    margin-top: 3rem;
+  }
 }

@@ -1,15 +1,15 @@
 mixin user-info(options)
-    - const bgColor = options.theme ? `user-info user-info_${options.theme}` : "user-info";
-    - const userName = options.theme ? `user-info__name user-info__name_${options.theme}` : "user-info__name";
-    - const userJob = options.theme ? `user-info__job user-info__job_${options.theme}` : "user-info__job";
-    - const fbItemsColor = options.theme ? `user-info__item user-info__item_fb_${options.theme}` : "user-info__item user-info__item_fb";
-    - const twItemsColor = options.theme ? `user-info__item user-info__item_tw_${options.theme}` : "user-info__item user-info__item_tw";
-    - const dbItemsColor = options.theme ? `user-info__item user-info__item_db_${options.theme}` : "user-info__item user-info__item_db";
+  - const bgColor = options.theme ? `user-info user-info_${options.theme}` : "user-info";
+  - const userName = options.theme ? `user-info__name user-info__name_${options.theme}` : "user-info__name";
+  - const userJob = options.theme ? `user-info__job user-info__job_${options.theme}` : "user-info__job";
+  - const fbItemsColor = options.theme ? `user-info__item user-info__item_fb_${options.theme}` : "user-info__item user-info__item_fb";
+  - const twItemsColor = options.theme ? `user-info__item user-info__item_tw_${options.theme}` : "user-info__item user-info__item_tw";
+  - const dbItemsColor = options.theme ? `user-info__item user-info__item_db_${options.theme}` : "user-info__item user-info__item_db";
 
-    div(class=bgColor)
-        h2(class=userName)= options.name
-        p(class=userJob)= options.job
-        ul.user-info__links
-            li(class=fbItemsColor)
-            li(class=twItemsColor)
-            li(class=dbItemsColor)
+  div(class=bgColor)
+    h2(class=userName)= options.name
+    p(class=userJob)= options.job
+    ul.user-info__links
+      li(class=fbItemsColor)
+      li(class=twItemsColor)
+      li(class=dbItemsColor)

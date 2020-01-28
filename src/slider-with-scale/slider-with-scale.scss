@@ -1,38 +1,38 @@
 .slider-with-scale {
-    height: 0.42rem;
-    background: #e5e5e5;
+  height: 0.42rem;
+  background: #e5e5e5;
 
-    &.ui-widget.ui-widget-content {
-        border: 0
-    }
+  &.ui-widget.ui-widget-content {
+    border: 0
+  }
 
-    & &__handle {
-        position: relative;
-        top: -0.67rem;
-        width: 1.63rem;
-        height: 1.63rem;
-        padding: 0;
-        line-height: 1.6;
-        border-radius: 50%;
-        border: none;
-        
-        &_green,
-        &_green:active {
-            background: #4eb7a8;
-        }
+  & &__handle {
+    position: relative;
+    top: -0.67rem;
+    width: 1.63rem;
+    height: 1.63rem;
+    padding: 0;
+    line-height: 1.6;
+    border-radius: 50%;
+    border: none;
+    
+    &_green,
+    &_green:active {
+      background: #4eb7a8;
     }
+  }
 
-    & &__range_green {
-        background: #4eb7a8;
-    }
+  & &__range_green {
+    background: #4eb7a8;
+  }
 
-    &__scale {
-        display: flex;
-        justify-content: space-between;
-        font-family: "Lato", Arial, sans-serif;
-        font-weight: 900;
-        font-size: 0.92rem;
-        line-height: 1;
-        color: #d1d1d1;
-    }
+  &__scale {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 0.92rem;
+    line-height: 1;
+    color: #d1d1d1;
+  }
 }

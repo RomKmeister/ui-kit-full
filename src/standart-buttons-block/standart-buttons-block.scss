@@ -1,15 +1,15 @@
 .standart-buttons {
-    padding: 0 57px;
+  padding: 0 57px;
 
-    &__buttons-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        margin: 22px 8px 0;
+  &__buttons-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 22px 8px 0;
 
-        &_first-item-margin {
-            margin-top: 62px;
-        }
+    &_first-item-margin {
+      margin-top: 62px;
     }
+  }
 }

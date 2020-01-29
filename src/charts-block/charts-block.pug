@@ -5,13 +5,19 @@ mixin charts-block()
   section.charts
     h1.title Percentages / Pie chart
     .charts__row
-      +pie-chart({value: "0"})
-      +pie-chart({value:"38"})
-      +pie-chart({value:"62"})
-      +pie-chart({value:"89"}) 
-      +donut-chart([
-      {value: "100", color: "#e5e5e5"},
-      {value: "65", color: "#4eb7a8"},
-      {value: "35", color: "#e75735"},
-      {value: "10", color: "#747474"}
-      ])
+      +pie-chart({ value: "0" })
+      +pie-chart({ value: "38" })
+      +pie-chart({ value: "62" })
+      +pie-chart({ value: "89" }) 
+      +donut-chart([{
+        value: "100", color: "#e5e5e5"
+      },
+      {
+        value: "65", color: "#4eb7a8"
+      },
+      {
+        value: "35", color: "#e75735"
+      },
+      {
+        value: "10", color: "#747474"
+      }])

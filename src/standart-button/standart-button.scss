@@ -1,94 +1,90 @@
+@import '../colors';
+
 .button {
   position: relative;
   line-height: 1.2;
   font-weight: 900;
   letter-spacing: -1px;
+  color: $main-white;
   border-width: 1px;
   border-style: solid;
   border-radius: 3px;
-  background: #ffffff;
+  background: $main-white;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
 
   &_green {
-    color: #4eb7a8;
-    border-color: #4eb7a8;
-    box-shadow: 0 3px 0 0 #4eb7a8;
+    color: $main-green;
+    border-color: $main-green;
+    box-shadow: 0 3px 0 0 $main-green;
     
     &:hover,
     &:focus {
-      color: #ffffff;
-      background: #4eb7a8;
-      box-shadow: 0 3px 0 0 #28a290;
+      background: $main-green;
+      box-shadow: 0 3px 0 0 $main-green-shadow;
       outline: 0;
     }
 
     &:active {
-      color: #ffffff;
-      background: #4eb7a8;
+      background: $main-green;
       box-shadow: none;
       outline: 0;
     }
   }
 
   &_orange {
-    color: #e75735;
-    border-color: #e75735;
-    box-shadow: 0 3px 0 0 #e75735;
+    color: $main-orange;
+    border-color: $main-orange;
+    box-shadow: 0 3px 0 0 $main-orange;
   
     &:hover,
     &:focus {
-      color: #ffffff;
-      background: #e75735;
-      box-shadow: 0 3px 0 0 #bf3e1f;
+      background: $main-orange;
+      box-shadow: 0 3px 0 0 $main-orange-shadow;
       outline: 0;
     }
 
     &:active {
-      color: #ffffff;
-      background: #e75735;
+      background: $main-orange;
       box-shadow: none;
       outline: 0;
     }
   }
 
   &_fullgreen {
-    color: #ffffff;
-    border-color: #4eb7a8;
-    background: #4eb7a8;
-    box-shadow: 0 3px 0 0 #28a290;
+    border-color: $main-green;
+    background: $main-green;
+    box-shadow: 0 3px 0 0 $deep-green;
     
     &:hover,
     &:focus {
-      background: #28a290;
-      box-shadow: 0 3px 0 0 #28a290;
+      background: $deep-green;
+      box-shadow: 0 3px 0 0 $deep-green;
       outline: 0;
     }
 
     &:active {
-      background: #28a290;
+      background: $deep-green;
       box-shadow: none;
       outline: 0;
     }
   }
 
   &_darkgreen {
-    color: #43ac9d;
-    border-color: #43ac9d;
-    box-shadow: 0 3px 0 0 #379285;
+    color: $dark-green;
+    border-color: $dark-green;
+    box-shadow: 0 3px 0 0 $dark-green-shadow;
     
     &:hover,
     &:focus {
-      color: #ffffff;
-      background: #43ac9d;
-      box-shadow: 0 3px 0 0 #379285;
+      background: $dark-green;
+      box-shadow: 0 3px 0 0 $dark-green-shadow;
       outline: 0;
     }
 
     &:active {
-      color: #ffffff;
-      background: #43ac9d;
+      background: $dark-green;
       box-shadow: none;
       outline: 0;
     }

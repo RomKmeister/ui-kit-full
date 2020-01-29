@@ -1,9 +1,7 @@
 @import '../colors';
 
 .pie-chart {
-  &__container {
-    position: relative;
-  }
+  position: relative;
 
   &__scale {
     width: 8.08rem;

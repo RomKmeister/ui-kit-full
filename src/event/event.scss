@@ -22,17 +22,19 @@
     font-family: 'Lato', Arial, sans-serif;
     font-weight: 300;
     z-index: 1;
+    
+    &_color{
+      &_green {
+        background: $main-green;
+      }
 
-    &_green {
-      background: $main-green;
-    }
+      &_orange {
+        background: $main-orange;
+      }
 
-    &_orange {
-      background: $main-orange;
-    }
-
-    &_gray {
-      background: $gray-textarea;
+      &_gray {
+        background: $gray-textarea;
+      }
     }
   }
 

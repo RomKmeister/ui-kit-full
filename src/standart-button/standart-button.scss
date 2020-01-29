@@ -14,116 +14,119 @@
   text-align: center;
   cursor: pointer;
 
-  &_green {
-    color: $main-green;
-    border-color: $main-green;
-    box-shadow: 0 3px 0 0 $main-green;
+  &_color{
+    &_green {
+      color: $main-green;
+      border-color: $main-green;
+      box-shadow: 0 3px 0 0 $main-green;
+      
+      &:hover,
+      &:focus {
+        color: $main-white;
+        background: $main-green;
+        box-shadow: 0 3px 0 0 $main-green-shadow;
+        outline: 0;
+      }
+
+      &:active {
+        color: $main-white;
+        background: $main-green;
+        box-shadow: none;
+        outline: 0;
+      }
+    }
+
+    &_orange {
+      color: $main-orange;
+      border-color: $main-orange;
+      box-shadow: 0 3px 0 0 $main-orange;
     
-    &:hover,
-    &:focus {
-      color: $main-white;
+      &:hover,
+      &:focus {
+        color: $main-white;
+        background: $main-orange;
+        box-shadow: 0 3px 0 0 $main-orange-shadow;
+        outline: 0;
+      }
+
+      &:active {
+        color: $main-white;
+        background: $main-orange;
+        box-shadow: none;
+        outline: 0;
+      }
+    }
+
+    &_fullgreen {
+      border-color: $main-green;
       background: $main-green;
-      box-shadow: 0 3px 0 0 $main-green-shadow;
-      outline: 0;
-    }
-
-    &:active {
-      color: $main-white;
-      background: $main-green;
-      box-shadow: none;
-      outline: 0;
-    }
-  }
-
-  &_orange {
-    color: $main-orange;
-    border-color: $main-orange;
-    box-shadow: 0 3px 0 0 $main-orange;
-  
-    &:hover,
-    &:focus {
-      color: $main-white;
-      background: $main-orange;
-      box-shadow: 0 3px 0 0 $main-orange-shadow;
-      outline: 0;
-    }
-
-    &:active {
-      color: $main-white;
-      background: $main-orange;
-      box-shadow: none;
-      outline: 0;
-    }
-  }
-
-  &_fullgreen {
-    border-color: $main-green;
-    background: $main-green;
-    box-shadow: 0 3px 0 0 $deep-green;
-    
-    &:hover,
-    &:focus {
-      background: $deep-green;
       box-shadow: 0 3px 0 0 $deep-green;
-      outline: 0;
+      
+      &:hover,
+      &:focus {
+        background: $deep-green;
+        box-shadow: 0 3px 0 0 $deep-green;
+        outline: 0;
+      }
+
+      &:active {
+        background: $deep-green;
+        box-shadow: none;
+        outline: 0;
+      }
     }
 
-    &:active {
-      background: $deep-green;
-      box-shadow: none;
-      outline: 0;
-    }
-  }
-
-  &_darkgreen {
-    color: $dark-green;
-    border-color: $dark-green;
-    box-shadow: 0 3px 0 0 $dark-green-shadow;
-    
-    &:hover,
-    &:focus {
-      color: $main-white;
-      background: $dark-green;
+    &_darkgreen {
+      color: $dark-green;
+      border-color: $dark-green;
       box-shadow: 0 3px 0 0 $dark-green-shadow;
-      outline: 0;
+      
+      &:hover,
+      &:focus {
+        color: $main-white;
+        background: $dark-green;
+        box-shadow: 0 3px 0 0 $dark-green-shadow;
+        outline: 0;
+      }
+
+      &:active {
+        color: $main-white;
+        background: $dark-green;
+        box-shadow: none;
+        outline: 0;
+      }
+    }
+  }
+  &_size{
+    &_small {
+      width: 6.5rem;
+      padding: 0.33rem 0.83rem;
+      font-size: 0.83rem;
     }
 
-    &:active {
-      color: $main-white;
-      background: $dark-green;
-      box-shadow: none;
-      outline: 0;
+    &_big {
+      width: 9.83rem;
+      padding: 0.58rem 0.83rem 0.67rem;
+      font-size: 1rem;
     }
-  }
 
-  &_small {
-    width: 6.5rem;
-    padding: 0.33rem 0.83rem;
-    font-size: 0.83rem;
-  }
+    &_wide {
+      width: 100%;
+      padding: 0.58rem 0.83rem 0.67rem;
+      font-size: 1rem;
+    }
 
-  &_big {
-    width: 9.83rem;
-    padding: 0.58rem 0.83rem 0.67rem;
-    font-size: 1rem;
-  }
+    &_custom {
+      width: 10.67rem;
+      padding: 0.42rem 0.83rem 0.42rem;
+      font-size: 0.833rem;
+    }
 
-  &_wide {
-    width: 100%;
-    padding: 0.58rem 0.83rem 0.67rem;
-    font-size: 1rem;
-  }
-
-  &_custom {
-    width: 10.67rem;
-    padding: 0.42rem 0.83rem 0.42rem;
-    font-size: 0.833rem;
-  }
-
-  &_big-for-events {
-    width: 12.5rem;
-    padding: 0.58rem 0.83rem 0.67rem;
-    font-size: 1rem;
+    &_big-for-events {
+      width: 12.5rem;
+      padding: 0.58rem 0.83rem 0.67rem;
+      font-size: 1rem;
+    }
   }
 
   &__ripple {

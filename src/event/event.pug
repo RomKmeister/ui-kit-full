@@ -3,7 +3,7 @@ include ../standart-button/standart-button
 mixin event(content)
 	.event
 		img.event__image(src=content.imgPath, alt="")
-		div(class=`event__block event__block_${content.color}`)
+		div(class=`event__block event__block_color_${content.color}`)
 			h2.event__date= content.day
 				span.event__month= content.month
 			p.event__title= content.title 

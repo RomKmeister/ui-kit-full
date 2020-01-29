@@ -1,3 +1,5 @@
+@import '../colors.scss';
+
 .donut-chart {
   width: 8.17rem;
   height: 8.17rem;
@@ -7,6 +9,10 @@
 
   &__circle {
     animation: show100 2s;
+  }
+
+  &__background {
+    fill: $main-white;
   }
 }
 

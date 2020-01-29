@@ -2,33 +2,33 @@
 
 .arrow-button {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 4.17rem;
+  height: 4.17rem;
   border-radius: 50%;
   cursor: pointer;
 
   &::after {
     content: '';
     display: block;
-    width: 12px;
-    height: 12px;
+    width: 1rem;
+    height: 1rem;
   }
 
   &_left::after {
-    transform: rotate(-135deg) translate(-8px, 7px)
+    transform: rotate(-135deg) translate(-0.66rem, 0.58rem)
   }
 
   &_right::after {
-    transform: rotate(45deg) translate(5px, -4px)
+    transform: rotate(45deg) translate(0.47rem, -0.33rem)
   }
 
   &_white {
     background: $main-white;
-    border: 3px solid $main-green;
+    border: 0.25rem solid $main-green;
 
     &::after {
-      border-top: 3px solid $main-green;
-      border-right: 3px solid $main-green;
+      border-top: 0.25rem solid $main-green;
+      border-right: 0.25rem solid $main-green;
     }
 
     &:hover,
@@ -37,19 +37,19 @@
       background: $main-green;
 
       &::after {
-      border-top: 3px solid $main-white;
-      border-right: 3px solid $main-white;
+      border-top: 0.25rem solid $main-white;
+      border-right: 0.25rem solid $main-white;
       }
     }
   }
 
   &_green {
     background: $main-green;
-    border: 3px solid $main-green;
+    border: 0.25rem solid $main-green;
     
     &::after {
-      border-top: 3px solid $main-white;
-      border-right: 3px solid $main-white;
+      border-top: 0.25rem solid $main-white;
+      border-right: 0.25rem solid $main-white;
     }
 
     &:hover,
@@ -58,20 +58,20 @@
       background: $main-white;
 
       &::after {
-      border-top: 3px solid $main-green;
-      border-right: 3px solid $main-green;
+      border-top: 0.25rem solid $main-green;
+      border-right: 0.25rem solid $main-green;
       }
     }
   }
 
   &:disabled {
     background: $main-gray;
-    border: 3px solid $main-gray;
+    border: 0.25rem solid $main-gray;
     cursor: default;
 
     &::after {
-      border-top: 3px solid $main-white;
-      border-right: 3px solid $main-white;
+      border-top: 0.25rem solid $main-white;
+      border-right: 0.25rem solid $main-white;
     }
   }
 }

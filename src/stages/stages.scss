@@ -1,3 +1,5 @@
+@import '../colors';
+
 .progressbar {
   display: flex;
   justify-content: space-between;
@@ -15,7 +17,7 @@
       flex-shrink: 0;
       width: 50px;
       height: 5px;
-      background: #e5e5e5;
+      background: $main-gray;
     }
 
     &:first-child{
@@ -27,12 +29,12 @@
     }
 
     &_active::before{
-      background: #e75735;
+      background: $main-orange;
     }
 
     &_active .progressbar__step {
-      background: #e75735;
-      color: #ffffff;
+      background: $main-orange;
+      color: $main-white;
     }
   }
 
@@ -41,9 +43,9 @@
     height: 28px;
     border-radius: 50%;
     line-height: 1.9;
-    background: #e5e5e5;
+    background: $main-gray;
     font-size: 1.167rem;
-    color: #888888;
+    color: $main-gray-text;
     text-align: center;
     font-weight: bold;
   }

@@ -65,8 +65,8 @@
   }
 
   &:disabled {
-    background: $disabled;
-    border: 3px solid $disabled;
+    background: $main-gray;
+    border: 3px solid $main-gray;
     cursor: default;
 
     &::after {

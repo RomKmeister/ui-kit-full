@@ -1,9 +1,11 @@
+@import '../colors';
+
 .form {
   display: flex;
   flex-wrap: wrap;
 
   &::-webkit-input-placeholder {
-    color: #888888;
+    color: $main-gray-text;
   }
 
   &__input-text {
@@ -14,7 +16,7 @@
     font-size: 1.17rem;
     border: none;
     border-radius: 0.25rem;
-    background: #e5e5e5;
+    background: $main-gray;
   }
 
   &__textarea {
@@ -25,7 +27,7 @@
     font-size: 1.17rem;
     border: none;
     border-radius: 0.25rem;
-    background: #e5e5e5;
+    background: $main-gray;
     resize: none;
   }
 
@@ -37,7 +39,7 @@
     margin-left: 2.68%;
     margin-bottom: 1rem;
     font-size: 0.83rem;
-    color: #ffffff;
+    color: $main-white;
     text-align: center;
     text-transform: uppercase;
     border-radius: 0.25rem;
@@ -56,19 +58,19 @@
 
   &__error {
       display: block;
-      background: #e75735;
+      background: $main-orange;
       
       &::before {
-      background: #e75735;
+      background: $main-orange;
       }
   }
 
   &__success {
       display: block;
-      background: #4eb7a8;
+      background: $main-green;
 
       &::before {
-          background: #4eb7a8;
+          background: $main-green;
       }
   }
 

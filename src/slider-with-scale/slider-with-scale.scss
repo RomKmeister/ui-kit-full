@@ -1,6 +1,8 @@
+@import '../colors.scss';
+
 .slider-with-scale {
   height: 0.42rem;
-  background: #e5e5e5;
+  background: $main-gray;
 
   &.ui-widget.ui-widget-content {
     border: 0
@@ -18,12 +20,12 @@
     
     &_green,
     &_green:active {
-      background: #4eb7a8;
+      background: $main-green;
     }
   }
 
   & &__range_green {
-    background: #4eb7a8;
+    background: $main-green;
   }
 
   &__scale {
@@ -33,6 +35,6 @@
     font-weight: 900;
     font-size: 0.92rem;
     line-height: 1;
-    color: #d1d1d1;
+    color: $main-gray;
   }
 }

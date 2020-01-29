@@ -1,9 +1,11 @@
+@import '../colors';
+
 .news {
   position: relative;
   display: flex;
   width: 24rem;
   overflow: hidden;
-  color: #ffffff;
+  color: $main-white;
   border-radius: 0.25rem;
 
   &__image {
@@ -19,7 +21,7 @@
     padding: 1.7rem;
     font-family: 'Lato', Arial, sans-serif;
     font-weight: 300;
-    background: #e75735;
+    background: $main-orange;
     z-index: 1;
   }
 

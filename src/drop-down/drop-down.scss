@@ -1,14 +1,16 @@
+@import '../colors';
+
 .ui-selectmenu-button_custom {
   padding: 0;
   font-family: "SourceSansPro", Arial, sans-serif;
   font-size: 1.16rem;
   font-weight: 400;
-  background: #e5e5e5;
-  color: #888888;
+  background: $main-gray;
+  color: $main-gray-text;
   border: none;
   
   &:hover {
-    background: #4eb7a8;
+    background: $main-green;
     border: none;
   }
 
@@ -20,7 +22,7 @@
   & .ui-selectmenu-icon {
     padding: 0.5rem 0.8rem;
     background-image: url("drop-down-arrow.svg");
-    background-color: #4eb7a8;
+    background-color: $main-green;
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 0 0.33rem 0.33rem 0;
@@ -54,9 +56,9 @@
     font-family: "SourceSansPro", Arial, sans-serif;
     font-size: 1.16rem;
     font-weight: 400;
-    background-color: #4eb7a8;
-    border: 1px solid #4eb7a8;
-    color: #ffffff;
+    background-color: $main-green;
+    border: 1px solid $main-green;
+    color: $main-white;
 
     & .ui-menu-item-wrapper {
       padding: 0.58rem 1.08rem;
@@ -72,8 +74,8 @@
   }
 
   & .ui-widget-content .ui-state-active {
-    background: #e5e5e5;
-    color: #888888;
+    background: $main-gray;
+    color: $main-gray-text;
     border: none;
   }
 }

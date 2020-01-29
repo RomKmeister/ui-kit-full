@@ -1,6 +1,8 @@
+@import '../colors.scss';
+
 .slider-with-bubble {
   height: 0.42rem;
-  background: #e5e5e5;
+  background: $main-gray;
 
   &.ui-widget.ui-widget-content {
     border: none;
@@ -18,7 +20,7 @@
 
     &_orange,
     &_orange:active {
-      background: #e75735;
+      background: $main-orange;
     }
   }
 
@@ -27,13 +29,13 @@
     width: 1.83rem;
     bottom: 2.25rem;
     left: -50%;
-    background: #e75735;
+    background: $main-orange;
     padding: 0.42rem 0.67rem;
     font-family: 'Lato', Arial, sans-serif;
     font-weight: 900;
     font-size: 13px;
     line-height: 1.2;
-    color: #ffffff;
+    color: $main-white;
     border-radius: 0.33rem;
     text-align: center;
   }
@@ -43,7 +45,7 @@
     position: absolute;
     left: 1.25rem;
     bottom: -0.25rem;
-    border: 4px solid #e75735;
+    border: 4px solid $main-orange;
     transform: rotate(45deg);
   }
 }

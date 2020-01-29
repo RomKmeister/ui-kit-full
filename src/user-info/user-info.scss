@@ -1,11 +1,13 @@
+@import '../colors';
+
 .user-info {
   position: relative;
   width: 13.75rem;
   margin-left: 1rem;
   border-radius: 0.5rem;
-  background: #4eb7a8;
+  background: $main-green;
   word-break: break-word;
-  color: #ffffff;
+  color: $main-white;
   text-align: center;
 
   &::before {
@@ -21,7 +23,7 @@
   }
 
   &_hovered {
-    background: #e5e5e5;
+    background: $main-gray;
   }
 
   &__name {
@@ -31,7 +33,7 @@
     font-size: 1.5rem;
   
     &_hovered {
-      color: #e75735;
+      color: $main-orange;
     }
   }
 
@@ -42,7 +44,7 @@
     letter-spacing: 0.7px;
 
     &_hovered {
-      color: #4f4f4f;
+      color: $gray-hovered;
     }
   }
 

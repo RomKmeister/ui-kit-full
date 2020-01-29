@@ -1,3 +1,5 @@
+@import '../colors';
+
 .tick-box {
   display: flex;
   justify-content: center;
@@ -8,12 +10,12 @@
   text-align: center;
 
   &_enabled {
-    background: #4eb7a8;
-    color: #ffffff;
+    background: $main-green;
+    color: $main-white;
   }
 
   &_disabled {
-    background: #e5e5e5;
-    color: #c0c0c0;
+    background: $main-gray;
+    color: $gray-light;
   }
 }

@@ -1,3 +1,5 @@
+@import '../colors';
+
 .search-form {
   display: flex;
   flex-wrap: wrap;
@@ -8,22 +10,22 @@
     padding: 10px 14px 9px;
     font-family: 'SourceSansPro', Arial, sans-serif;
     font-size: 14px;
-    background: #e5e5e5;
+    background: $main-gray;
     border: none;
     border-radius: 4px 0 0 4px;
   
     &_empty {
-      background: #e75735;
-      color: #ffffff;
+      background: $main-orange;
+      color: $main-white;
     }
   }
 
   &__submit {
     height: 28px;
     padding: 5px 10px 3px;
-    background: #e75735;
+    background: $main-orange;
     border: none;
     border-radius: 0 4px 4px 0;
-    color: #ffffff;
+    color: $main-white;
   }
 }

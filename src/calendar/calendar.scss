@@ -1,3 +1,5 @@
+@import '../colors';
+
 .datepicker__date {
   width: 23.33rem;
   padding: 0.66rem 0 0.5rem;
@@ -5,8 +7,8 @@
   font-weight: 300;
   font-size: 6.67rem;
   line-height: 0.325;
-  color: #ffffff;
-  background: #e75735;
+  color: $main-white;
+  background: $main-orange;
   letter-spacing: -0.08;
   border: none;
   border-radius: 0.25rem 0.25rem 0 0;
@@ -23,8 +25,8 @@
       font-weight: 300;
       font-size: 2rem;
       line-height: 1.08;
-      color: #ffffff;
-      background: #d54c2c;
+      color: $main-white;
+      background: $dark-orange;
       border: none;
       border-radius: 0;
     }
@@ -39,7 +41,7 @@
   }
 
   .ui-datepicker-header {
-    background: #d54c2c;
+    background: $dark-orange;
     border: none;
     border-radius: 0;
   }
@@ -66,14 +68,14 @@
   }
 
   .ui-icon-circle-triangle-w {
-    border-top: 0.25rem solid #fff;
-    border-left: 0.25rem solid #fff;
+    border-top: 0.25rem solid $main-white;
+    border-left: 0.25rem solid $main-white;
     transform: rotate(-45deg);
   }
 
   .ui-icon-circle-triangle-e {
-    border-top: 0.25rem solid #fff;
-    border-left: 0.25rem solid #fff;
+    border-top: 0.25rem solid $main-white;
+    border-left: 0.25rem solid $main-white;
     transform: rotate(135deg);
   }
 
@@ -89,8 +91,8 @@
     font-family: 'Lato', Arial, sans-serif;
     font-weight: 900;
     font-size: 0.75rem;
-    color: #ffffff;
-    background: #e75735;
+    color: $main-white;
+    background: $main-orange;
     text-transform: uppercase;
   }
 
@@ -101,7 +103,7 @@
   .ui-datepicker td {
     width: 3.25rem;
     padding: 0;
-    border: 0.17rem solid #ffffff;
+    border: 0.17rem solid $main-white;
   }
 
   .ui-widget-content .ui-state-default {
@@ -109,21 +111,21 @@
     font-family: 'SourceSansPro';
     font-size: 1.7rem;
     line-height: 1.75;
-    color: #868686;
-    background: #f2f2f2;
+    color: $gray-calendar;
+    background: $gray-light-background;
     border: 0;
     text-align: center;
   }
 
   .ui-widget-content .ui-state-default .ui-state-hover {
     border: 0;
-    background: #e75735;
-    color: #ffffff;
+    background: $main-orange;
+    color: $main-white;
   }
 
   .ui-state-highlight, .ui-widget-content .ui-state-highlight{
-    background: #e75735;
-    color: #ffffff;
+    background: $main-orange;
+    color: $main-white;
   }
 
   .ui-widget-content .ui-state-disabled {
@@ -131,7 +133,7 @@
   }
 
   .ui-widget-content .ui-state-disabled .ui-state-default {
-    color: #ffffff;
+    color: $main-white;
   }
 
   .ui-widget-header .ui-state-hover {
@@ -151,8 +153,8 @@
     font-family: 'Lato', Arial, sans-serif;
     font-weight: 900;
     font-size: 1.2rem;
-    color: #868686;
-    background: #e5e5e5;
+    color: $gray-calendar;
+    background: $main-gray;
     text-transform: uppercase; 
     text-align: left;
   }

@@ -1,6 +1,6 @@
 include ../toggle/toggle
-include ../slider-with-scale/slider
-include ../standart-button/button
+include ../slider-with-scale/slider-with-scale
+include ../standart-button/standart-button
 include ../event/event
 
 doctype html
@@ -24,15 +24,15 @@ html(lang="ru")
 							p.filter__lable Неинтересные
 						.filter__slider
 							p Оценка
-							+sliderWithScale({value: "5", min: "1", max: "5", stepsNumber: "6"})
+							+slider-with-scale({value: "5", min: "1", max: "5", stepsNumber: "6"})
 				main.content__right-column
 					section
 						.top-bar
 							h1.content__title Мероприятия
-							+stdButton({color: "fullgreen", size: "big-for-events", type: "button", title: "Добавить свое"})
+							+std-button({color: "fullgreen", size: "big-for-events", type: "button", title: "Добавить свое"})
 						.events-block__wrap
 							.events-block__item
-								+eventItem({
+								+event({
 									color: "green",
 									day: "24",
 									month: "Aug",
@@ -41,7 +41,7 @@ html(lang="ru")
 									imgPath: "../event/event-image.jpg"
 								})
 							.events-block__item
-								+eventItem({
+								+event({
 									color: "green",
 									day: "24",
 									month: "Aug",
@@ -50,7 +50,7 @@ html(lang="ru")
 									imgPath: "../event/event-image.jpg"
 								})
 							.events-block__item
-								+eventItem({
+								+event({
 									color: "orange",
 									day: "24",
 									month: "Aug",
@@ -59,7 +59,7 @@ html(lang="ru")
 									imgPath: "../event/event-image.jpg"
 								})
 							.events-block__item
-								+eventItem({
+								+event({
 									color: "green",
 									day: "24",
 									month: "Aug",
@@ -68,7 +68,7 @@ html(lang="ru")
 									imgPath: "../event/event-image.jpg"
 								})
 							.events-block__item
-								+eventItem({
+								+event({
 									color: "green",
 									day: "24",
 									month: "Aug",
@@ -77,7 +77,7 @@ html(lang="ru")
 									imgPath: "../event/event-image.jpg"
 								})
 							.events-block__item
-								+eventItem({
+								+event({
 									color: "green",
 									day: "24",
 									month: "Aug",
@@ -86,7 +86,7 @@ html(lang="ru")
 									imgPath: "../event/event-image.jpg"
 								})
 							.events-block__item
-								+eventItem({
+								+event({
 									color: "gray",
 									day: "24",
 									month: "Aug",

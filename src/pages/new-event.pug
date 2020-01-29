@@ -1,4 +1,4 @@
-include ../progressbar/progressbar
+include ../stages/stages
 include ../form/form
 include ../calendar/calendar
 include ../map/map
@@ -15,14 +15,14 @@ html(lang="ru")
 			main
 				section
 				h1.new-event__title Новое мероприятие
-					+progressbar({steps: "2", activeStep: "1"})
+					+stages({steps: "2", activeStep: "1"})
 					h2.new-event__second-title Место
 					+map()
 					h2.new-event__second-title Описание и время
 					.new-event__new-date-wrap
-						+newCalendar()
+						+calendar()
 						.new-event__form-wrap
-							+newForm()
+							+form()
 					
 		include footer/footer
 		script(src="https://api-maps.yandex.ru/2.1/?apikey=4ddfe254-a524-4b68-a64b-af1b457f35c6&lang=en_US")

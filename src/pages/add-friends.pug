@@ -1,6 +1,6 @@
-include ../progressbar/progressbar
+include ../stages/stages
 include ../search/search
-include ../standart-button/button
+include ../standart-button/standart-button
 include ../user-photo/user-photo
 include ../user-info/user-info
 include ../pie-chart/pie-chart
@@ -18,54 +18,54 @@ html(lang="ru")
 				main
 					section
 					h1.new-event__title Новое мероприятие
-						+progressbar({steps: "2", activeStep: "2"})
+						+stages({steps: "2", activeStep: "2"})
 						.new-event__search-block
 							h2.new-event__second-title Добавить друзей
-							+searchForm({action: "", searchValue:"", placeholder: "Search", emptyResult: false})
+							+search-form({action: "", searchValue:"", placeholder: "Search", emptyResult: false})
 						.friends-block
 							.friend-block
 								.friend-block__button
-									+stdButton({color: "green", size: "small", type: "button", title: "Добавить"})
-									+stdButton({color: "orange", size: "small", type: "button", title: "Удалить"})
+									+std-button({color: "green", size: "small", type: "button", title: "Добавить"})
+									+std-button({color: "orange", size: "small", type: "button", title: "Удалить"})
 								.friend-block__user-profile
-									+userPhoto({imagePath: "../user-profile/user.jpg", imageAlt: ""})
-									+userInfo({name: "John Smith", job: "Ux designer", theme: "hovered"})
+									+user-photo({imagePath: "../user-profile/user.jpg", imageAlt: ""})
+									+user-info({name: "John Smith", job: "Ux designer", theme: "hovered"})
+								.friend-block__chart
+									+pie-chart({value: "99"})
+							.friend-block
+								.friend-block__button
+									+std-button({color: "green", size: "small", type: "button", title: "Добавить"})
+									+std-button({color: "orange", size: "small", type: "button", title: "Удалить"})
+								.friend-block__user-profile
+									+user-bhoto({imagePath: "img/al.jpg", imageAlt: ""})
+									+user-info({name: "John Smith", job: "Ux designer", theme: "hovered"})
+								.friend-block__chart
+									+pie-chart({value: "1"})
+							.friend-block
+								.friend-block__button
+									 +std-button({color: "green", size: "small", type: "button", title: "Добавить"})
+									 +std-button({color: "orange", size: "small", type: "button", title: "Удалить"})
+								.friend-block__user-profile
+									+user-photo({imagePath: "img/11.jpg", imageAlt: ""})
+									+user-info({name: "John Smith", job: "Ux designer", theme: "hovered"})
 								.friend-block__chart
 									+pieChart({value: "99"})
 							.friend-block
 								.friend-block__button
-									+stdButton({color: "green", size: "small", type: "button", title: "Добавить"})
-									+stdButton({color: "orange", size: "small", type: "button", title: "Удалить"})
+									 +std-button({color: "green", size: "small", type: "button", title: "Добавить"})
+									 +std-button({color: "orange", size: "small", type: "button", title: "Удалить"})
 								.friend-block__user-profile
-									+userPhoto({imagePath: "img/al.jpg", imageAlt: ""})
-									+userInfo({name: "John Smith", job: "Ux designer", theme: "hovered"})
-								.friend-block__chart
-									+pieChart({value: "1"})
-							.friend-block
-								.friend-block__button
-									+stdButton({color: "green", size: "small", type: "button", title: "Добавить"})
-									+stdButton({color: "orange", size: "small", type: "button", title: "Удалить"})
-								.friend-block__user-profile
-									+userPhoto({imagePath: "img/11.jpg", imageAlt: ""})
-									+userInfo({name: "John Smith", job: "Ux designer", theme: "hovered"})
-								.friend-block__chart
-									+pieChart({value: "99"})
-							.friend-block
-								.friend-block__button
-									+stdButton({color: "green", size: "small", type: "button", title: "Добавить"})
-									+stdButton({color: "orange", size: "small", type: "button", title: "Удалить"})
-								.friend-block__user-profile
-									+userPhoto({imagePath: "img/12.jpg", imageAlt: ""})
-									+userInfo({name: "John Smith", job: "Ux designer", theme: "hovered"})
+									+user-photo({imagePath: "img/12.jpg", imageAlt: ""})
+									+user-info({name: "John Smith", job: "Ux designer", theme: "hovered"})
 								.friend-block__chart
 									+pieChart({value: "57"})
 							.friend-block
 								.friend-block__button
-									+stdButton({color: "green", size: "small", type: "button", title: "Добавить"})
-									+stdButton({color: "orange", size: "small", type: "button", title: "Удалить"})
+									 +std-button({color: "green", size: "small", type: "button", title: "Добавить"})
+									 +std-button({color: "orange", size: "small", type: "button", title: "Удалить"})
 								.friend-block__user-profile
-									+userPhoto({imagePath: "img/13.jpg", imageAlt: ""})
-									+userInfo({name: "John Smith", job: "Ux designer", theme: "hovered"})
+									+user-photo({imagePath: "img/13.jpg", imageAlt: ""})
+									+user-info({name: "John Smith", job: "Ux designer", theme: "hovered"})
 								.friend-block__chart
 									+pieChart({value: "5"})
 

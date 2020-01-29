@@ -21,12 +21,14 @@
     
     &:hover,
     &:focus {
+      color: $main-white;
       background: $main-green;
       box-shadow: 0 3px 0 0 $main-green-shadow;
       outline: 0;
     }
 
     &:active {
+      color: $main-white;
       background: $main-green;
       box-shadow: none;
       outline: 0;
@@ -40,12 +42,14 @@
   
     &:hover,
     &:focus {
+      color: $main-white;
       background: $main-orange;
       box-shadow: 0 3px 0 0 $main-orange-shadow;
       outline: 0;
     }
 
     &:active {
+      color: $main-white;
       background: $main-orange;
       box-shadow: none;
       outline: 0;
@@ -78,12 +82,14 @@
     
     &:hover,
     &:focus {
+      color: $main-white;
       background: $dark-green;
       box-shadow: 0 3px 0 0 $dark-green-shadow;
       outline: 0;
     }
 
     &:active {
+      color: $main-white;
       background: $dark-green;
       box-shadow: none;
       outline: 0;

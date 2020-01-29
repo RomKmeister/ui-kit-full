@@ -1,3 +1,5 @@
+@import '../colors';
+
 .pie-chart {
   &__container {
     position: relative;
@@ -10,6 +12,15 @@
     transform: rotate(-90deg);
     fill: none;
     animation: show100 2s;
+  }
+
+  &__fill {
+    stroke: $main-orange;
+    stroke-width: 32;
+  }
+
+  &__background {
+    fill: $main-white;
   }
 
   &__number {

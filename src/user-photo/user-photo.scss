@@ -1,12 +1,10 @@
 .user-photo {
-  &__wrap {
-    position: relative;
-    width: 7.08rem;
-    height: 7.08rem;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 0.33rem solid #e5e5e5;
-  }
+  position: relative;
+  width: 7.08rem;
+  height: 7.08rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 0.33rem solid #e5e5e5;
 
   &__image {
     width: 100%;

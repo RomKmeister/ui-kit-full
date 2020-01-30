@@ -1,5 +1,5 @@
 $( function() {
-    $(".slider-with-scale").each(function() {
+    $(".js-slider-with-scale").each(function() {
         $(this).slider({
             value: $(this).data("value"),
             min: $(this).data("min"),

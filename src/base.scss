@@ -75,19 +75,20 @@ body {
 }
 
 .main {
-    width: 594px;
+    max-width: 49.5rem;
+    min-width: 41rem;
     margin: 0 auto;
 
     &__standart-buttons {
-        margin: 71px auto 0;
+        margin: 5.92rem auto 0;
     }
 
     &__arrow-buttons {
-        margin: 46px auto 0;
+        margin: 3.83rem auto 0;
     }
 
     &__charts {
-        margin: 34px auto 0;
+        margin: 2.83rem auto 0;
     }
 
     &__sliders {
@@ -95,28 +96,28 @@ body {
     }
 
     &__stages-bar {
-        margin-top: 48px;
+        margin-top: 1.5rem;
     }
 
     &__form-elements {
-        margin-top: 43px;
+        margin-top: 3.58rem;
     }
 
     &__news-and-events {
-        margin-top: 82px;
+        margin-top: 6.83rem;
       }
 
     &__location {
-        margin-top: 37px;
+        margin-top: 3.08rem;
     }
 
     &__wrap {
         display: flex;
         justify-content: space-between;
-        margin-top: 38px;
+        margin-top: 3.16rem;
     }
 
     &__videos {
-        margin-top: 40px;
+        margin-top: 3.33rem;
     }
 }

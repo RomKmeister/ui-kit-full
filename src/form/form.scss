@@ -54,24 +54,24 @@
     margin-top: -0.16rem;
     transform: rotate(45deg);
     }
-  }
 
-  &__error {
+    &_with_error {
       display: block;
       background: $main-orange;
       
       &::before {
       background: $main-orange;
       }
-  }
+    }
 
-  &__success {
+    &_with_success {
       display: block;
       background: $main-green;
 
       &::before {
           background: $main-green;
       }
+    }
   }
 
   &__button-wrap {

@@ -17,6 +17,10 @@ module.exports = {
         use:  [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
       {
+        test: /\.css$/,
+        use:  [MiniCssExtractPlugin.loader, 'css-loader']
+      },
+      {
         test: /\.pug$/,
         use: ['html-loader', 'pug-html-loader']
       },
@@ -43,17 +47,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'main-page.html',
       template: 'src/pages/main.pug',
-      inject: false
     }),
     new HtmlWebpackPlugin({
       filename: 'new-event.html',
       template: 'src/pages/new-event.pug',
-      inject: false
     }),
     new HtmlWebpackPlugin({
       filename: 'add-friends.html',
       template: 'src/pages/add-friends.pug',
-      inject: false
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',

@@ -1,123 +1,133 @@
 @import './colors';
 
 @font-face {
-    font-family: 'Lato';
-    src: local('Lato Black'), local('Lato Black'),
-        url('fonts/Lato-Black.woff') format('woff'),
-        url('fonts/Lato-Black.ttf') format('truetype'),
-        url('fonts/Lato-Black.svg#Lato-Black') format('svg');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'Lato';
+  src: local('Lato Black'), local('Lato Black'),
+    url('fonts/Lato-Black.woff') format('woff'),
+    url('fonts/Lato-Black.ttf') format('truetype'),
+    url('fonts/Lato-Black.svg#Lato-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lato';
-    src: local('Lato Bold'), local('Lato Light'),
-        url('fonts/Lato-Bold.woff') format('woff'),
-        url('fonts/Lato-Bold.ttf') format('truetype'),
-        url('fonts/Lato-Bold.svg#Lato-Bold') format('svg');
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'Lato';
+  src: local('Lato Bold'), local('Lato Light'),
+    url('fonts/Lato-Bold.woff') format('woff'),
+    url('fonts/Lato-Bold.ttf') format('truetype'),
+    url('fonts/Lato-Bold.svg#Lato-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lato';
-    src: local('Lato Light'), local('Lato Light'),
-        url('fonts/Lato-Light.woff') format('woff'),
-        url('fonts/Lato-Light.ttf') format('truetype'),
-        url('fonts/Lato-Light.svg#Lato-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'Lato';
+  src: local('Lato Light'), local('Lato Light'),
+    url('fonts/Lato-Light.woff') format('woff'),
+    url('fonts/Lato-Light.ttf') format('truetype'),
+    url('fonts/Lato-Light.svg#Lato-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lato';
-    src: local('Lato Regular'), local('Lato Black'),
-        url('fonts/Lato-Regular.woff') format('woff'),
-        url('fonts/Lato-Regular.ttf') format('truetype'),
-        url('fonts/Lato-Regular.svg#Lato-Regular') format('svg');
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'Lato';
+  src: local('Lato Regular'), local('Lato Black'),
+    url('fonts/Lato-Regular.woff') format('woff'),
+    url('fonts/Lato-Regular.ttf') format('truetype'),
+    url('fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SourceSansPro';
-    src: local('SourceSansPro Regular'), local('Lato Light'),
-        url('fonts/SourceSansPro-Regular.woff') format('woff'),
-        url('fonts/SourceSansPro-Regular.ttf') format('truetype'),
-        url('fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'SourceSansPro';
+  src: local('SourceSansPro Regular'), local('Lato Light'),
+    url('fonts/SourceSansPro-Regular.woff') format('woff'),
+    url('fonts/SourceSansPro-Regular.ttf') format('truetype'),
+    url('fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SourceSansPro';
-    src: local('SourceSansPro Light'), local('Lato Light'),
-        url('fonts/SourceSansPro-Light.woff') format('woff'),
-        url('fonts/SourceSansPro-Light.ttf') format('truetype'),
-        url('fonts/SourceSansPro-Light.svg#SourceSansPro-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'SourceSansPro';
+  src: local('SourceSansPro Light'), local('Lato Light'),
+    url('fonts/SourceSansPro-Light.woff') format('woff'),
+    url('fonts/SourceSansPro-Light.ttf') format('truetype'),
+    url('fonts/SourceSansPro-Light.svg#SourceSansPro-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
 }
 
 html {
-    height: 100%;
-    font-family: 'Lato', Arial, sans-serif;
-    font-size: 12px;
-    font-weight: 900;
-    color: $main-text;
-    background: $main-white;
+  height: 100%;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  color: $main-text;
+  background: $main-white;
 }
 
 body {
-    margin: 0;
-    height: 100%;
+  margin: 0;
+  height: 100%;
 }
 
 .main {
-    max-width: 49.5rem;
-    min-width: 41rem;
-    margin: 0 auto;
+  max-width: 49.5rem;
+  min-width: 41rem;
+  margin: 0 auto;
 
-    &__standart-buttons {
-        margin: 5.92rem auto 0;
+  &__standart-buttons {
+    margin: 5.92rem 4.75rem 0;
+
+    @media(max-width: 581px) {
+      margin: 5.92rem 0.75rem 0;
     }
+  }
 
-    &__arrow-buttons {
-        margin: 3.83rem auto 0;
+  &__arrow-buttons {
+    margin: 3.83rem auto 0;
+  }
+
+  &__charts {
+    margin: 2.83rem auto 0;
+  }
+
+  &__sliders {
+    margin-top: 1.67rem;
+  }
+
+  &__stages-bar {
+    margin-top: 4rem;
+  }
+
+  &__form-elements {
+    margin-top: 3.58rem;
+  }
+
+  &__news-and-events {
+    margin-top: 6.83rem;
+  }
+
+  &__location {
+    margin-top: 3.08rem;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.16rem;
+    
+    @media(max-width: 581px) {
+      justify-content: center;
     }
+  }
 
-    &__charts {
-        margin: 2.83rem auto 0;
-    }
-
-    &__sliders {
-        margin-top: 1.67rem;
-    }
-
-    &__stages-bar {
-        margin-top: 1.5rem;
-    }
-
-    &__form-elements {
-        margin-top: 3.58rem;
-    }
-
-    &__news-and-events {
-        margin-top: 6.83rem;
-      }
-
-    &__location {
-        margin-top: 3.08rem;
-    }
-
-    &__wrap {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 3.16rem;
-    }
-
-    &__videos {
-        margin-top: 3.33rem;
-    }
+  &__videos {
+    margin-top: 3.33rem;
+  }
 }

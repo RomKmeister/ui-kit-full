@@ -1,11 +1,17 @@
-.news-and-events__wrap {
-  margin-top: 1.952rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+.news-and-events {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 
-  @media(max-width: 592px) {
-    justify-content: center;
-}
+    @media(max-width: 592px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__news-item,
+  &__event-item {
+    margin-top: 1.952rem;
+  }
 }

@@ -2,16 +2,16 @@
 
     'use strict';
   
-    var $ripple = $('.button__ripple-js');
+    const $ripple = $('.js-button__ripple');
   
     $ripple.on('click.ui.ripple', function(e) {
   
-      var $this = $(this);
-      var $offset = $this.parent().offset();
-      var $circle = $this.find('.button__ripple-circle');
+      const $this = $(this);
+      const $offset = $this.parent().offset();
+      const $circle = $this.find('.button__ripple_circle');
   
-      var x = e.pageX - $offset.left;
-      var y = e.pageY - $offset.top;
+      const x = e.pageX - $offset.left;
+      const y = e.pageY - $offset.top;
   
       $circle.css({
         top: y + 'px',

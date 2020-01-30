@@ -138,7 +138,7 @@
     overflow: hidden;
     background: transparent;
 
-    &-circle {
+    &_circle {
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       position: absolute;
@@ -151,7 +151,7 @@
       background: rgba(255, 255, 255, 0.25);
     }
 
-    &_active &-circle {
+    &_active &_circle {
       -webkit-animation: a-ripple .4s ease-in;
       animation: a-ripple .4s ease-in;
     }

@@ -1,7 +1,9 @@
 include ../toggle/toggle
 include ../slider-with-scale/slider-with-scale
+include ../drop-down/drop-down
 include ../standart-button/standart-button
 include ../event/event
+include ../arrow-button/arrow-button
 
 doctype html
 html(lang="ru")
@@ -24,6 +26,8 @@ html(lang="ru")
 						.filter__slider
 							p Оценка
 							+slider-with-scale({value: "5", min: "1", max: "5", stepsNumber: "6"})
+						.filter__drop-down
+							+drop-down({ theme: "custom", placeholder: "Choose An Option", options: ["This is option 1", "This is option 2", "This is option 3", "This is option 4"] })
 				main.content__right-column
 					section
 						.top-bar
@@ -41,7 +45,7 @@ html(lang="ru")
 								})
 							.events-block__item
 								+event({
-									color: "green",
+									color: "gray",
 									day: "24",
 									month: "Aug",
 									title: "This is the title",
@@ -84,13 +88,7 @@ html(lang="ru")
 									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 									imgPath: "../event/event-image.jpg"
 								})
-							.events-block__item
-								+event({
-									color: "gray",
-									day: "24",
-									month: "Aug",
-									title: "This is the title",
-									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-									imgPath: "../event/event-image.jpg"
-								})
+								.paginator
+									+arrow-button({ direction: "left", color: "white", isDisabled: false })
+									+arrow-button({ direction: "right", color: "white", isDisabled: false })
 			include footer/footer

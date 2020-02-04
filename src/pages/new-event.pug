@@ -1,7 +1,7 @@
-include ../stages/stages
-include ../form/form
-include ../calendar/calendar
+include ../video/video
+include ../pie-chart/pie-chart
 include ../map/map
+include ../standart-button/standart-button
 
 doctype html
 html(lang="ru")
@@ -11,18 +11,26 @@ html(lang="ru")
 		title I'm a title
 	body
 		include header/header
-		.new-event
-			main
-				section
-				h1.new-event__title Новое мероприятие
-					+stages({steps: "2", activeStep: "1"})
-					h2.new-event__second-title Место
+		main.new-event
+			section
+			.new-event__left-column
+				img(src="img/romeo.jpg")
+				.videos__wrap
+						+video({src: "https://www.youtube.com/embed/swcG66soqps"})
+			.new-event__right-column
+				h1.new-event__title Ромео и Джульетта
+				p.description Если задуматься, в&nbsp;знаменитой истории Ромео и&nbsp;Джульетты нет ничего слащавого. Ничего от&nbsp;конфетно-открыточных историй на&nbsp;День Святого Валентина. Страстное влечение, краткий период тайного счастья&nbsp;&mdash; и&nbsp;неотвратимый смертельный финал. Герои пытаются бороться с&nbsp;роком&nbsp;&mdash; но&nbsp;каждый шаг лишь приближает развязку: законы трагедии неумолимы. Этой любви не&nbsp;суждена долгая жизнь.
+				.new-event__charts
+					.new-event__chart
+						+pie-chart({value: "70"})
+						p Оценка критиков
+					.new-event__chart
+						+pie-chart({value: "90"})
+						p Оценка зрителей
+				h2.new-event__second-title Место
 					+map()
-					h2.new-event__second-title Описание и время
-					.new-event__new-date-wrap
-						+calendar()
-						.new-event__form-wrap
-							+form()
+				.new-event__button
+					+std-button({color: "green", size: "wide", type: "button", title: "Билеты"})
 					
 		include footer/footer
 		script(src="https://api-maps.yandex.ru/2.1/?apikey=4ddfe254-a524-4b68-a64b-af1b457f35c6&lang=en_US")

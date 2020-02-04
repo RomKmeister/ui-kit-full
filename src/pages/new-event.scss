@@ -2,22 +2,37 @@
     display: flex;
     padding: 1% 5%;
 
+    &__left-column {
+        margin: 1rem;
+    }
+
+    &__right-column {
+        margin: 1rem;
+    }
+
     &__title {
         margin: 0;
         font-size: 32px;
     }
 
     &__second-title {
-        margin-top: 5%;
+        margin: 5% 0 1%;
         font-size: 24px;
     }
 
-    &__new-date-wrap {
+    &__charts {
         display: flex;
+        justify-content: center;
     }
 
-    &__form-wrap {
-        margin-left: 5%;
-        width: 50%;
+    &__chart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    &__button {
+     margin: 1rem 0;
     }
 }

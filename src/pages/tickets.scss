@@ -1,0 +1,8 @@
+.tickets {
+  display: flex;
+  justify-content: center;
+  
+  &__wrap {
+    width: 38rem;  
+  }
+}

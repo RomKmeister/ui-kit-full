@@ -56,6 +56,10 @@ module.exports = {
       filename: 'add-friends.html',
       template: 'src/pages/add-friends.pug',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'seat.html',
+      template: 'src/pages/seat.pug',
+    }),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',

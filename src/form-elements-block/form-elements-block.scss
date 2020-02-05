@@ -10,13 +10,22 @@
     }
 
     &_margin-for-second-row {
-      margin-top: 4.75rem;
+      margin-top: 4.9rem;
+    }
+  }
+  
+  &__left-column {
+    width: 48.5%;
+
+    @media(max-width: 640px) {
+      width: 90%;
+      margin: 0 auto;
     }
   }
 
-  &__left-column,
   &__right-column {
     width: 50%;
+    margin-left: 1%;
 
     @media(max-width: 640px) {
       width: 90%;
@@ -28,12 +37,8 @@
     margin-top: 1.17rem;
   }
 
-  &_width-for-form-block {
-    width: 49%;
-  }
-
   &__toggles {
-    margin-left: 1.42rem;
+    margin-left: 2.42rem;
   }
 
   &__tick-boxes {

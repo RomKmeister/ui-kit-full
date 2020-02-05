@@ -26,11 +26,11 @@
 
   &__buble {
     position: absolute;
-    width: 1.83rem;
+    width: 1.5rem;
     bottom: 2.25rem;
     left: -50%;
     background: $main-orange;
-    padding: 0.42rem 0.67rem;
+    padding: 0.4rem 0.67rem;
     font-family: 'Lato', Arial, sans-serif;
     font-weight: 900;
     font-size: 1.08rem;
@@ -45,7 +45,7 @@
     position: absolute;
     left: 1.25rem;
     bottom: -0.25rem;
-    border: 4px solid $main-orange;
+    border: 0.33rem solid $main-orange;
     transform: rotate(45deg);
   }
 }

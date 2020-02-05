@@ -3,11 +3,12 @@
 .ui-selectmenu-button_custom {
   padding: 0;
   font-family: "SourceSansPro", Arial, sans-serif;
-  font-size: 1.16rem;
+  font-size: 1.17rem;
   font-weight: 400;
   background: $main-gray;
   color: $main-gray-text;
   border: none;
+  border-radius: 0.25rem;
   
   &:hover {
     background: $main-green;
@@ -45,7 +46,7 @@
   }
 
   & .ui-selectmenu-text {
-    padding: 0.5rem 1.1rem 0.6rem;
+    padding: 0.4rem 1.1rem 0.6rem;
   }
 }
 
@@ -57,7 +58,7 @@
     font-size: 1.16rem;
     font-weight: 400;
     background-color: $main-green;
-    border: 1px solid $main-green;
+    border: 0.08rem solid $main-green;
     color: $main-white;
 
     & .ui-menu-item-wrapper {

@@ -97,7 +97,7 @@
   }
 
   .ui-datepicker th {
-    padding: 1.2em 0.3em 0.8em;;
+    padding: 1.1rem 0.89rem 0.8rem;
   }
 
   .ui-datepicker td {
@@ -123,9 +123,14 @@
     color: $main-white;
   }
 
-  .ui-state-highlight, .ui-widget-content .ui-state-highlight{
+  .ui-state-active, .ui-widget-content .ui-state-active {
     background: $main-orange;
     color: $main-white;
+  }
+
+  .ui-state-highlight, .ui-widget-content .ui-state-highlight{
+    background: $gray-light-background;
+    color: $gray-calendar;
   }
 
   .ui-widget-content .ui-state-disabled {

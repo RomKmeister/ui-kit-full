@@ -1,0 +1,40 @@
+include ../header/header
+include ../../video/video
+include ../../pie-chart/pie-chart
+include ../../map/map
+include ../../standart-button/standart-button
+include ../../user-profile/user-profile
+include ../footer/footer
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title I'm a title
+	body
+		+header()
+		main.event-item
+			section.event-item__left-column
+				img.event-item__poster(src="../img/romeo.jpg")
+				.event-item__video
+					+video({src: "https://www.youtube.com/embed/swcG66soqps"})
+			section.event-item__right-column
+				h1.event-item__title Ромео и Джульетта
+				p.event-item__description Если задуматься, в знаменитой истории Ромео и Джульетты нет ничего слащавого. Ничего от конфетно-открыточных историй на День Святого Валентина. Страстное влечение, краткий период тайного счастья &mdash; и неотвратимый смертельный финал. Герои пытаются бороться с роком &mdash; но каждый шаг лишь приближает развязку: законы трагедии неумолимы. Этой любви не суждена долгая жизнь.
+				.event-item__actors
+					.event-item__actor
+						+user-profile({ imagePath: "../img/romeo-actor.jpg", imageAlt: "", name: "Андрей Симонькин", job: "Ромео", theme: "hovered" })
+					.event-item__actor
+						+user-profile({ imagePath: "../img/juliet.jpg", imageAlt: "", name: "Евгения Родина", job: "Джульетта", theme: "hovered" })
+					.event-item__show-all
+						+std-button({ color: "green", size: "wide", type: "button", title: "Все актеры" })
+				.event-item__charts
+					.event-item__chart
+						+pie-chart({ value: "70" })
+						p Оценка критиков
+					.event-item__chart
+						+pie-chart({ value: "90" })
+						p Оценка зрителей
+				.event-item__button
+					+std-button({color: "green", size: "wide", type: "button", title: "Купить билет"})
+		+footer()

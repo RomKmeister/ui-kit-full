@@ -1,0 +1,15 @@
+.customer-info {
+  display: flex;
+  justify-content: center;
+  
+  &__wrap {
+    display: flex;
+		flex-direction: column;
+		width: 38rem;
+		margin-top: 4rem;
+  }
+
+  &__tickets {
+    margin: 0 0 3rem;
+  }
+}

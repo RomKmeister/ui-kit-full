@@ -1,0 +1,24 @@
+.choosing-seat {
+  display: flex;
+  justify-content: center;
+  
+  &__wrap {
+		display: flex;
+		flex-direction: column;
+		width: 38rem;
+		margin-top: 4rem;
+  }
+
+  &__seat {
+    margin-top: 2rem;
+  }
+  
+  &__add-seat {
+    margin-top: 1rem;
+  }
+    
+  &__next-step {
+    margin-top: 6rem;
+    margin-left: auto;
+  }
+}

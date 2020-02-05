@@ -1,0 +1,112 @@
+.main-page {
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  &__content {
+    display: flex;
+    padding: 1% 5%;
+    flex: 1 0 auto;
+    
+    @media(max-width: 690px) {
+      flex-direction: column;
+    }
+  }
+
+  &__left-column {
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: 5% 3% 0 0;
+    
+    @media(max-width: 690px) {
+      order: 1;
+    }
+  }
+
+  &__right-column {
+    margin: 5% 3%;
+		
+		@media(max-width: 690px) {
+      display: block;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 2.67rem;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 2rem;
+		
+		@media(max-width: 690px) {
+      width: 24rem;
+    }
+  }
+
+  &__toggle {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem 0;
+  }
+
+  &__lable {
+    margin: 0.42rem 0.83rem;
+  }
+
+  &__drop-down,
+  &__choose-date {
+    margin-top: 2rem
+  }
+
+
+  &__events {
+    display: flex;
+    flex-direction: column;
+  
+    @media(max-width: 690px) {
+      align-items: center;
+    }
+  }
+
+  &__top-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    &__button {
+      margin-left: 2rem;
+    }
+  }
+
+  &__events-block {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+    @media(max-width: 690px) {
+      width: 24rem;
+    }
+  }
+
+  &__event-item {
+    margin: 1.67rem 1.67rem 0 0;
+    
+    @media(max-width: 690px) {
+      margin-right: 0;
+    }
+  }
+
+  &__paginator {
+    display: flex;
+    justify-content: space-between;
+    width: 9rem;
+    margin-top: 2rem;
+  }
+}

@@ -46,19 +46,19 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'main-page.html',
-      template: 'src/pages/main.pug',
+      template: 'src/pages/main-page/main-page.pug',
     }),
     new HtmlWebpackPlugin({
-      filename: 'new-event.html',
-      template: 'src/pages/new-event.pug',
+      filename: 'event-item.html',
+      template: 'src/pages/event-item/event-item.pug',
     }),
     new HtmlWebpackPlugin({
-      filename: 'add-friends.html',
-      template: 'src/pages/add-friends.pug',
+      filename: 'choosing-seat.html',
+      template: 'src/pages/choosing-seat/choosing-seat.pug',
     }),
     new HtmlWebpackPlugin({
-      filename: 'seat.html',
-      template: 'src/pages/seat.pug',
+      filename: 'customer-info.html',
+      template: 'src/pages/customer-info/customer-info.pug',
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',

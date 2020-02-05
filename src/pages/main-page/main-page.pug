@@ -1,102 +1,104 @@
-include ../toggle/toggle
-include ../slider-with-scale/slider-with-scale
-include ../drop-down/drop-down
-include ../standart-button/standart-button
-include ../event/event
-include ../arrow-button/arrow-button
-include ../calendar/calendar
+include ../header/header
+include ../../toggle/toggle
+include ../../slider-with-scale/slider-with-scale
+include ../../drop-down/drop-down
+include ../../standart-button/standart-button
+include ../../event/event
+include ../../arrow-button/arrow-button
+include ../../calendar/calendar
+include ../footer/footer
 
 doctype html
 html(lang="ru")
 	head
 		meta(charset="utf-8")
 		title I'm a title
-	body
-		.wrapper
-			include header/header
-			.content
-				aside.content__left-column
-					.filter
-						h2.filter__title Фильтры
-						.filter__choose-date
+	body.main-page
+		.main-page__header
+			+header()
+			.main-page__content
+				aside.main-page__left-column
+					.main-page__filter
+						h2.main-page__title Фильтры
+						.main-page__choose-date
 							+calendar()
-						.filter__drop-down
+						.main-page__drop-down
 							+drop-down({ theme: "custom", placeholder: "Тема", options: ["Концерты", "Театры", "Кино"] })
-						.filter__toggle
+						.main-page__toggle
 							+toggle() 
 							p.filter__lable Премьеры
-						.filter__toggle
+						.main-page__toggle
 							+toggle("checked")
-							p.filter__lable Все
-				main.content__right-column
-					section.events
-						.top-bar
-							h1.content__title Мероприятия
-						.events-block__wrap
-							.events-block__item
+							p.main-page__lable Все
+				main.main-page__right-column
+					section.main-page__events
+						.main-page__top-bar
+							h1.main-page__title Мероприятия
+						.main-page__events-block
+							.main-page__event-item
 								+event({
 									color: "green",
 									day: "4",
 									month: "Фев",
 									title: "Ромео и Джульетта",
 									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-									imgPath: "img/romeo.jpg"
+									imgPath: "../img/romeo.jpg"
 								})
-							.events-block__item
+							.main-page__event-item
 								+event({
 									color: "green",
 									day: "7",
 									month: "Фев",
 									title: "Золотой теленок",
 									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-									imgPath: "img/telenok.jpg"
+									imgPath: "../img/telenok.jpg"
 								})
-							.events-block__item
+							.main-page__event-item
 								+event({
 									color: "orange",
 									day: "8",
 									month: "Фев",
 									title: "Art Jazz",
 									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-									imgPath: "img/jazz.jpg"
+									imgPath: "../img/jazz.jpg"
 								})
-							.events-block__item
+							.main-page__event-item
 								+event({
 									color: "gray",
 									day: "10",
 									month: "Фев",
 									title: "Плохие парни",
 									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-									imgPath: "img/badboys.jpg"
+									imgPath: "../img/badboys.jpg"
 								})
-							.events-block__item
+							.main-page__event-item
 								+event({
 									color: "orange",
 									day: "14",
 									month: "Фев",
 									title: "Snoop Dogg show",
 									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-									imgPath: "img/snoop.jpg"
+									imgPath: "../img/snoop.jpg"
 								})
-							.events-block__item
+							.main-page__event-item
 								+event({
 									color: "gray",
 									day: "15",
 									month: "Фев",
 									title: "1917",
 									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-									imgPath: "img/1917.jpg"
+									imgPath: "../img/1917.jpg"
 								})
-							.events-block__item
+							.main-page__event-item
 								+event({
 									color: "gray",
 									day: "16",
 									month: "Фев",
 									title: "Шахматист",
 									text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-									imgPath: "img/shachmatist.jpg"
+									imgPath: "../img/shachmatist.jpg"
 								})
-						.paginator
+						.main-page__paginator
 							+arrow-button({ direction: "left", color: "white", isDisabled: true })
 							+arrow-button({ direction: "right", color: "white", isDisabled: false })
-			include footer/footer
+			+footer()

@@ -1,26 +1,21 @@
-include ../header/header
-include ../../stages/stages
-include ../../drop-down/drop-down
-include ../../form/form
-include ../footer/footer
+extends ../template/template.pug
 
+block include
+	include ../../stages/stages
+	include ../../form/form
 
-doctype html
-html(lang="ru")
-	head
-		meta(charset="utf-8")
-		title I'm a title
-	body
-		+header()
-		main.customer-info
-			section.customer-info__wrap
-				+stages({ steps: "2", activeStep: "2" })
-				h1.customer-info__title Подтверждение заказа
-				.customer-info__tickets
-					p.customer-info__date 3 февраля 2020 года
-					p.customer-info__event Ромео и Джульетта
-					p.customer-info__seat 4 ряд 2 место
-					p.customer-info__price Цена 500 руб.
-				.customer-info__contacts
-					+form()
-		+footer()
+block title
+	title Подтверждение заказа
+	
+block content
+	main.customer-info
+		section.customer-info__wrap
+			+stages({ steps: "2", activeStep: "2" })
+			h1.customer-info__title Подтверждение заказа
+			.customer-info__tickets
+				p.customer-info__date 3 февраля 2020 года
+				p.customer-info__event Ромео и Джульетта
+				p.customer-info__seat 4 ряд 2 место
+				p.customer-info__price Цена 500 руб.
+			.customer-info__contacts
+				+form()

@@ -1,0 +1,18 @@
+include ../header/header
+include ../footer/footer
+block include
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="initial-scale=1.0, width=device-width")
+		meta(name="keywords" content="")
+		meta(name="description" content="")
+		block title
+			title Главная
+	body.wrapper
+		+header()
+		.wrapper__content
+			block content
+		+footer()

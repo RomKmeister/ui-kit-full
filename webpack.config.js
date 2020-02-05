@@ -43,22 +43,27 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/index.pug',
+      favicon: 'src/favicon.ico'
     }),
     new HtmlWebpackPlugin({
       filename: 'main-page.html',
       template: 'src/pages/main-page/main-page.pug',
+      favicon: 'src/favicon.ico'
     }),
     new HtmlWebpackPlugin({
       filename: 'event-item.html',
       template: 'src/pages/event-item/event-item.pug',
+      favicon: 'src/favicon.ico'
     }),
     new HtmlWebpackPlugin({
       filename: 'choosing-seat.html',
       template: 'src/pages/choosing-seat/choosing-seat.pug',
+      favicon: 'src/favicon.ico'
     }),
     new HtmlWebpackPlugin({
       filename: 'customer-info.html',
       template: 'src/pages/customer-info/customer-info.pug',
+      favicon: 'src/favicon.ico'
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',

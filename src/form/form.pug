@@ -4,7 +4,7 @@ mixin form()
 	form.form(name="form", action="")
 		input.form__input-text(type="text", name="name", placeholder="Your Name")
 		.form__result.form__result_with_error error
-		input.form__input-text(type="text", name="email", placeholder="Your Email")
+		input.form__input-text(type="email", name="email", placeholder="Your Email")
 		.form__result.form__result_with_success thanks!
 		textarea.form__textarea(name="message", placeholder="Your Message")
 		.form__button-wrap

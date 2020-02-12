@@ -1,4 +1,4 @@
-# resume
+# ui-kit
 <a href="https://romkmeister.github.io/ui-kit-full/dist/index.html">Компоненты ui-kit</a><br>
 <a href="https://romkmeister.github.io/ui-kit-full/dist/main-page.html">Страницы</a>
 <h2>Клонирование репозитория</h2>

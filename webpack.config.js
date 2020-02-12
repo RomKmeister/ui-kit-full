@@ -33,6 +33,22 @@ module.exports = {
         test: /\.(png|svg|jpe?g|gif)$/,
         exclude: /fonts/,
         use: ['file-loader?name=images/[name].[ext]']
+      },
+      {
+        loader: 'image-webpack-loader',
+        options: {
+          mozjpeg: {
+            progressive: true,
+            quality: 70
+          },
+          optipng: {
+            enabled: false,
+          },
+          pngquant: {
+            quality: [0.65, 0.90],
+            speed: 4
+          }
+        }
       }
     ]
   },

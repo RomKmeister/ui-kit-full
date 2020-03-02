@@ -1,0 +1,40 @@
+@import '../../colors.scss';
+
+.slider-with-scale {
+  height: 0.42rem;
+  background: $main-gray;
+
+  &.ui-widget.ui-widget-content {
+    border: 0
+  }
+
+  & &__handle {
+    position: relative;
+    top: -0.67rem;
+    width: 1.63rem;
+    height: 1.63rem;
+    padding: 0;
+    line-height: 1.6;
+    border-radius: 50%;
+    border: none;
+    
+    &_green,
+    &_green:active {
+      background: $main-green;
+    }
+  }
+
+  & &__range_green {
+    background: $main-green;
+  }
+
+  &__scale {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 0.92rem;
+    line-height: 1;
+    color: $main-gray;
+  }
+}

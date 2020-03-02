@@ -1,0 +1,18 @@
+include ../user-photo/user-photo
+include ../standart-button/standart-button
+
+mixin message(content)
+  .message
+    .message__header
+      h2.message__title= content.title
+        .message__user-profile
+          +user-photo({imagePath: "blocks/user-profile/user-1.jpg", imageAlt: ""})
+    .message__body
+      .message__icons
+        .message__bubble
+        .message__camera
+      .message__income= content.income
+      form
+        textarea.message__new= content.message
+        .message__wrap-for-button
+          +std-button({color: "fullgreen", size: "wide", type: "button", title: "Reply"})

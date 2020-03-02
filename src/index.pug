@@ -1,14 +1,4 @@
-include standart-buttons-block/standart-buttons-block
-include arrow-buttons-block/arrow-buttons-block
-include charts-block/charts-block
-include sliders-block/sliders-block
-include stages-block/stages-block
-include form-elements-block/form-elements-block
-include news-and-events-block/news-and-events-block
-include location-block/location-block
-include calendar-block/calendar-block
-include messaging-block/messaging-block
-include videos-block/videos-block
+include blocks/main/main
 
 doctype html
 html(lang="ru")
@@ -28,26 +18,6 @@ html(lang="ru")
     link(rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#ff0000")
     link(rel="shortcut icon" href="favicon/favicon.ico")
   body
-    article.main
-      .main__standart-buttons
-        +standart-buttons-block()
-      .main__arrow-buttons
-        +arrow-buttons-block()
-      .main__charts
-        +charts-block()
-      .main__sliders
-        +sliders-block()
-      .main__stages-bar
-        +stages-block()
-      .main__form-elements
-        +form-elements-block()
-      .main__news-and-events
-        +news-and-events-block()
-      .main__location
-        +location-block()
-      .main__wrap
-        +datepicker-block()
-        +messaging-block()
-      .main__videos
-        +videos-block()
-      script(src="https://api-maps.yandex.ru/2.1/?apikey=4ddfe254-a524-4b68-a64b-af1b457f35c6&lang=en_US")
+    +main()
+    script(src="https://api-maps.yandex.ru/2.1/?apikey=4ddfe254-a524-4b68-a64b-af1b457f35c6&lang=en_US")
+

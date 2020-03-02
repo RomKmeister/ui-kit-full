@@ -1,0 +1,52 @@
+@import '../../colors.scss';
+
+.progressbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    &:before {
+      content: '';
+      flex-grow: 1;
+      flex-shrink: 0;
+      width: 4.17rem;
+      height: 0.42rem;
+      background: $main-gray;
+    }
+
+    &:first-child{
+      flex-grow: 0;
+    }
+
+    &:first-child:before{
+      content: none;
+    }
+
+    &_active::before{
+      background: $main-orange;
+    }
+
+    &_active .progressbar__step {
+      background: $main-orange;
+      color: $main-white;
+    }
+  }
+
+  &__step {
+    width: 2.33rem;
+    height: 2.33rem;
+    border-radius: 50%;
+    line-height: 1.9;
+    background: $main-gray;
+    font-size: 1.167rem;
+    color: $main-gray-text;
+    text-align: center;
+    font-weight: bold;
+  }
+}

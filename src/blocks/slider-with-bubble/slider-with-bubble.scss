@@ -1,0 +1,51 @@
+@import '../../colors.scss';
+
+.slider-with-bubble {
+  height: 0.42rem;
+  background: $main-gray;
+
+  &.ui-widget.ui-widget-content {
+    border: none;
+  }
+
+  & &__handle {
+    position: relative;
+    top: -0.58rem;
+    width: 1.63rem;
+    height: 1.63rem;
+    padding: 0;
+    line-height: 1.6;
+    border-radius: 50%;
+    border: none;
+
+    &_orange,
+    &_orange:active {
+      background: $main-orange;
+    }
+  }
+
+  &__buble {
+    position: absolute;
+    width: 1.5rem;
+    bottom: 2.25rem;
+    left: -50%;
+    background: $main-orange;
+    padding: 0.4rem 0.67rem;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 1.08rem;
+    line-height: 1.2;
+    color: $main-white;
+    border-radius: 0.33rem;
+    text-align: center;
+  }
+
+  &__buble::after {
+    content: '';
+    position: absolute;
+    left: 1.25rem;
+    bottom: -0.25rem;
+    border: 0.33rem solid $main-orange;
+    transform: rotate(45deg);
+  }
+}

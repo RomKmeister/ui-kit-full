@@ -1,0 +1,80 @@
+@import '../../colors.scss';
+
+.arrow-button {
+  position: relative;
+  width: 4.17rem;
+  height: 4.17rem;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 1rem;
+    height: 1rem;
+  }
+  &_direction {
+    &_left::after {
+      transform: rotate(-135deg) translate(-0.66rem, 0.58rem)
+    }
+
+    &_right::after {
+      transform: rotate(45deg) translate(0.47rem, -0.33rem)
+    }
+  }
+
+  &_color {
+    &_white {
+      background: $main-white;
+      border: 0.25rem solid $main-green;
+
+      &::after {
+        border-top: 0.25rem solid $main-green;
+        border-right: 0.25rem solid $main-green;
+      }
+
+      &:hover,
+      &:focus {
+        outline: 0;
+        background: $main-green;
+
+        &::after {
+        border-top: 0.25rem solid $main-white;
+        border-right: 0.25rem solid $main-white;
+        }
+      }
+    }
+
+    &_green {
+      background: $main-green;
+      border: 0.25rem solid $main-green;
+      
+      &::after {
+        border-top: 0.25rem solid $main-white;
+        border-right: 0.25rem solid $main-white;
+      }
+
+      &:hover,
+      &:focus {
+        outline: 0;
+        background: $main-white;
+
+        &::after {
+        border-top: 0.25rem solid $main-green;
+        border-right: 0.25rem solid $main-green;
+        }
+      }
+    }
+  }
+
+    &:disabled {
+      background: $main-gray;
+      border: 0.25rem solid $main-gray;
+      cursor: default;
+
+      &::after {
+        border-top: 0.25rem solid $main-white;
+        border-right: 0.25rem solid $main-white;
+      }
+    }
+}

@@ -1,0 +1,21 @@
+@import '../../colors.scss';
+
+.tick-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.92rem;
+  width: 1.92rem;
+  border-radius: 50%;
+  text-align: center;
+
+  &_enabled {
+    background: $main-green;
+    color: $main-white;
+  }
+
+  &_disabled {
+    background: $main-gray;
+    color: $gray-light;
+  }
+}

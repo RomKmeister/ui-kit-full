@@ -1,18 +1,18 @@
 .event-item {
   display: flex;
-	padding: 1% 5%;
-	
-	@media(max-width: 1160px) {
-		flex-direction: column;
-	}
+  padding: 1% 5%;
+  
+  @media(max-width: 1160px) {
+    flex-direction: column;
+  }
 
   &__left-column {
     width: 70%;
-		margin: 1rem;
-		
-		@media(max-width: 1160px) {
-			width: auto;
-		}
+    margin: 1rem;
+    
+    @media(max-width: 1160px) {
+      width: auto;
+    }
   }
 
   &__poster {
@@ -21,11 +21,11 @@
 
   &__right-column {
     width: 30%;
-		margin: 1rem;
-		
-		@media(max-width: 1160px) {
-			width: auto;
-		}
+    margin: 1rem;
+    
+    @media(max-width: 1160px) {
+      width: auto;
+    }
   }
 
   &__title {
@@ -37,17 +37,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-		margin: 1rem;
-		
-		@media(max-width: 1160px) {
-			flex-direction: row;
-			justify-content: space-between;
-		}
+    margin: 1rem;
+    
+    @media(max-width: 1160px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
-		@media(max-width: 850px) {
-			flex-direction: column;
-			justify-content: flex-start;
-		}
+    @media(max-width: 850px) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
   }
 
   &__actor {

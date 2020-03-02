@@ -1,9 +1,9 @@
 include ../user-profile/user-profile
 
 mixin user-profile-block()
-	section.user-profiles
-		h1.title User profile
-		.user-profiles__item.user-profiles__item_with-margin
-			+user-profile({ imagePath: "user-profile/user.jpg", imageAlt: "", name: "John Smith", job: "Ux designer", theme: "hovered" })
-		.user-profiles__item
-			+user-profile({ imagePath: "user-profile/user-1.jpg", imageAlt: "", name: "Sarah Brown", job: "Developer", theme: "" })
+  section.user-profiles
+    h1.title User profile
+    .user-profiles__item.user-profiles__item_with-margin
+      +user-profile({ imagePath: "user-profile/user.jpg", imageAlt: "", name: "John Smith", job: "Ux designer", theme: "hovered" })
+    .user-profiles__item
+      +user-profile({ imagePath: "user-profile/user-1.jpg", imageAlt: "", name: "Sarah Brown", job: "Developer", theme: "" })

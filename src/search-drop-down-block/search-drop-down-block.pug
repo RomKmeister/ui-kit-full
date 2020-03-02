@@ -2,11 +2,11 @@ include ../search/search
 include ../drop-down/drop-down
 
 mixin search-block()
-	section.search-drop-down
-		h1.title Search / Drop down
-		.search__wrap.search__wrap_margin-for-first-item
-			+search({ action: "", searchValue:"", placeholder:"Search", emptyResult: false })
-		.search__wrap
-			+search({ action: "", searchValue:"I’ve not found what I’m looking for...", placeholder:"", emptyResult: true })
-		.drop-down__wrap
-			+drop-down({ theme: "custom", placeholder: "Choose An Option", options: ["This is option 1", "This is option 2", "This is option 3", "This is option 4"] })
+  section.search-drop-down
+    h1.title Search / Drop down
+    .search__wrap.search__wrap_margin-for-first-item
+      +search({ action: "", searchValue:"", placeholder:"Search", emptyResult: false })
+    .search__wrap
+      +search({ action: "", searchValue:"I’ve not found what I’m looking for...", placeholder:"", emptyResult: true })
+    .drop-down__wrap
+      +drop-down({ theme: "custom", placeholder: "Choose An Option", options: ["This is option 1", "This is option 2", "This is option 3", "This is option 4"] })

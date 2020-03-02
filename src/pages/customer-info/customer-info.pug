@@ -1,21 +1,21 @@
 extends ../template/template.pug
 
 block include
-	include ../../stages/stages
-	include ../../form/form
+  include ../../stages/stages
+  include ../../form/form
 
 block title
-	title Подтверждение заказа
-	
+  title Подтверждение заказа
+  
 block content
-	main.customer-info
-		section.customer-info__wrap
-			+stages({ steps: "2", activeStep: "2" })
-			h1.customer-info__title Подтверждение заказа
-			.customer-info__tickets
-				p.customer-info__date 3 февраля 2020 года
-				p.customer-info__event Ромео и Джульетта
-				p.customer-info__seat 4 ряд 2 место
-				p.customer-info__price Цена 500 руб.
-			.customer-info__contacts
-				+form()
+  main.customer-info
+    section.customer-info__wrap
+      +stages({ steps: "2", activeStep: "2" })
+      h1.customer-info__title Подтверждение заказа
+      .customer-info__tickets
+        p.customer-info__date 3 февраля 2020 года
+        p.customer-info__event Ромео и Джульетта
+        p.customer-info__seat 4 ряд 2 место
+        p.customer-info__price Цена 500 руб.
+      .customer-info__contacts
+        +form()

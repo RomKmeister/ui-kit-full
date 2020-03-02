@@ -1,98 +1,98 @@
 extends ../template/template.pug
 
 block include
-	include ../../calendar/calendar
-	include ../../drop-down/drop-down
-	include ../../toggle/toggle
-	include ../../event/event
-	include ../../arrow-button/arrow-button
+  include ../../calendar/calendar
+  include ../../drop-down/drop-down
+  include ../../toggle/toggle
+  include ../../event/event
+  include ../../arrow-button/arrow-button
 
 block title
-	title Главная
-	
+  title Главная
+  
 block content
-	.main-page__content
-		aside.main-page__left-column
-			.main-page__filter
-				h2.main-page__title Фильтры
-				.main-page__choose-date
-					+calendar()
-				.main-page__drop-down
-					+drop-down({ theme: "custom", placeholder: "Тема", options: ["Концерты", "Театры", "Кино"] })
-				.main-page__toggle
-					+toggle() 
-					p.filter__lable Премьеры
-				.main-page__toggle
-					+toggle("checked")
-					p.main-page__lable Все
-		main.main-page__right-column
-			section.main-page__events
-				.main-page__top-bar
-					h1.main-page__title Мероприятия
-				.main-page__events-block
-					.main-page__event-item
-						+event({
-							color: "green",
-							day: "4",
-							month: "Фев",
-							title: "Ромео и Джульетта",
-							text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-							imgPath: "../img/romeo.jpg"
-						})
-					.main-page__event-item
-						+event({
-							color: "green",
-							day: "7",
-							month: "Фев",
-							title: "Золотой теленок",
-							text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-							imgPath: "../img/telenok.jpg"
-						})
-					.main-page__event-item
-						+event({
-							color: "orange",
-							day: "8",
-							month: "Фев",
-							title: "Art Jazz",
-							text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-							imgPath: "../img/jazz.jpg"
-						})
-					.main-page__event-item
-						+event({
-							color: "gray",
-							day: "10",
-							month: "Фев",
-							title: "Плохие парни",
-							text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-							imgPath: "../img/badboys.jpg"
-						})
-					.main-page__event-item
-						+event({
-							color: "orange",
-							day: "14",
-							month: "Фев",
-							title: "Snoop Dogg show",
-							text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-							imgPath: "../img/snoop.jpg"
-						})
-					.main-page__event-item
-						+event({
-							color: "gray",
-							day: "15",
-							month: "Фев",
-							title: "1917",
-							text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-							imgPath: "../img/1917.jpg"
-						})
-					.main-page__event-item
-						+event({
-							color: "gray",
-							day: "16",
-							month: "Фев",
-							title: "Шахматист",
-							text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-							imgPath: "../img/shachmatist.jpg"
-						})
-				.main-page__paginator
-					+arrow-button({ direction: "left", color: "white", isDisabled: true })
-					+arrow-button({ direction: "right", color: "white", isDisabled: false })
+  .main-page__content
+    aside.main-page__left-column
+      .main-page__filter
+        h2.main-page__title Фильтры
+        .main-page__choose-date
+          +calendar()
+        .main-page__drop-down
+          +drop-down({ theme: "custom", placeholder: "Тема", options: ["Концерты", "Театры", "Кино"] })
+        .main-page__toggle
+          +toggle() 
+          p.filter__lable Премьеры
+        .main-page__toggle
+          +toggle("checked")
+          p.main-page__lable Все
+    main.main-page__right-column
+      section.main-page__events
+        .main-page__top-bar
+          h1.main-page__title Мероприятия
+        .main-page__events-block
+          .main-page__event-item
+            +event({
+              color: "green",
+              day: "4",
+              month: "Фев",
+              title: "Ромео и Джульетта",
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              imgPath: "../img/romeo.jpg"
+            })
+          .main-page__event-item
+            +event({
+              color: "green",
+              day: "7",
+              month: "Фев",
+              title: "Золотой теленок",
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              imgPath: "../img/telenok.jpg"
+            })
+          .main-page__event-item
+            +event({
+              color: "orange",
+              day: "8",
+              month: "Фев",
+              title: "Art Jazz",
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              imgPath: "../img/jazz.jpg"
+            })
+          .main-page__event-item
+            +event({
+              color: "gray",
+              day: "10",
+              month: "Фев",
+              title: "Плохие парни",
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              imgPath: "../img/badboys.jpg"
+            })
+          .main-page__event-item
+            +event({
+              color: "orange",
+              day: "14",
+              month: "Фев",
+              title: "Snoop Dogg show",
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              imgPath: "../img/snoop.jpg"
+            })
+          .main-page__event-item
+            +event({
+              color: "gray",
+              day: "15",
+              month: "Фев",
+              title: "1917",
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              imgPath: "../img/1917.jpg"
+            })
+          .main-page__event-item
+            +event({
+              color: "gray",
+              day: "16",
+              month: "Фев",
+              title: "Шахматист",
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              imgPath: "../img/shachmatist.jpg"
+            })
+        .main-page__paginator
+          +arrow-button({ direction: "left", color: "white", isDisabled: true })
+          +arrow-button({ direction: "right", color: "white", isDisabled: false })

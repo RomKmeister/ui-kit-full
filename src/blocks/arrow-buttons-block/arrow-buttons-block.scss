@@ -1,8 +1,10 @@
-.arrow-buttons__row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  width: 35.16rem;
-  margin: 2.08rem auto 0;
+.arrow-buttons-block {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 35.16rem;
+    margin: 2.08rem auto 0;
+  }
 }

@@ -1,8 +1,9 @@
+include ../title/title
 include ../standard-button/standard-button
 
 mixin standard-buttons-block()
   section.standard-buttons
-    h1.title Standart buttons
+    +title("Standart buttons")
     .standard-buttons-block__row.standard-buttons-block__row_margin_bigger
       +standard-button({ color: "green", size: "small", type: "button", title: "Button" })
       +standard-button({ color: "green", size: "big", type: "button", title: "Button" })

@@ -1,4 +1,4 @@
-include ../standart-button/standart-button
+include ../standard-button/standard-button
 
 mixin form()
   form.form(name="form", action="")
@@ -8,4 +8,4 @@ mixin form()
     .form__result.form__result_with_success thanks!
     textarea.form__textarea(name="message", placeholder="Your Message")
     .form__button-wrap
-      +std-button({ color: "fullgreen", size: "big", type: "submit", title: "Submit" })
+      +standard-button({ color: "fullgreen", size: "big", type: "submit", title: "Submit" })

@@ -3,7 +3,7 @@ extends ../template/template.pug
 block include
   include ../../blocks/stages/stages
   include ../../blocks/drop-down/drop-down
-  include ../../blocks/standart-button/standart-button
+  include ../../blocks/standard-button/standard-button
 
 block title
   title Выбор места
@@ -16,6 +16,6 @@ block content
       .choosing-seat__seat
         +drop-down({ theme: "custom", placeholder: "Ряд и место", options: ["Ряд 4, место 2", "Ряд 4, место 7", "Ряд 5, место 3", "Ряд 7, место 5", "Ряд 7, место 6" ] })
       .choosing-seat__add-seat
-        +std-button({ color: "green", size: "small", type: "button", title: "Добавить" })
+        +standard-button({ color: "green", size: "small", type: "button", title: "Добавить" })
       .choosing-seat__next-step
-        +std-button({ color: "orange", size: "big", type: "button", title: "Следующий шаг" })
+        +standard-button({ color: "orange", size: "big", type: "button", title: "Следующий шаг" })

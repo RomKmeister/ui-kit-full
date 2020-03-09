@@ -1,5 +1,5 @@
 include ../user-photo/user-photo
-include ../standart-button/standart-button
+include ../standard-button/standard-button
 
 mixin message(content)
   .message
@@ -15,4 +15,4 @@ mixin message(content)
       form
         textarea.message__new= content.message
         .message__wrap-for-button
-          +std-button({color: "fullgreen", size: "wide", type: "button", title: "Reply"})
+          +standard-button({color: "fullgreen", size: "wide", type: "button", title: "Reply"})

@@ -1,0 +1,19 @@
+mixin standard-button(options)
+  - const { color, size, type, title } = options;
+  - 
+    const colors = {
+      green: "green",
+      orange: "orange",
+      fullGreen: "full-green",
+      darkGreeen: "darkgreen",
+      };
+  - 
+    const sizes = {
+      small: "small",
+      big: "big",
+      wide: "wide",
+      };
+  - const isType = type ? type : false;
+  button(class=`standard-button js-standard-button standard-button_color_${colors[color] || colors.green} standard-button_size_${sizes[size] || sizes.big}`, type=isType)= title
+    .standard-button__ripple.js-standard-button__ripple
+      span.standard-button__ripple_circle

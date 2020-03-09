@@ -4,7 +4,7 @@ block include
   include ../../blocks/video/video
   include ../../blocks/user-profile/user-profile
   include ../../blocks/pie-chart/pie-chart
-  include ../../blocks/standart-button/standart-button
+  include ../../blocks/standard-button/standard-button
 
 block title
   title Спектакль
@@ -24,7 +24,7 @@ block content
         .event-item__actor
           +user-profile({ imagePath: "../img/juliet.jpg", imageAlt: "", name: "Евгения Родина", job: "Джульетта", theme: "hovered" })
         .event-item__show-all
-          +std-button({ color: "green", size: "wide", type: "button", title: "Все актеры" })
+          +standard-button({ color: "green", size: "wide", type: "button", title: "Все актеры" })
       .event-item__charts
         .event-item__chart
           +pie-chart({ value: "70" })
@@ -33,4 +33,4 @@ block content
           +pie-chart({ value: "90" })
           p Оценка зрителей
       .event-item__button
-        +std-button({color: "green", size: "wide", type: "button", title: "Купить билет"})
+        +standard-button({color: "green", size: "wide", type: "button", title: "Купить билет"})

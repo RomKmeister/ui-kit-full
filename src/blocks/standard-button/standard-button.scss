@@ -6,7 +6,7 @@
   font-weight: 900;
   letter-spacing: -0.08rem;
   color: $main-white;
-  border-width: 0.08rem;
+  border-width: 1px;
   border-style: solid;
   border-radius: 0.25rem;
   background: $main-white;
@@ -121,12 +121,6 @@
       width: 10.67rem;
       padding: 0.42rem 0.83rem 0.42rem;
       font-size: 0.833rem;
-    }
-
-    &_big-for-events {
-      width: 12.5rem;
-      padding: 0.58rem 0.83rem 0.67rem;
-      font-size: 1rem;
     }
   }
 

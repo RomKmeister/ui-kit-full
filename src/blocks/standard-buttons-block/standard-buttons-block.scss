@@ -1,12 +1,12 @@
-.standard-buttons {
-  &__buttons-row {
+.standard-buttons-block {
+  &__row {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
     margin: 1.83rem 0.67rem 0;
 
-    &_first-item-margin {
+    &_margin_bigger {
       margin-top: 5.17rem;
     }
   }

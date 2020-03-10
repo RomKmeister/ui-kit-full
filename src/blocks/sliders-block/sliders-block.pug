@@ -5,8 +5,8 @@ include ../slider-with-scale/slider-with-scale
 mixin sliders-block()
   section.sliders
     +title("Sliders")
-    .sliders__wrap
-      .sliders__left-column
+    .sliders-block__wrapper
+      .sliders-block__left-column
         +slider-with-bubble({ value: "40", min: "0", max: "110" })
-      .sliders__right-column
+      .sliders-block__right-column
         +slider-with-scale({ value: "75", min: "0", max: "100", stepsNumber: "5" })

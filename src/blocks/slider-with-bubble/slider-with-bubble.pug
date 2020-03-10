@@ -1,3 +1,4 @@
 mixin slider-with-bubble(options)
-  div(class="slider-with-bubble js-slider-with-bubble" data-value=options.value data-min=options.min data-max=options.max)
+  - const { value, min, max } = options;
+  .slider-with-bubble.js-slider-with-bubble(data-value=value data-min=min data-max=max)
     .ui-slider-handle

@@ -1,6 +1,6 @@
 @import '../../colors.scss';
 
-.progressbar {
+.stages {
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -31,11 +31,6 @@
     &_active::before{
       background: $main-orange;
     }
-
-    &_active .progressbar__step {
-      background: $main-orange;
-      color: $main-white;
-    }
   }
 
   &__step {
@@ -48,5 +43,10 @@
     color: $main-gray-text;
     text-align: center;
     font-weight: bold;
+
+    &_active {
+      background: $main-orange;
+      color: $main-white;
+    }
   }
 }

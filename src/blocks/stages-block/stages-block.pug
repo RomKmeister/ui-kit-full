@@ -2,8 +2,8 @@ include ../title/title
 include ../stages/stages
 
 mixin stages-block()
-  section.stages-bar
+  section.stages-block
     +title("Stages")
-    .stages-bar__wrap
+    .stages-block__wrapper
       +stages({ steps: "5", activeStep: "3" })
 

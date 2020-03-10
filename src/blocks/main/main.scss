@@ -6,7 +6,8 @@
   margin: 0 auto;
 
   &__standard-buttons {
-    margin: 5.92rem 4.75rem 0;
+    width: 38.8rem;
+    margin: 5.92rem auto 0;
 
     @media(max-width: 581px) {
       margin: 5.92rem 0.75rem 0;

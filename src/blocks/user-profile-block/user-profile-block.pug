@@ -1,8 +1,9 @@
+include ../title/title
 include ../user-profile/user-profile
 
 mixin user-profile-block()
   section.user-profiles
-    h1.title User profile
+    +title("User profile")
     .user-profiles__item.user-profiles__item_with-margin
       +user-profile({ imagePath: "blocks/user-profile/user.jpg", imageAlt: "", name: "John Smith", job: "Ux designer", theme: "hovered" })
     .user-profiles__item

@@ -1,8 +1,9 @@
+include ../title/title
 include ../toggle/toggle
 
 mixin toggles-block()
   section.toggles
-    h1.title Toggles
+    +title("Toggles")
     .toggles__row
       .toggles__wrap
         +toggle()

@@ -1,8 +1,9 @@
+include ../title/title
 include ../calendar/calendar
 
 mixin datepicker-block()
   section.calendar
-    h1.title Calendar
+    +title("Calendar")
     .calendar__wrap
       +calendar()
 

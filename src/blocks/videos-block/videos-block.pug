@@ -1,7 +1,8 @@
+include ../title/title
 include ../video/video
 
 mixin videos-block()
   section.videos
-    h1.title Video
+    +title("Video")
     .videos__wrap
       +video({src: "https://www.youtube.com/embed/rPmGtZAUxNs"})

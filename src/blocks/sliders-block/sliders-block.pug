@@ -1,9 +1,10 @@
+include ../title/title
 include ../slider-with-bubble/slider-with-bubble
 include ../slider-with-scale/slider-with-scale
 
 mixin sliders-block()
   section.sliders
-    h1.title Sliders
+    +title("Sliders")
     .sliders__wrap
       .sliders__left-column
         +slider-with-bubble({ value: "40", min: "0", max: "110" })

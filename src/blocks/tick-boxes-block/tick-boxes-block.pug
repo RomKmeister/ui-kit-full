@@ -1,8 +1,9 @@
+include ../title/title
 include ../tick-box/tick-box
 
 mixin tick-block()
   section.tick-boxes
-    h1.title Tick boxes
+    +title("Tick boxes")
     .tick-boxes__row
       .tick-boxes__wrap
         +tick-box()

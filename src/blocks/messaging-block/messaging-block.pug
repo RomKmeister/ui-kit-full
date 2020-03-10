@@ -1,8 +1,9 @@
+include ../title/title
 include ../message/message
 
 mixin messaging-block()
   section.messaging
-    h1.title Messaging
+    +title("Messaging")
     .messaging__wrap
       +message({
         title: "Sarah Brown",

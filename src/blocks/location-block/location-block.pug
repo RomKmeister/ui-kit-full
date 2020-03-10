@@ -1,6 +1,7 @@
+include ../title/title
 include ../map/map
 
 mixin location-block()
   section.location
-    h1.title Location
+    +title("Location")
     +map()

@@ -1,9 +1,10 @@
+include ../title/title
 include ../news/news
 include ../event/event
 
 mixin news-and-events-block()
   section.news-and-events
-    h1.title News &amp; events
+    +title("News & events")
     .news-and-events__wrap
       .news-and-events__news-item
         +news({

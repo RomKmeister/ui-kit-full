@@ -1,3 +1,4 @@
+include ../title/title
 include ../form/form
 include ../toggles-block/toggles-block
 include ../tick-boxes-block/tick-boxes-block
@@ -6,7 +7,7 @@ include ../user-profile-block/user-profile-block
 
 mixin form-elements-block()
 	section.form-elements
-		h1.title Form elements
+		+title("Form elements")
 		.form-elements__row.form-elements__row_margin-for-first-row 
 			.form-elements__left-column.form-elements_margin-for-form-block
 				+form()

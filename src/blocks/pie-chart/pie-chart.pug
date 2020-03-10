@@ -1,6 +1,6 @@
-mixin pie-chart(options)
+mixin pie-chart(value)
   .pie-chart
-    svg.pie-chart__scale(viewBox="0 0 32 32" stroke-dasharray=`${options.value} 100`)
+    svg.pie-chart__scale(viewBox="0 0 32 32" stroke-dasharray=`${value} 100`)
       circle.pie-chart__fill(r="16" cx="16" cy="16")
       circle.pie-chart__background(r="14" cx="16" cy="16")
-    .pie-chart__number= options.value
+    .pie-chart__number= value

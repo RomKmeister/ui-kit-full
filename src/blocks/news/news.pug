@@ -1,7 +1,8 @@
 mixin news(content)
+  - const { title, date, text, imgPath } = content
   .news
-    img.news__image(src=content.imgPath, alt="")
+    img.news__image(src=imgPath, alt="")
     .news__block
-      h2.news__title= content.title
-      p.news__date= content.date 
-      p.news__text= content.text
+      h2.news__title= title
+      p.news__date= date 
+      p.news__text= text

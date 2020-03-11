@@ -1,11 +1,13 @@
-.search__wrap {
-  margin-top: 1.25rem;
+.search-drop-down-block {
+  &__search {
+    margin-top: 1.25rem;
 
-  &_margin-for-first-item {
-    margin-top: 0.83rem;
+    &_margin-for-first-item {
+      margin-top: 0.83rem;
+    }
   }
-}
 
-.drop-down__wrap {
-  margin-top: 1.67rem;
+  &__drop-down {
+    margin-top: 1.67rem;
+  }
 }

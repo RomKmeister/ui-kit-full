@@ -1,3 +1,4 @@
 mixin user-photo(options)
+  - const { imagePath, imageAlt } = options;
   .user-photo
-    img.user-photo__image(src=options.imagePath, alt=options.imageAlt)
+    img.user-photo__image(src=imagePath, alt=imageAlt)

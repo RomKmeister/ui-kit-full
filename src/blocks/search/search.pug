@@ -1,5 +1,6 @@
 mixin search(options)
-  - const classes = options.emptyResult ? "search-form__input search-form__input_empty" : "search-form__input"
-  form.search-form(action=options.action)
-    input(class=classes, type="search", placeholder=options.placeholder, value=options.searchValue)
-    button.search-form__submit(type="submit")
+  - const { action, searchValue, placeholder, emptyResult } = options;
+  - const classes = emptyResult ? "search__input search__input_empty" : "search__input"
+  form.search(action=action)
+    input(class=classes, type="search", placeholder=placeholder, value=searchValue)
+    button.search__submit(type="submit")

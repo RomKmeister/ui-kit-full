@@ -1,5 +1,6 @@
 mixin drop-down(options)
-  select.select.js-select(data-theme=options.theme)
-    option(disabled, selected)= options.placeholder
-    each val in options.options
-      option= val
+  - const { theme, placeholder, items } = options;
+  select.drop-down.js-drop-down(data-theme=theme)
+    option(disabled, selected)= placeholder
+    each item in items
+      option= item

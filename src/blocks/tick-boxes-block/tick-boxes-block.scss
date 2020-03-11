@@ -1,10 +1,12 @@
-.tick-boxes__row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 1.67rem;
-}
+.tick-boxes-block {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.67rem;
+  }
 
-.tick-boxes__wrap {
-  margin: 0 0.75rem;
+  &__wrapper {
+    margin: 0 0.75rem;
+  }
 }

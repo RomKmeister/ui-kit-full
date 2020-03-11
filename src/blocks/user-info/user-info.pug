@@ -1,14 +1,15 @@
 mixin user-info(options)
-  - const bgColor = options.theme ? `user-info user-info_${options.theme}` : "user-info";
-  - const userName = options.theme ? `user-info__name user-info__name_${options.theme}` : "user-info__name";
-  - const userJob = options.theme ? `user-info__job user-info__job_${options.theme}` : "user-info__job";
-  - const fbItemsColor = options.theme ? `user-info__link user-info__link_fb_${options.theme}` : "user-info__link user-info__link_fb";
-  - const twItemsColor = options.theme ? `user-info__link user-info__link_tw_${options.theme}` : "user-info__link user-info__link_tw";
-  - const dbItemsColor = options.theme ? `user-info__link user-info__link_db_${options.theme}` : "user-info__link user-info__link_db";
+  - const { name, job, theme } = options;
+  - const bgColor = theme ? `user-info user-info_${theme}` : "user-info";
+  - const userName = theme ? `user-info__name user-info__name_${theme}` : "user-info__name";
+  - const userJob = theme ? `user-info__job user-info__job_${theme}` : "user-info__job";
+  - const fbItemsColor = theme ? `user-info__link user-info__link_fb_${theme}` : "user-info__link user-info__link_fb";
+  - const twItemsColor = theme ? `user-info__link user-info__link_tw_${theme}` : "user-info__link user-info__link_tw";
+  - const dbItemsColor = theme ? `user-info__link user-info__link_db_${theme}` : "user-info__link user-info__link_db";
 
   div(class=bgColor)
-    h2(class=userName)= options.name
-    p(class=userJob)= options.job
+    h2(class=userName)= name
+    p(class=userJob)= job
     ul.user-info__links
       li(class=fbItemsColor)
       li(class=twItemsColor)

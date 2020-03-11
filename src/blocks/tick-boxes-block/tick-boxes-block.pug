@@ -1,11 +1,11 @@
 include ../title/title
 include ../tick-box/tick-box
 
-mixin tick-block()
+mixin tick-boxes-block()
   section.tick-boxes
     +title("Tick boxes")
-    .tick-boxes__row
-      .tick-boxes__wrap
+    .tick-boxes-block__row
+      .tick-boxes-block__wrapper
         +tick-box()
-      .tick-boxes__wrap
+      .tick-boxes-block__wrapper
         +tick-box("disabled")

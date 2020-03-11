@@ -2,6 +2,7 @@ include ../user-photo/user-photo
 include ../user-info/user-info
 
 mixin user-profile(options)
+  - const { imagePath, imageAlt, name, job, theme } = options;
   .user-profile
-    +user-photo(options)
-    +user-info(options)
+    +user-photo({ imagePath, imageAlt })
+    +user-info({ name, job, theme })

@@ -1,10 +1,12 @@
-.toggles__row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 1.5rem;
-}
+.toggles-block {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
 
-.toggles__wrap {
-  margin: 0 0.42rem;
+  &__wrapper {
+    margin: 0 0.42rem;
+  }
 }

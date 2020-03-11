@@ -1,5 +1,5 @@
 $( function() {
-  $(".js-select").each(function() {
+  $(".js-drop-down").each(function() {
     $(this).selectmenu({
       width: "100%",
       classes: {

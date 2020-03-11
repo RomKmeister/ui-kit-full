@@ -2,12 +2,30 @@ include ../title/title
 include ../search/search
 include ../drop-down/drop-down
 
-mixin search-block()
-  section.search-drop-down
+mixin search-drop-down-block()
+  section.search-drop-down-block
     +title("Search / Drop down")
-    .search__wrap.search__wrap_margin-for-first-item
-      +search({ action: "", searchValue:"", placeholder:"Search", emptyResult: false })
-    .search__wrap
-      +search({ action: "", searchValue:"I’ve not found what I’m looking for...", placeholder:"", emptyResult: true })
-    .drop-down__wrap
-      +drop-down({ theme: "custom", placeholder: "Choose An Option", options: ["This is option 1", "This is option 2", "This is option 3", "This is option 4"] })
+    .search-drop-down-block__search.search-drop-down-block__search_margin-for-first-item
+      +search({
+        action: "",
+        searchValue: "",
+        placeholder: "Search",
+        emptyResult: false 
+      })
+    .search-drop-down-block__search
+      +search({
+        action: "",
+        searchValue: "I’ve not found what I’m looking for...",
+        placeholder: "",
+        emptyResult: true 
+        })
+    .search-drop-down-block__drop-down
+      +drop-down({
+        theme: "custom",
+        placeholder: "Choose An Option",
+        items: [
+          "This is option 1", 
+          "This is option 2", 
+          "This is option 3", 
+          "This is option 4"
+          ]})

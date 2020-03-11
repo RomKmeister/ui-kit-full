@@ -1,5 +1,6 @@
 $( function() {
-  $(".js-location__map").each(
+  const $locationMap = $(".js-location__map");
+  $locationMap.each(
     ymaps.ready(function () {
       var myMap = new ymaps.Map('map', {
           center: [37.787509, -122.444838],

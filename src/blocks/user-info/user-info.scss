@@ -63,27 +63,27 @@
     background-repeat: no-repeat;
 
     &_fb {
-      background-image: url('fb.png');
+      background-image: url('images/fb.png');
     }
 
     &_tw {
-      background-image: url('twitter.png');
+      background-image: url('images/twitter.png');
     }
 
     &_db {
-      background-image: url('dribbble.png');
+      background-image: url('images/dribbble.png');
     }
 
     &_fb_hovered {
-      background-image: url('fb-grey.png');
+      background-image: url('images/fb-grey.png');
     }
 
     &_tw_hovered {
-      background-image: url('twitter-orange.png');
+      background-image: url('images/twitter-orange.png');
     }
 
     &_db_hovered {
-      background-image: url('dribbble-grey.png');
+      background-image: url('images/dribbble-grey.png');
     }
   }
 }

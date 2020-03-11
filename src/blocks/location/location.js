@@ -23,7 +23,7 @@ $( function() {
       }, {
         balloonContentLayout: CustomBalloon,
         iconLayout: 'default#image',
-        iconImageHref: '../src/map/map-pin.svg',
+        iconImageHref: '../src/location/images/map-pin.svg',
         iconImageSize: [41, 56],
         iconImageOffset: [-5, -38]
       });

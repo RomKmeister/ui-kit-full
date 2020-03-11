@@ -2,7 +2,7 @@ include ../title/title
 include ../video/video
 
 mixin videos-block()
-  section.videos
+  section.videos-block
     +title("Video")
-    .videos__wrap
-      +video({src: "https://www.youtube.com/embed/rPmGtZAUxNs"})
+    .videos-block__wrapper
+      +video("https://www.youtube.com/embed/rPmGtZAUxNs")

@@ -1,7 +1,7 @@
 extends ../template/template.pug
 
 block include
-  include ../../blocks/calendar/calendar
+  include ../../blocks/datepicker/datepicker
   include ../../blocks/drop-down/drop-down
   include ../../blocks/toggle/toggle
   include ../../blocks/event/event
@@ -18,7 +18,7 @@ block content
         .main-page__choose-date
           +calendar()
         .main-page__drop-down
-          +drop-down({ theme: "custom", placeholder: "Тема", options: ["Концерты", "Театры", "Кино"] })
+          +drop-down({ theme: "custom", placeholder: "Тема", items: ["Концерты", "Театры", "Кино"] })
         .main-page__toggle
           +toggle() 
           p.filter__lable Премьеры

@@ -100,14 +100,12 @@
   
   &_size{
     &_small {
-      width: 6.5rem;
-      padding: 0.33rem 0.83rem;
+      padding: 0.33rem 1.4rem;
       font-size: 0.83rem;
     }
 
     &_big {
-      width: 9.83rem;
-      padding: 0.58rem 0.83rem 0.67rem;
+      padding: 0.58rem 2.7rem 0.67rem;
       font-size: 1rem;
     }
 
@@ -117,10 +115,9 @@
       font-size: 1rem;
     }
 
-    &_custom {
-      width: 10.67rem;
-      padding: 0.42rem 0.83rem 0.42rem;
-      font-size: 0.833rem;
+    &_special {
+      padding: 0.42rem 1.5rem 0.42rem;
+      font-size: 0.83rem;
     }
   }
 

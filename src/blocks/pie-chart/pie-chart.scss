@@ -3,7 +3,7 @@
 .pie-chart {
   position: relative;
 
-  &__scale {
+  &__chart {
     width: 8.08rem;
     height: 8.08rem;
     border-radius: 50%;
@@ -12,7 +12,7 @@
     animation: show100 2s;
   }
 
-  &__fill {
+  &__scale {
     stroke: $main-orange;
     stroke-width: 32;
   }

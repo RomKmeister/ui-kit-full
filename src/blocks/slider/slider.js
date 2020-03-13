@@ -9,6 +9,9 @@ $( function() {
       max: $(this).data('max'),
       step: $stepSize,
       range: 'min',
+      classes: {
+        'ui-slider-range': 'ui-slider-range_' + $(this).data('color')
+      },
       create: function() {
         $sliderBubble.text($(this).slider('value'))
       },

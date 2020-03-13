@@ -15,7 +15,6 @@
       content: '';
       flex-grow: 1;
       flex-shrink: 0;
-      width: 4.17rem;
       height: 0.42rem;
       background: $main-gray;
     }
@@ -36,13 +35,13 @@
   &__step {
     width: 2.33rem;
     height: 2.33rem;
-    border-radius: 50%;
-    line-height: 1.9;
-    background: $main-gray;
-    font-size: 1.167rem;
-    color: $main-gray-text;
-    text-align: center;
     font-weight: bold;
+    font-size: 1.167rem;
+    line-height: 1.9;
+    color: $main-gray-text;
+    background: $main-gray;
+    border-radius: 50%;
+    text-align: center;
 
     &_active {
       background: $main-orange;

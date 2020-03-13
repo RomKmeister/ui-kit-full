@@ -1,12 +1,11 @@
 include ../title/title
-include ../slider-with-bubble/slider-with-bubble
-include ../slider-with-scale/slider-with-scale
+include ../slider/slider
 
 mixin sliders-block()
   section.sliders
     +title("Sliders")
     .sliders-block__wrapper
       .sliders-block__left-column
-        +slider-with-bubble({ value: "40", min: "0", max: "110" })
+        +slider({ value: "40", min: "0", max: "110",stepsNumber: "0", showBubble: true, showScale: false, color: "orange" })
       .sliders-block__right-column
-        +slider-with-scale({ value: "75", min: "0", max: "100", stepsNumber: "5" })
+        +slider({ value: "75", min: "0", max: "100", stepsNumber: "5", showBubble: true, showScale: true, color: "green" })

@@ -1,9 +1,0 @@
-mixin slider-with-scale(options)
-  - const { value, min, max, stepsNumber } = options;
-  .slider-with-scale.js-slider-with-scale(data-value=value data-min=min data-max=max)
-    .ui-slider-handle
-    .slider-with-scale__scale
-      - let i = 0;
-      - let stepRange = max / (stepsNumber - 1)
-      while i < stepsNumber
-        span= i++ * stepRange

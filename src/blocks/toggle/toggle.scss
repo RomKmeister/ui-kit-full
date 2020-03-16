@@ -1,3 +1,5 @@
+@import '../../colors.scss';
+
 .toggle {
   position: relative;
   display: inline-block;
@@ -5,7 +7,7 @@
   width: 5rem;
   height: 1.67rem;
   padding: 0.25rem;
-  background-color: white;
+  background: $main-white;
   border-radius: 1.5rem;
   cursor: pointer;
 
@@ -17,22 +19,15 @@
   }
 
   &__label {
-    -webkit-transition: 0.15s ease-out;
-    -moz-transition: 0.15s ease-out;
-    -o-transition: 0.15s ease-out;
-    -webkit-transition-property: opacity background;
-    -moz-transition-property: opacity background;
-    -o-transition-property: opacity background;
-    transition-property: opacity background;
-    transition: 0.15s ease-out;
     position: relative;
     display: block;
     height: inherit;
     padding: 0.17rem 0;
     font-size: 1rem;
     text-transform: uppercase;
-    background: #e5e5e5;
+    background: $main-gray;
     border-radius: inherit;
+    transition: 0.15s ease-out;
 
     &:before, 
     &:after {
@@ -40,22 +35,19 @@
       top: 50%;
       margin-top: -0.5em;
       line-height: 1;
-      -webkit-transition: inherit;
-      -moz-transition: inherit;
-      -o-transition: inherit;
       transition: inherit;
     }
 
     &:before {
-      content: attr(data-off);
+      content: 'off';
       right: 0.92rem;
-      color: #ffffff;
+      color: $main-white;
     }
 
     &:after {
-      content: attr(data-on);
+      content: 'on';
       left: 0.92rem;
-      color: white;
+      color: $main-white;
       opacity: 0;
     }
   }
@@ -71,17 +63,14 @@
   }
 
   &__handle {
-    -webkit-transition: left 0.15s ease-out;
-    -moz-transition: left 0.15s ease-out;
-    -o-transition: left 0.15s ease-out;
     transition: left 0.15s ease-out;
     position: absolute;
     top: 0.5rem;
     left: 0.58rem;
     width: 1.5rem;
     height: 1.5rem;
-    background: white;
-    border-radius: 0.82rem;
+    background: $main-white;
+    border-radius: 50%;
   }
 
   &__input:checked ~ &__handle {

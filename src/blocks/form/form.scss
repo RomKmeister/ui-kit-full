@@ -8,15 +8,72 @@
     color: $main-gray-text;
   }
 
-  &__input-text {
-    width: 62.71%;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
     margin-bottom: 1rem;
-    padding: 0.33rem 1.08rem 0.42rem;
     font-family: "SourceSansPro", Arial, sans-serif;
+  }
+
+  &__input-text {
+    flex-grow: 1;
+    padding: 0.33rem 1.08rem 0.42rem;
     font-size: 1.17rem;
+    font-family: "SourceSansPro", Arial, sans-serif;
     border: none;
     border-radius: 0.25rem;
     background: $main-gray;
+  
+    &:valid:not(:placeholder-shown) + .form__result {
+      display: block;
+      background: $main-green;
+
+        &::before {
+          background: $main-green;
+        }
+
+        &::after {
+          content: 'thanks!';
+        }
+    }
+
+    &:invalid:not(:placeholder-shown) + .form__result {
+      display: block;
+      background: $main-orange;
+
+      &::before {
+        background: $main-orange;
+      }
+
+      &::after {
+        content: 'error';
+      }
+    }
+  }
+
+  &__result {
+    position: relative;
+    display: none;
+    width: 24.86%;
+    padding: 0.5rem 0;
+    margin-left: 0.5rem;
+    font-size: 0.83rem;
+    color: $main-white;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    
+    &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -0.16rem;
+    width: 0.42rem;
+    height: 0.42rem;
+    margin-top: -0.16rem;
+    transform: rotate(45deg);
+    }
   }
 
   &__textarea {
@@ -31,50 +88,7 @@
     resize: none;
   }
 
-  &__result {
-    position: relative;
-    display: none;
-    width: 24.86%;
-    padding: 0.67rem 0;
-    margin-left: 2.68%;
-    margin-bottom: 1rem;
-    font-size: 0.83rem;
-    color: $main-white;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 0.25rem;
-    
-    &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -0.16rem;
-    width: 0.42rem;
-    height: 0.42rem;
-    margin-top: -0.16rem;
-    transform: rotate(45deg);
-    }
-
-    &_with_error {
-      display: block;
-      background: $main-orange;
-      
-      &::before {
-      background: $main-orange;
-      }
-    }
-
-    &_with_success {
-      display: block;
-      background: $main-green;
-
-      &::before {
-        background: $main-green;
-      }
-    }
-  }
-
-  &__button-wrap {
+  &__button {
     margin: 0.83rem 0 0 auto;
   }
 }

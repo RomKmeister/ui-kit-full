@@ -6,9 +6,8 @@
   justify-content: center;
 
   &__input {
-    width: 21.25rem;
-    height: 2.33rem;
-    padding: 0.83rem 1.67rem 0.75rem;
+    flex-grow: 1;
+    padding: 0.65rem 1rem 0.5rem;
     font-family: 'SourceSansPro', Arial, sans-serif;
     font-size: 1.08rem;
     background: $main-gray;
@@ -22,9 +21,8 @@
   }
 
   &__submit {
-    height: 2.33rem;
-    padding: 0.42rem 1.33rem 0.25rem;
-    background: $main-orange url('images/search-icon.svg') 0.75rem 0.5rem no-repeat;
+    padding: 0 1.45rem;
+    background: #e75735 url(images/search-icon.svg) 0.7rem 0.7rem no-repeat;
     border: none;
     border-radius: 0 0.33rem 0.33rem 0;
     color: $main-white;

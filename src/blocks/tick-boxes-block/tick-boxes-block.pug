@@ -2,10 +2,10 @@ include ../title/title
 include ../tick-box/tick-box
 
 mixin tick-boxes-block()
-  section.tick-boxes
+  section.tick-boxes-block
     +title("Tick boxes")
     .tick-boxes-block__row
       .tick-boxes-block__wrapper
-        +tick-box()
+        +tick-box({ name:"radio", isChecked: "true" })
       .tick-boxes-block__wrapper
-        +tick-box("disabled")
+        +tick-box({ name:"radio", isChecked: "false" })

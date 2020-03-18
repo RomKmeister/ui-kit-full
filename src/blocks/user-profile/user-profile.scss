@@ -1,6 +1,100 @@
+@import '../../colors.scss';
+
 .user-profile {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  &__info {
+    position: relative;
+    flex-grow: 1;
+    padding: 0.83rem 1%;
+    margin-left: 1.1rem;
+    border-radius: 0.5rem;
+    word-break: break-word;
+    color: $main-white;
+    text-align: center;
+
+    &_theme {
+      &_gray {
+        background: $main-gray;
+      }
+      &_green {
+        background: $main-green;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 0.83rem;
+      height: 0.83rem;
+      background: inherit;
+      border-radius: 0 0 0 0.17rem;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+
+  &__name {
+    margin: 0;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+  
+    &_theme {
+      &_gray {
+        color: $main-orange;
+      }
+
+      &_green {
+        color: $main-white;
+      }
+    }
+  }
+
+  &__job {
+    margin: 0;
+    font-size: 0.92rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+
+    &_theme {
+      &_gray {
+        color: $gray-profile;
+      }
+
+      &_green {
+        color: $main-white;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.17rem 2.4rem 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link:hover path {
+    fill: $main-orange;
+  }
+
+  &__icon {
+    width: 2.08rem;
+    height: 1.75rem;
+    &_theme {
+      &_gray {
+        fill: $gray-profile;
+      }
+
+      &_green {
+        fill: $main-white;
+      }
+    }
+  }
 }

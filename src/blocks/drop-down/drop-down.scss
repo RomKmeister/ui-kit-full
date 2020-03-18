@@ -1,56 +1,61 @@
 @import '../../colors.scss';
 
-.ui-selectmenu-button_custom {
-  padding: 0;
-  font-family: "SourceSansPro", Arial, sans-serif;
-  font-size: 1.17rem;
-  font-weight: 400;
-  background: $main-gray;
-  color: $main-gray-text;
-  border: none;
-  border-radius: 0.25rem;
-  
-  &:hover {
-    background: $main-green;
-    border: none;
-  }
-
-  &:focus,
-  &:active {
-    border: none;
-  }
-
-  & .ui-selectmenu-icon {
-    padding: 1.25rem 1.5rem;
-    background-image: url("images/drop-down-arrow.svg");
-    background-color: $main-green;
-    background-position: center center;
-    background-repeat: no-repeat;
-    border-radius: 0 0.33rem 0.33rem 0;
-  }
-
-  & .ui-selectmenu-button-open {
-    border-radius: 0 0 0.33rem 0;
-  }
-
-  &.ui-button {
+.drop-down {
+  .ui-selectmenu-button {
     padding: 0;
-    margin: 0;
+    font-family: "SourceSansPro", Arial, sans-serif;
+    font-size: 1.17rem;
+    font-weight: 400;
+    background: $main-gray;
+    color: $main-gray-text;
     border: none;
+    border-radius: 0.25rem;
+    
+    &:hover {
+      background: $main-green;
+      border: none;
+    }
 
-    &:hover,
     &:focus,
     &:active {
       border: none;
     }
-  }
 
-  & .ui-selectmenu-text {
-    padding: 0.4rem 1.1rem 0.6rem;
+    & .ui-selectmenu-icon {
+      padding: 1.25rem 1.5rem;
+      background-image: url("images/drop-down-arrow.svg");
+      background-color: $main-green;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border-radius: 0 0.33rem 0.33rem 0;
+    }
+
+    &-open {
+      & .ui-selectmenu-icon {
+      border-radius: 0 0.33rem 0 0;
+      }
+    }
+
+    &.ui-button {
+      padding: 0;
+      margin: 0;
+      border: none;
+      outline: 0;
+
+      &:hover,
+      &:focus,
+      &:active {
+        border: none;
+      }
+    }
+
+    & .ui-selectmenu-text {
+      padding: 0.4rem 1.1rem 0.6rem;
+    }
   }
 }
 
-.ui-selectmenu-menu_custom {
+.ui-selectmenu-menu_ui {
 
   & .ui-menu {
     padding: 0 0 0.83rem;
@@ -60,6 +65,7 @@
     background-color: $main-green;
     border: 0.08rem solid $main-green;
     color: $main-white;
+    border-radius: 0 0 0.33rem 0.33rem;
 
     & .ui-menu-item-wrapper {
       padding: 0.58rem 1.08rem;
@@ -78,5 +84,10 @@
     background: $main-gray;
     color: $main-gray-text;
     border: none;
+  }
+
+  & .ui-menu .ui-state-focus, 
+  & .ui-menu .ui-state-active {
+    margin: 0;
   }
 }

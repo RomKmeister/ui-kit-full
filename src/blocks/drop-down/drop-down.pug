@@ -1,6 +1,7 @@
 mixin drop-down(options)
-  - const { theme, placeholder, items } = options;
-  select.drop-down.js-drop-down(data-theme=theme)
-    option(disabled, selected)= placeholder
-    each item in items
-      option= item
+  - const { placeholder, items } = options;
+  .drop-down
+    select.drop-down__select.js-drop-down__select
+      option(disabled, selected)= placeholder
+      each item in items
+        option= item

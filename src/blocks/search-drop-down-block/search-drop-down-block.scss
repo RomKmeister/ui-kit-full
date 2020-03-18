@@ -1,13 +1,13 @@
 .search-drop-down-block {
   &__search {
-    margin-top: 1.25rem;
+    margin-top: 0.9rem;
+  }
 
-    &_margin-for-first-item {
-      margin-top: 0.83rem;
-    }
+  &__empty-search {
+    margin-top: 1.1rem;
   }
 
   &__drop-down {
-    margin-top: 1.67rem;
+    margin-top: 1.4rem;
   }
 }

@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg>
 <metadata>
-Created by FontForge 20090914 at Wed Apr 17 13:58:46 2019
+Created by FontForge 20090914 at Thu Nov  8 16:25:32 2018
  By www-data
 Copyright (c) 2010-2011 by tyPoland Lukasz Dziedzic with Reserved Font Name "Lato". Licensed under the SIL Open Font License, Version 1.1.
 </metadata>
@@ -1168,6 +1168,8 @@ d="M128 701l390 821h124l390 -821l-390 -820h-124zM276 701l276 -581c5.33301 -15.33
 l-15.5 -41z" />
     <glyph glyph-name="uni2669" unicode="&#x2669;" horiz-adv-x="0" 
 d="M-2 1473h4v-1816h-4v1816z" />
+    <glyph glyph-name="undercommaaccent" horiz-adv-x="614" 
+d="M360 -80c15.333 0 24.835 -3.49902 28.502 -10.499s5.5 -14.5 5.5 -22.5c0 -6.66699 -0.833008 -15 -2.5 -25s-5 -23.333 -10 -40s-11.667 -37 -20 -61l-31.5 -88c-6.66699 -14.667 -14.834 -24.334 -24.501 -29.001s-22.834 -7 -39.501 -7h-62l49 283h107z" />
     <glyph glyph-name="grave.case" horiz-adv-x="614" 
 d="M157 1782c21.333 0 37.333 -2.16797 48 -6.50098s22.667 -13.166 36 -26.499l211 -203h-139c-14 0 -25 1.16699 -33 3.5s-17.667 7.5 -29 15.5l-295 217h201z" />
     <glyph glyph-name="dieresis.case" horiz-adv-x="614" 
@@ -1199,6 +1201,9 @@ s41.666 -18.167 60.999 -28.5l55 -28.5c17.333 -8.66699 34 -13 50 -13z" />
     <glyph glyph-name="hungarumlaut.case" horiz-adv-x="614" 
 d="M424 1771l-199.001 -198.001c-9.33301 -9.33301 -18.5 -16.166 -27.5 -20.499s-20.167 -6.5 -33.5 -6.5h-86l142 181c10.667 13.333 22.334 24 35.001 32s30 12 52 12h117zM761.999 1771l-242.999 -197.999c-11.333 -8.66699 -21.833 -15.334 -31.5 -20.001
 s-21.5 -7 -35.5 -7h-96l179 181c12.667 13.333 25.667 24 39 32s30.666 12 51.999 12h136z" />
+    <glyph glyph-name="caron.salt" horiz-adv-x="614" 
+d="M385 1475c14.667 0 23.835 -3.49902 27.502 -10.499s5.5 -14.5 5.5 -22.5c0 -6.66699 -1.16699 -15.5 -3.5 -26.5s-6.5 -26.333 -12.5 -46s-14.333 -44.5 -25 -74.5l-41 -111c-6.66699 -14.667 -14.834 -24.334 -24.501 -29.001s-22.834 -7 -39.501 -7h-62l57 327h118z
+" />
     <hkern u1="&#x22;" u2="&#x2206;" k="182" />
     <hkern u1="&#x22;" u2="&#x203a;" k="178" />
     <hkern u1="&#x22;" u2="&#x2039;" k="178" />

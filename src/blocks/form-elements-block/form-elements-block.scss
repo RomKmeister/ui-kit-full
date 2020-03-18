@@ -1,40 +1,31 @@
 .form-elements-block {
   &__row {
     display: flex;
+    justify-content: space-between;
+    margin-top: 2.1rem;
+    
     @media(max-width: 640px) {
       display: block;
     }
-
-    &_margin-for-first-row {
-      margin-top: 2.17rem;
-    }
-
-    &_margin-for-second-row {
-      margin-top: 4.9rem;
-    }
   }
-  
-  &__left-column {
+
+  &__form-block {
     width: 48.5%;
-
-    @media(max-width: 640px) {
-      width: 90%;
-      margin: 0 auto;
-    }
-  }
-
-  &__right-column {
-    width: 50%;
-    margin-left: 1%;
-
-    @media(max-width: 640px) {
-      width: 90%;
-      margin: 0 auto;
-    }
-  }
-
-  &_margin-for-form-block {
     margin-top: 1.17rem;
+
+    @media(max-width: 640px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  &__toggle-and-tick {
+    width: 52%;
+
+    @media(max-width: 640px) {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 
   &__toggles {
@@ -43,10 +34,16 @@
 
   &__tick-boxes {
     margin-top: 2.25rem;
-    margin-left: 0.83rem;
+    margin-left: 2.3rem;
+  }
+
+  &__search {
+    width: 48.5%;
+    margin: 2.9rem 0 0;
   }
 
   &__user-profile {
-    margin-left: 2.08rem;
+    width: 45.5%;
+    margin: 2.9rem 0 0;
    }
 }

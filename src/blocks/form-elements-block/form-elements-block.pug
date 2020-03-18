@@ -8,17 +8,16 @@ include ../user-profile-block/user-profile-block
 mixin form-elements-block()
 	section.form-elements-block
 		+title("Form elements")
-		.form-elements-block__row.form-elements-block__row_margin-for-first-row 
-			.form-elements-block__left-column.form-elements-block_margin-for-form-block
+		.form-elements-block__row
+			.form-elements-block__form-block
 				+form()
-			.form-elements-block__right-column
+			.form-elements-block__toggle-and-tick
 				.form-elements-block__toggles
 					+toggles-block()
 				.form-elements-block__tick-boxes
 					+tick-boxes-block()
-		.form-elements-block__row.form-elements-block__row_margin-for-second-row 
-			.form-elements-block__left-column
+		.form-elements-block__row
+			.form-elements-block__search
 				+search-drop-down-block()
-			.form-elements-block__right-column
-				.form-elements-block__user-profile
-					+user-profile-block()
+			.form-elements-block__user-profile
+				+user-profile-block()

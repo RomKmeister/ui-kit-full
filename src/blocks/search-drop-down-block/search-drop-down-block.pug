@@ -5,14 +5,14 @@ include ../drop-down/drop-down
 mixin search-drop-down-block()
   section.search-drop-down-block
     +title("Search / Drop down")
-    .search-drop-down-block__search.search-drop-down-block__search_margin-for-first-item
+    .search-drop-down-block__search
       +search({
         action: "",
         searchValue: "",
         placeholder: "Search",
         emptyResult: false 
       })
-    .search-drop-down-block__search
+    .search-drop-down-block__empty-search
       +search({
         action: "",
         searchValue: "I’ve not found what I’m looking for...",

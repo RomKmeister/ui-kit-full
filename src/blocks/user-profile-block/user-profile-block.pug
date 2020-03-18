@@ -2,9 +2,29 @@ include ../title/title
 include ../user-profile/user-profile
 
 mixin user-profile-block()
-  section.user-profiles
+  section.user-profile-block
     +title("User profile")
     .user-profile-block__item.user-profile-block__item_with-margin
-      +user-profile({ imagePath: "blocks/user-profile-block/images/user.jpg", imageAlt: "", name: "John Smith", job: "Ux designer", theme: "hovered" })
+      +user-profile({
+        imagePath: "/../images/user.jpg",
+        imageAlt: "",
+        name: "John Smith",
+        job: "Ux designer",
+        theme: "",
+        links: {
+          facebook: "user-link.html",
+          twitter: "user-link.html",
+          dribble: "user-link.html",
+        }})
     .user-profile-block__item
-      +user-profile({ imagePath: "blocks/user-profile-block/images/user-1.jpg", imageAlt: "", name: "Sarah Brown", job: "Developer", theme: "" })
+      +user-profile({
+        imagePath: "/../images/user-1.jpg",
+        imageAlt: "",
+        name: "Sarah Brown",
+        job: "Developer",
+        theme: "green",
+        links: {
+          facebook: "user-link.html",
+          twitter: "user-link.html",
+          dribble: "user-link.html",
+        }})

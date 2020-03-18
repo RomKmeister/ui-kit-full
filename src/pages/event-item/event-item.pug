@@ -20,9 +20,28 @@ block content
       p.event-item__description Если задуматься, в знаменитой истории Ромео и Джульетты нет ничего слащавого. Ничего от конфетно-открыточных историй на День Святого Валентина. Страстное влечение, краткий период тайного счастья &mdash; и неотвратимый смертельный финал. Герои пытаются бороться с роком &mdash; но каждый шаг лишь приближает развязку: законы трагедии неумолимы. Этой любви не суждена долгая жизнь.
       .event-item__actors
         .event-item__actor
-          +user-profile({ imagePath: "../img/romeo-actor.jpg", imageAlt: "", name: "Андрей Симонькин", job: "Ромео", theme: "hovered" })
+          +user-profile({
+            imagePath: "../img/romeo-actor.jpg",
+            imageAlt: "", name: "Андрей Симонькин",
+            job: "Ромео",
+            theme: "gray",
+            links: {
+              facebook: "user-link.html",
+              twitter: "user-link.html",
+              dribble: "user-link.html",
+            }})
         .event-item__actor
-          +user-profile({ imagePath: "../img/juliet.jpg", imageAlt: "", name: "Евгения Родина", job: "Джульетта", theme: "hovered" })
+          +user-profile({
+            imagePath: "../img/juliet.jpg",
+            imageAlt: "",
+            name: "Евгения Родина",
+            job: "Джульетта",
+            theme: "gray",
+            links: {
+              facebook: "user-link.html",
+              twitter: "user-link.html",
+              dribble: "user-link.html",
+            }})
         .event-item__show-all
           +standard-button({ color: "green", size: "wide", type: "button", title: "Все актеры" })
       .event-item__charts

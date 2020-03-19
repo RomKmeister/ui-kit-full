@@ -2,7 +2,7 @@ $( function() {
   const $locationMap = $(".js-location__map");
   $locationMap.each(
     ymaps.ready(function () {
-      var myMap = new ymaps.Map('map', {
+      const myMap = new ymaps.Map('map', {
           center: [37.787509, -122.444838],
           zoom: 13,
           controls: []
@@ -20,11 +20,11 @@ $( function() {
             <div class='location__pin'></div>`
         );
 
-      var myPlacemark = new ymaps.Placemark([37.787509, -122.444838], {
+      const myPlacemark = new ymaps.Placemark([37.787509, -122.444838], {
       }, {
         balloonContentLayout: CustomBalloon,
         iconLayout: 'default#image',
-        iconImageHref: '../src/location/images/map-pin.svg',
+        iconImageHref: '../images/map-pin.svg',
         iconImageSize: [41, 56],
         iconImageOffset: [-5, -38]
       });

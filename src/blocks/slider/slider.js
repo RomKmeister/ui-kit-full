@@ -19,5 +19,5 @@ $( function() {
         $sliderBubble.text(ui.value)
       }
     });
-   });
+  });
 });

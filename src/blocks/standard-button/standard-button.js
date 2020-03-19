@@ -1,29 +1,43 @@
-;(function($, window, document, undefined) {
+class Ripple {
+  constructor() {
+    this.run();
+  }
 
-    'use strict';
-  
-    const $ripple = $('.js-standard-button__ripple');
-  
-    $ripple.on('click.ui.ripple', function(e) {
-  
-      const $this = $(this);
-      const $offset = $this.parent().offset();
-      const $circle = $this.find('.standard-button__ripple_circle');
-  
-      const x = e.pageX - $offset.left;
-      const y = e.pageY - $offset.top;
-  
-      $circle.css({
-        top: y + 'px',
-        left: x + 'px'
-      });
-  
-      $this.addClass('standard-button__ripple_active');
-  
+  run() {
+    this._findElements();
+    this.$ripple.on('click', this._handleStandardButtonClick.bind(this) )
+    this.$ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', this._handleStandardButtonAnimationend);
+  }
+
+  _findElements() {
+    this.$ripple = $('.js-standard-button__ripple');
+    this.$circle = $('.standard-button__ripple_circle');
+  }
+
+  _handleStandardButtonClick(event) {
+    const $this = $(event.currentTarget);
+    const $offset = $this.parent().offset();
+
+    const x = event.pageX - $offset.left;
+    const y = event.pageY - $offset.top;
+
+    this.$circle.css({
+      top: y + 'px',
+      left: x + 'px'
     });
-  
-    $ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(e) {
-        $(this).removeClass('standard-button__ripple_active');
-    });
-  
-  })(jQuery, window, document);
+
+    $this.addClass('standard-button__ripple_active');
+  }
+
+  _handleStandardButtonAnimationend(event) {
+    $(event.currentTarget).removeClass('standard-button__ripple_active');
+  }
+}
+
+$(() => {
+  const $button = $('.js-standard-button');
+
+  $button.each(() => {
+    new Ripple();
+  });
+});

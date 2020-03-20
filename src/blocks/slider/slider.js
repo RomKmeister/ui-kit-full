@@ -1,23 +1,34 @@
-$( function() {
-  const $sliderWithScale = $('.js-slider');
-  $sliderWithScale.each(function() {
-    const $sliderBubble = $(this).find('.js-slider__bubble');
-    const $stepSize = ($(this).data('max') - $(this).data('min')) / ($(this).data('step') - 1);
-    $(this).slider({
-      value: $(this).data('value'),
-      min: $(this).data('min'),
-      max: $(this).data('max'),
-      step: $stepSize,
+class Slider {
+  constructor(element) {
+    this.element = element;
+    this.run();
+  }
+
+  run() {
+    const $sliderBubble = this.element.find('.js-slider__bubble');
+    this.element.slider({
+      value: this.element.data('value'),
+      min: this.element.data('min'),
+      max: this.element.data('max'),
+      step: (this.element.data('max') - this.element.data('min')) / (this.element.data('step') - 1),
       range: 'min',
       classes: {
-        'ui-slider-range': 'ui-slider-range_' + $(this).data('color')
+        'ui-slider-range': 'ui-slider-range_' + this.element.data('color')
       },
-      create: function() {
-        $sliderBubble.text($(this).slider('value'))
+      create: () => {
+        $sliderBubble.text(this.element.data('value'))
       },
-      slide: function( event, ui ) {
+      slide: ( event, ui ) => {
         $sliderBubble.text(ui.value)
       }
     });
+  }
+}
+
+$( () => {
+  const $slider = $('.js-slider');
+
+  $slider.each((index, item) => {
+    new Slider($(item))
   });
 });

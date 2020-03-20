@@ -15,9 +15,4 @@ class DropDown {
   }
 }
 
-$(() => {
-  const $dropDown = $('.js-drop-down');
-  $dropDown.each((index, item) => {
-    new DropDown($(item))
-  });
-});
+export default DropDown;

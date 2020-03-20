@@ -1,5 +1,6 @@
-class Ripple {
-  constructor() {
+class StandardButton {
+  constructor(element) {
+    this.element = element;
     this.run();
   }
 
@@ -10,8 +11,8 @@ class Ripple {
   }
 
   _findElements() {
-    this.$ripple = $('.js-standard-button__ripple');
-    this.$circle = $('.standard-button__ripple_circle');
+    this.$ripple = this.element.find('.js-standard-button__ripple');
+    this.$circle = this.element.find('.standard-button__ripple_circle');
   }
 
   _handleStandardButtonClick(event) {
@@ -34,10 +35,4 @@ class Ripple {
   }
 }
 
-$(() => {
-  const $button = $('.js-standard-button');
-
-  $button.each(() => {
-    new Ripple();
-  });
-});
+export default StandardButton;

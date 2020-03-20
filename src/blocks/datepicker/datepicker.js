@@ -1,5 +1,6 @@
 class Datepicker {
-  constructor() {
+  constructor(element) {
+    this.element = element;
     this.show();
   }
 
@@ -18,8 +19,8 @@ class Datepicker {
   }
 
   _findElements() {
-    this.$calendar = $( '.js-datepicker__calendar');
-    this.$todayButton = $( '.js-datepicker__button');
+    this.$calendar = this.element.find( '.js-datepicker__calendar');
+    this.$todayButton = this.element.find( '.js-datepicker__button');
   }
 
   _handleTodayButtonClick() {
@@ -27,10 +28,4 @@ class Datepicker {
   }
 }
 
-$( () => {
-  const $calendar = $('.datepicker');
-
-  $calendar.each(() => {
-    new Datepicker();
-  });
-});
+export default Datepicker;

@@ -1,7 +1,7 @@
 include ../standard-button/standard-button
 
 mixin event(content)
-  - const { color, day, month, title, text, imgPath } = content
+  - const { color, day, month, title, text, image } = content
   -
     const colors = {
       green: 'green',
@@ -9,7 +9,7 @@ mixin event(content)
       gray: 'gray'
     }
   .event
-    img.event__image(src=imgPath, alt="")
+    img.event__image(src=image, alt="")
     div(class=`event__block event__block_color_${colors[color] || colors.gray}`)
       h2.event__date= day
         span.event__month= month

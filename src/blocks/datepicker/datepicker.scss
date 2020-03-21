@@ -75,7 +75,7 @@
       }
   
       & th {
-        padding: 1.1rem 0 0.8rem;
+        padding: 1.1rem 0 0.5rem;
       }
   
       & td {
@@ -154,6 +154,7 @@
   }
 
   &__button {
+    width: 19.92rem;
     margin: 0;
     padding: 1.1rem 1.54rem;
     font-family: 'Lato', Arial, sans-serif;

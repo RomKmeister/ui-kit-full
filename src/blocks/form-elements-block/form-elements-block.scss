@@ -4,7 +4,7 @@
     justify-content: space-between;
     margin-top: 2.1rem;
     
-    @media(max-width: 640px) {
+    @media(max-width: 660px) {
       display: block;
     }
   }
@@ -13,7 +13,7 @@
     width: 48.5%;
     margin-top: 1.17rem;
 
-    @media(max-width: 640px) {
+    @media(max-width: 660px) {
       width: 90%;
       margin: 0 auto;
     }
@@ -22,7 +22,7 @@
   &__toggle-and-tick {
     width: 52%;
 
-    @media(max-width: 640px) {
+    @media(max-width: 660px) {
       width: 90%;
       margin: 0 auto;
     }
@@ -40,10 +40,20 @@
   &__search {
     width: 48.5%;
     margin: 2.9rem 0 0;
+
+    @media(max-width: 660px) {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 
   &__user-profile {
     width: 45.5%;
     margin: 2.9rem 0 0;
+
+    @media(max-width: 660px) {
+      width: 23rem;
+      margin: 0 auto;
+    }
    }
 }

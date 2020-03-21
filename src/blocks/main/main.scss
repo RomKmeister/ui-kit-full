@@ -5,11 +5,15 @@
   min-width: 41rem;
   margin: 0 auto;
 
+  @media(max-width: 660px) {
+    padding: 0 2%;
+  }
+
   &__standard-buttons {
     margin: 5.92rem 0 0;
 
-    @media(max-width: 581px) {
-      margin: 5.92rem 0.75rem 0;
+    @media(max-width: 660px) {
+      margin: 5.92rem 0 0;
     }
   }
 
@@ -41,19 +45,11 @@
     margin-top: 3.08rem;
   }
 
-  &__wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+  &__calendar-messaging-block {
     margin-top: 3.4rem;
-    
-    @media(max-width: 581px) {
-      justify-content: center;
-    }
   }
 
-  &__video-block {
-    margin-top: 3.33rem;
+  &__videos-block {
+    margin-top: 0.33rem;
   }
 }

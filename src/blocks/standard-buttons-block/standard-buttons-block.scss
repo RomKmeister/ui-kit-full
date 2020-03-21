@@ -1,5 +1,9 @@
 .standard-buttons-block {
   padding: 0 10.9%;
+
+  @media(max-width: 660px) {
+    padding: 0 2%;
+  }
   
   &__row {
     display: flex;

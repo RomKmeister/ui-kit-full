@@ -1,0 +1,15 @@
+.calendar-messaging-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media(max-width: 660px) {
+    justify-content: center;
+  }
+  
+  &__item {
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+  }
+}

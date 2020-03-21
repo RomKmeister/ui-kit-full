@@ -9,7 +9,8 @@
   }
   
   &__item {
-    margin-bottom: 3rem;
-    margin-left: 1rem;
+    @media(max-width: 660px) {
+      margin-bottom: 3rem;
+    }
   }
 }

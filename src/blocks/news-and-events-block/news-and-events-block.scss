@@ -6,9 +6,7 @@
     margin-top: 1.952rem;
 
     @media(max-width: 660px) {
-      flex-wrap: wrap;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
     }
   }

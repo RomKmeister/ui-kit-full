@@ -12,16 +12,16 @@ block title
 block content
   main.event-item
     section.event-item__left-column
-      img.event-item__poster(src="../img/romeo.jpg")
+      img.event-item__poster(src="images/romeo.jpg")
       .event-item__video
-        +video({src: "https://www.youtube.com/embed/swcG66soqps"})
+        +video("https://www.youtube.com/embed/swcG66soqps")
     section.event-item__right-column
       h1.event-item__title Ромео и Джульетта
       p.event-item__description Если задуматься, в знаменитой истории Ромео и Джульетты нет ничего слащавого. Ничего от конфетно-открыточных историй на День Святого Валентина. Страстное влечение, краткий период тайного счастья &mdash; и неотвратимый смертельный финал. Герои пытаются бороться с роком &mdash; но каждый шаг лишь приближает развязку: законы трагедии неумолимы. Этой любви не суждена долгая жизнь.
       .event-item__actors
         .event-item__actor
           +user-profile({
-            imagePath: "../img/romeo-actor.jpg",
+            image: "images/romeo-actor.jpg",
             imageAlt: "", name: "Андрей Симонькин",
             job: "Ромео",
             theme: "gray",
@@ -32,7 +32,7 @@ block content
             }})
         .event-item__actor
           +user-profile({
-            imagePath: "../img/juliet.jpg",
+            image: "images/juliet.jpg",
             imageAlt: "",
             name: "Евгения Родина",
             job: "Джульетта",
@@ -46,10 +46,10 @@ block content
           +standard-button({ color: "green", size: "wide", type: "button", title: "Все актеры" })
       .event-item__charts
         .event-item__chart
-          +pie-chart({ value: "70" })
+          +pie-chart("70")
           p Оценка критиков
         .event-item__chart
-          +pie-chart({ value: "90" })
+          +pie-chart("90")
           p Оценка зрителей
       .event-item__button
         +standard-button({color: "green", size: "wide", type: "button", title: "Купить билет"})

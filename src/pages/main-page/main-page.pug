@@ -4,6 +4,7 @@ block include
   include ../../blocks/datepicker/datepicker
   include ../../blocks/drop-down/drop-down
   include ../../blocks/toggle/toggle
+  include ../../blocks/tick-box/tick-box
   include ../../blocks/event/event
   include ../../blocks/arrow-button/arrow-button
 
@@ -11,20 +12,21 @@ block title
   title Главная
   
 block content
-  .main-page__content
+  .main-page
     aside.main-page__left-column
       .main-page__filter
         h2.main-page__title Фильтры
-        .main-page__choose-date
+        .main-page__date
           +datepicker()
-        .main-page__drop-down
+        .main-page__type
           +drop-down({ theme: "custom", placeholder: "Тема", items: ["Концерты", "Театры", "Кино"] })
-        .main-page__toggle
-          +toggle() 
-          p.filter__lable Премьеры
-        .main-page__toggle
-          +toggle("checked")
-          p.main-page__lable Все
+        .main-page__novelty
+          .main-page__tick-box
+            +tick-box({ name:"radio", isChecked: "false" }) 
+            p.main-page__lable Премьеры
+          .main-page__tick-box
+            +tick-box({ name:"radio", isChecked: "true" })
+            p.main-page__lable Все
     main.main-page__right-column
       section.main-page__events
         .main-page__top-bar
@@ -37,7 +39,7 @@ block content
               month: "Фев",
               title: "Ромео и Джульетта",
               text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              imgPath: "../img/romeo.jpg"
+              image: "/../images/romeo.jpg"
             })
           .main-page__event-item
             +event({
@@ -46,7 +48,7 @@ block content
               month: "Фев",
               title: "Золотой теленок",
               text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              imgPath: "../img/telenok.jpg"
+              image: "images/telenok.jpg"
             })
           .main-page__event-item
             +event({
@@ -55,7 +57,7 @@ block content
               month: "Фев",
               title: "Art Jazz",
               text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              imgPath: "../img/jazz.jpg"
+              image: "images/jazz.jpg"
             })
           .main-page__event-item
             +event({
@@ -64,7 +66,7 @@ block content
               month: "Фев",
               title: "Плохие парни",
               text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              imgPath: "../img/badboys.jpg"
+              image: "images/badboys.jpg"
             })
           .main-page__event-item
             +event({
@@ -73,7 +75,7 @@ block content
               month: "Фев",
               title: "Snoop Dogg show",
               text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              imgPath: "../img/snoop.jpg"
+              image: "images/snoop.jpg"
             })
           .main-page__event-item
             +event({
@@ -82,7 +84,7 @@ block content
               month: "Фев",
               title: "1917",
               text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              imgPath: "../img/1917.jpg"
+              image: "images/1917.jpg"
             })
           .main-page__event-item
             +event({
@@ -91,7 +93,7 @@ block content
               month: "Фев",
               title: "Шахматист",
               text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              imgPath: "../img/shachmatist.jpg"
+              image: "images/shachmatist.jpg"
             })
         .main-page__paginator
           +arrow-button({ direction: "left", color: "white", isDisabled: true })

@@ -1,10 +1,9 @@
 .header {
   display: flex;
-  flex: 0 0 auto;
-  align-items: flex-start;
-  align-content: flex-end;
-  background: #4eb7a8;
+  align-items: baseline;
+  width: 100%;
   padding: 1% 5%;
+  background: #4eb7a8;
   
   &__logo {
     font-size: 2rem;

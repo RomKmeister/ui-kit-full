@@ -1,13 +1,10 @@
 .main-page {
   height: 100%;
-
-  &__content {
-    display: flex;
-    padding: 1% 5%;
-    
-    @media(max-width: 690px) {
-      flex-direction: column;
-    }
+  display: flex;
+  padding: 1% 5%;
+  
+  @media(max-width: 690px) {
+    flex-direction: column;
   }
 
   &__left-column {
@@ -22,18 +19,24 @@
     }
   }
 
-  &__toggle {
+  &__novelty {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    margin: 1rem 0;
+    margin: 2rem 0 0;
+  }
+
+  &__tick-box {
+    display: flex;
+    margin: 0.5rem 0;
   }
 
   &__lable {
-    margin: 0.42rem 0.83rem;
+    margin: 0.2rem 0.5rem;
   }
 
-  &__drop-down,
-  &__choose-date {
+  &__type,
+  &__date {
     margin-top: 2rem
   }
 

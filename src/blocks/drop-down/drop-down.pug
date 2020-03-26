@@ -2,6 +2,6 @@ mixin drop-down(options)
   - const { placeholder, items } = options;
   .drop-down.js-drop-down
     select.drop-down__select.js-drop-down__select
-      option(disabled, selected)= placeholder
+      option.drop-down__item(disabled, selected)= placeholder
       each item in items
-        option= item
+        option.drop-down__item= item

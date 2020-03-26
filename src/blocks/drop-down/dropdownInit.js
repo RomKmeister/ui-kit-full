@@ -1,4 +1,4 @@
-import DropDown from './DropDown';
+import DropDown from './Dropdown';
 
 $(() => {
   const $dropDown = $('.js-drop-down');

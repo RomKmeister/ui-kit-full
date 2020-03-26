@@ -13,14 +13,14 @@ class Slider {
       step: (this.element.data('max') - this.element.data('min')) / (this.element.data('step') - 1),
       range: 'min',
       classes: {
-        'ui-slider-range': 'ui-slider-range_' + this.element.data('color')
+        'ui-slider-range': `ui-slider-range_${this.element.data('color')}`,
       },
       create: () => {
-        $sliderBubble.text(this.element.data('value'))
+        $sliderBubble.text(this.element.data('value'));
       },
-      slide: ( event, ui ) => {
-        $sliderBubble.text(ui.value)
-      }
+      slide: (event, ui) => {
+        $sliderBubble.text(ui.value);
+      },
     });
   }
 }

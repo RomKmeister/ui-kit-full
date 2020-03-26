@@ -6,7 +6,7 @@ class StandardButton {
 
   run() {
     this._findElements();
-    this.$ripple.on('click', this._handleStandardButtonClick.bind(this) )
+    this.$ripple.on('click', this._handleStandardButtonClick.bind(this));
     this.$ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', this._handleStandardButtonAnimationend);
   }
 
@@ -23,8 +23,8 @@ class StandardButton {
     const y = event.pageY - $offset.top;
 
     this.$circle.css({
-      top: y + 'px',
-      left: x + 'px'
+      top: `${y} px`,
+      left: `${x} px`,
     });
 
     $this.addClass('standard-button__ripple_active');

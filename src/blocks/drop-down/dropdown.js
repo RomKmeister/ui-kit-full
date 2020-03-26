@@ -9,8 +9,8 @@ class DropDown {
     $dropDown.selectmenu({
       width: '100%',
       classes: {
-        'ui-selectmenu-menu': 'ui-selectmenu-menu_ui'
-      }
+        'ui-selectmenu-menu': 'ui-selectmenu-menu_ui',
+      },
     });
   }
 }

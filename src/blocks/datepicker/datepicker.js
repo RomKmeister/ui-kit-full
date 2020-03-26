@@ -9,18 +9,18 @@ class Datepicker {
     this.$calendar.datepicker({
       altField: '.js-datepicker__date',
       dateFormat: 'd',
-      dayNamesMin: [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ],
+      dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
       inline: true,
       firstDay: 1,
       showOtherMonths: true,
     });
 
-    this.$todayButton.on(`click`, this._handleTodayButtonClick.bind(this));
+    this.$todayButton.on('click', this._handleTodayButtonClick.bind(this));
   }
 
   _findElements() {
-    this.$calendar = this.element.find( '.js-datepicker__calendar');
-    this.$todayButton = this.element.find( '.js-datepicker__button');
+    this.$calendar = this.element.find('.js-datepicker__calendar');
+    this.$todayButton = this.element.find('.js-datepicker__button');
   }
 
   _handleTodayButtonClick() {

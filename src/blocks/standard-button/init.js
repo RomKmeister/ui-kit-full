@@ -1,4 +1,4 @@
-import StandardButton from './standardButton';
+import StandardButton from './standardbutton';
 
 $(() => {
   const $button = $('.js-standard-button');

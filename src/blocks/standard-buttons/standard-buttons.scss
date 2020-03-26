@@ -1,0 +1,19 @@
+.standard-buttons {
+  padding: 0 10.9%;
+
+  @media(max-width: 660px) {
+    padding: 0 2%;
+  }
+  
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 1.83rem 0 0;
+
+    &_margin_bigger {
+      margin-top: 5.17rem;
+    }
+  }
+}

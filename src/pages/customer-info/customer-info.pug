@@ -1,7 +1,7 @@
 extends ../template/template.pug
 
 block include
-  include ../../blocks/stages/stages
+  include ../../blocks/progress-bar/progress-bar
   include ../../blocks/form/form
 
 block title
@@ -10,7 +10,7 @@ block title
 block content
   main.customer-info
     section.customer-info__step
-      +stages({ steps: "2", activeStep: "2" })
+      +progress-bar({ steps: "2", activeStep: "2" })
       h1.customer-info__title Подтверждение заказа
       .customer-info__tickets
         p.customer-info__date 3 февраля 2020 года

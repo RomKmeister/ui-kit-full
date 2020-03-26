@@ -1,0 +1,59 @@
+.form-elements {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.1rem;
+    
+    @media(max-width: 660px) {
+      display: block;
+    }
+  }
+
+  &__form {
+    width: 48.5%;
+    margin-top: 1.17rem;
+
+    @media(max-width: 660px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  &__toggle-and-tick {
+    width: 52%;
+
+    @media(max-width: 660px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  &__toggles {
+    margin-left: 2.42rem;
+  }
+
+  &__tick-boxes {
+    margin-top: 2.25rem;
+    margin-left: 2.3rem;
+  }
+
+  &__widget {
+    width: 48.5%;
+    margin: 2.9rem 0 0;
+
+    @media(max-width: 660px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  &__user-profiles {
+    width: 45.5%;
+    margin: 2.9rem 0 0;
+
+    @media(max-width: 660px) {
+      width: 23rem;
+      margin: 0 auto;
+    }
+   }
+}

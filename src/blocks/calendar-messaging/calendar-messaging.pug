@@ -1,0 +1,12 @@
+include ../calendar/calendar
+include ../messaging/messaging
+
+mixin calendar-messaging()
+  .calendar-messaging
+    .calendar-messaging__item
+      +calendar()
+    .calendar-messaging__item
+      +messaging()
+
+
+

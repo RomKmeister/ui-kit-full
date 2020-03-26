@@ -1,0 +1,13 @@
+include ../title/title
+include ../message/message
+
+mixin messaging()
+  section.messaging
+    +title("Messaging")
+    .messaging__item
+      +message({
+        title: "Sarah Brown",
+        income: "Hey! So are we cool to meet at the art gallery? Say 8pm",
+        message: "Yeah that sounds great. See you then.",
+        image: "/../images/user-1.jpg"
+      })

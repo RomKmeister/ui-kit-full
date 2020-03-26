@@ -1,0 +1,21 @@
+include ../title/title
+include ../standard-button/standard-button
+
+mixin standard-buttons()
+  section.standard-buttons
+    +title("Standart buttons")
+    .standard-buttons__row.standard-buttons__row_margin_bigger
+      +standard-button({ color: "green", size: "small", type: "button", title: "Button" })
+      +standard-button({ color: "green", size: "big", type: "button", title: "Button" })
+      +standard-button({ color: "orange", size: "big", type: "button", title: "Button" })
+      +standard-button({ color: "orange", size: "small", type: "button", title: "Button" })
+    .standard-buttons__row
+      +standard-button({ color: "green", size: "small", type: "button", title: "Button" })
+      +standard-button({ color: "green", size: "big", type: "button", title: "Button" })
+      +standard-button({ color: "orange", size: "big", type: "button", title: "Button" })
+      +standard-button({ color: "orange", size: "small", type: "button", title: "Button" })
+    .standard-buttons__row
+      +standard-button({ color: "green", size: "small", type: "button", title: "Button" })
+      +standard-button({ color: "green", size: "big", type: "button", title: "Button" })
+      +standard-button({ color: "orange", size: "big", type: "button", title: "Button" })
+      +standard-button({ color: "orange", size: "small", type: "button", title: "Button" })

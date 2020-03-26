@@ -1,51 +1,5 @@
-@import '../../colors.scss';
-
 .stages {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  list-style: none;
-
-  &__item {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-
-    &:before {
-      content: '';
-      flex-grow: 1;
-      flex-shrink: 0;
-      height: 0.42rem;
-      background: $main-gray;
-    }
-
-    &:first-child{
-      flex-grow: 0;
-    }
-
-    &:first-child:before{
-      content: none;
-    }
-
-    &_active::before{
-      background: $main-orange;
-    }
-  }
-
-  &__step {
-    width: 2.33rem;
-    height: 2.33rem;
-    font-weight: bold;
-    font-size: 1.167rem;
-    line-height: 1.9;
-    color: $main-gray-text;
-    background: $main-gray;
-    border-radius: 50%;
-    text-align: center;
-
-    &_active {
-      background: $main-orange;
-      color: $main-white;
-    }
+  &__wrapper {
+    margin: 1.5rem 0 0;
   }
 }

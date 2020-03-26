@@ -1,11 +1,9 @@
-mixin stages(options)
-  - const { steps, activeStep } = options;
-  - let i = 1;
-  ul.stages
-    while i <= steps
-      if i <= activeStep
-        li.stages__item.stages__item_active
-          span.stages__step.stages__step_active= i++
-      else
-        li.stages__item
-          span.stages__step= i++
+include ../title/title
+include ../progress-bar/progress-bar
+
+mixin stages()
+  section.stages
+    +title("Stages")
+    .stages__wrapper
+      +progress-bar({ steps: "5", activeStep: "3" })
+

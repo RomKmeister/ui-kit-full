@@ -23,15 +23,15 @@ block content
         .main-page__novelty
           .main-page__tick-box
             +tick-box({ name:"radio", isChecked: "false" }) 
-            p.main-page__lable Премьеры
+            p.main-page__label Премьеры
           .main-page__tick-box
             +tick-box({ name:"radio", isChecked: "true" })
-            p.main-page__lable Все
+            p.main-page__label Все
     main.main-page__right-column
-      section.main-page__events
+      section.main-page__content
         .main-page__top-bar
           h1.main-page__title Мероприятия
-        .main-page__events-block
+        .main-page__events
           .main-page__event-item
             +event({
               color: "green",

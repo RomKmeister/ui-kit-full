@@ -1,9 +1,9 @@
-.user-profile {
-  &__item {
-    margin-top: 2.42rem;
+.user-profiles {
+  &__items {
+    margin-top: 1.6rem;
+  }
 
-    &_with-margin {
-      margin-top: 1.6rem;
-    }
+  &__item {
+    margin-bottom: 2.42rem;
   }
 }

@@ -1,6 +1,6 @@
-mixin toggle(isChecked)
-  - const toggleChecked = isChecked ? true : false;
+mixin toggle(options)
+  - const { isChecked } = options
   label.toggle
-    input.toggle__input(type="checkbox", checked=toggleChecked)
+    input.toggle__input(type="checkbox", checked=isChecked)
     span.toggle__label
     span.toggle__handle

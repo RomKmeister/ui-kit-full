@@ -6,6 +6,6 @@ mixin toggles()
     +title("Toggles")
     .toggles__row
       .toggles__item
-        +toggle()
+        +toggle({ isChecked: false })
       .toggles__item
-        +toggle("checked")
+        +toggle({ isChecked: true })

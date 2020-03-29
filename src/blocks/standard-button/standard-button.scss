@@ -1,4 +1,5 @@
 @import '../../colors.scss';
+@import '../../mixins.scss';
 
 .standard-button {
   position: relative;
@@ -16,15 +17,15 @@
 
   &_color{
     &_green {
+      @include standard-button-shadow($main-green);
       color: $main-green;
       border-color: $main-green;
-      box-shadow: 0 0.25rem 0 0 $main-green;
       
       &:hover,
       &:focus {
+        @include standard-button-shadow($main-green-shadow);
         color: $main-white;
         background: $main-green;
-        box-shadow: 0 0.25rem 0 0 $main-green-shadow;
         outline: 0;
       }
 
@@ -37,15 +38,15 @@
     }
 
     &_orange {
+      @include standard-button-shadow($main-orange);
       color: $main-orange;
       border-color: $main-orange;
-      box-shadow: 0 0.25rem 0 0 $main-orange;
     
       &:hover,
       &:focus {
+        @include standard-button-shadow($main-orange-shadow);
         color: $main-white;
         background: $main-orange;
-        box-shadow: 0 0.25rem 0 0 $main-orange-shadow;
         outline: 0;
       }
 
@@ -58,14 +59,14 @@
     }
 
     &_fullgreen {
+      @include standard-button-shadow($deep-green);
       border-color: $main-green;
       background: $main-green;
-      box-shadow: 0 0.25rem 0 0 $deep-green;
       
       &:hover,
       &:focus {
+        @include standard-button-shadow($deep-green);
         background: $deep-green;
-        box-shadow: 0 0.25rem 0 0 $deep-green;
         outline: 0;
       }
 
@@ -77,15 +78,15 @@
     }
 
     &_darkgreen {
+      @include standard-button-shadow($dark-green-shadow);
       color: $dark-green;
       border-color: $dark-green;
-      box-shadow: 0 0.25rem 0 0 $dark-green-shadow;
       
       &:hover,
       &:focus {
+        @include standard-button-shadow($dark-green-shadow);
         color: $main-white;
         background: $dark-green;
-        box-shadow: 0 0.25rem 0 0 $dark-green-shadow;
         outline: 0;
       }
 

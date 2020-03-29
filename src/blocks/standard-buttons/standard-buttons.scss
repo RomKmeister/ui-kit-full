@@ -1,7 +1,9 @@
+@import '../../vars.scss';
+
 .standard-buttons {
   padding: 0 10.9%;
 
-  @media(max-width: 660px) {
+  @media(max-width: $small) {
     padding: 0 2%;
   }
   

@@ -1,10 +1,12 @@
+@import '../../vars.scss';
+
 .form-elements {
   &__row {
     display: flex;
     justify-content: space-between;
     margin-top: 2.1rem;
     
-    @media(max-width: 660px) {
+    @media(max-width: $small) {
       display: block;
     }
   }
@@ -14,7 +16,7 @@
     margin-top: 1.17rem;
     margin-right: 3.5%;
 
-    @media(max-width: 660px) {
+    @media(max-width: $small) {
       width: 90%;
       margin: 0 auto;
     }
@@ -23,7 +25,7 @@
   &__right-block {
     padding: 0 11%;
 
-    @media(max-width: 660px) {
+    @media(max-width: $small) {
       width: 90%;
       margin: 0 auto;
     }
@@ -37,7 +39,7 @@
     flex-grow: 1;
     margin: 2.9rem 0 0;
 
-    @media(max-width: 660px) {
+    @media(max-width: $small) {
       width: 90%;
       margin: 0 auto;
     }
@@ -48,7 +50,7 @@
     padding-left: 6%;
     margin: 2.9rem 0 0;
 
-    @media(max-width: 660px) {
+    @media(max-width: $small) {
       width: 23rem;
       margin: 0 auto;
     }

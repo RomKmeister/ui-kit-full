@@ -1,9 +1,11 @@
+@import '../../vars.scss';
+
 .main-page {
   height: 100%;
   display: flex;
   padding: 1% 5%;
   
-  @media(max-width: 690px) {
+  @media(max-width: $normal) {
     flex-direction: column;
   }
 
@@ -14,7 +16,7 @@
     width: auto;
     margin: 5% 3% 0 0;
     
-    @media(max-width: 690px) {
+    @media(max-width: $normal) {
       order: 1;
     }
   }
@@ -43,7 +45,7 @@
   &__right-column {
     margin: 5% 3%;
     
-    @media(max-width: 690px) {
+    @media(max-width: $normal) {
       display: block;
     }
   }
@@ -52,7 +54,7 @@
     margin: 0;
     font-size: 2rem;
     
-    @media(max-width: 690px) {
+    @media(max-width: $normal) {
       width: 24rem;
     }
   }
@@ -61,7 +63,7 @@
     display: flex;
     flex-direction: column;
   
-    @media(max-width: 690px) {
+    @media(max-width: $normal) {
       align-items: center;
     }
   }
@@ -81,7 +83,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     
-    @media(max-width: 690px) {
+    @media(max-width: $normal) {
       width: 24rem;
     }
   }
@@ -89,7 +91,7 @@
   &__event-item {
     margin: 1.67rem 1.67rem 0 0;
     
-    @media(max-width: 690px) {
+    @media(max-width: $normal) {
       margin-right: 0;
     }
   }

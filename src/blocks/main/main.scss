@@ -1,18 +1,18 @@
-@import '../../colors';
+@import '../../vars.scss';
 
 .main {
   max-width: 49.5rem;
   min-width: 41rem;
   margin: 0 auto;
 
-  @media(max-width: 660px) {
+  @media(max-width: $small) {
     padding: 0 2%;
   }
 
   &__standard-buttons {
     margin: 5.92rem 0 0;
 
-    @media(max-width: 660px) {
+    @media(max-width: $small) {
       margin: 5.92rem 0 0;
     }
   }

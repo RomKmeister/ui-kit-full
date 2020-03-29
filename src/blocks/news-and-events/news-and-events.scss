@@ -1,3 +1,5 @@
+@import '../../vars.scss';
+
 .news-and-events {
   &__row {
     display: flex;
@@ -5,7 +7,7 @@
     align-items: flex-start;
     margin-top: 1.952rem;
 
-    @media(max-width: 660px) {
+    @media(max-width: $small) {
       flex-direction: column;
       align-items: center;
     }

@@ -2,7 +2,7 @@
 
 .slider {
   height: 0.42rem;
-  background: $main-gray;
+  background: $third-light;
 
   &.ui-widget.ui-widget-content {
     border: 0;
@@ -22,18 +22,18 @@
     
     &_orange,
     &_orange:active {
-      background: $main-orange;
+      background: $second;
     }
     
     &_green,
     &_green:active {
-      background: $main-green;
+      background: $main;
     }
   }
 
   & .ui-slider-range {
     &_green {
-      background: $main-green;
+      background: $main;
     }
   }
 
@@ -45,7 +45,7 @@
     font-weight: 900;
     font-size: 0.92rem;
     line-height: 1;
-    color: $main-gray;
+    color: $third-light-scale;
 
     &_hide {
       display: none;
@@ -63,19 +63,19 @@
     font-weight: 900;
     font-size: 1.08rem;
     line-height: 1.2;
-    color: $main-white;
+    color: $third-lightest;
     border-radius: 0.33rem;
     text-align: center;
 
     &_color{
       &_orange {
-        background: $main-orange;
-        border-color: $main-orange;
+        background: $second;
+        border-color: $second;
       }
       
       &_green {
-        background: $main-green;
-        border-color: $main-green;
+        background: $main;
+        border-color: $main;
       }
     }
 

@@ -16,7 +16,7 @@
       flex-grow: 1;
       flex-shrink: 0;
       height: 0.42rem;
-      background: $main-gray;
+      background: $third-light;
     }
 
     &:first-child{
@@ -28,7 +28,7 @@
     }
 
     &_active::before{
-      background: $main-orange;
+      background: $second;
     }
   }
 
@@ -38,14 +38,14 @@
     font-weight: bold;
     font-size: 1.167rem;
     line-height: 1.9;
-    color: $main-gray-text;
-    background: $main-gray;
+    color: $third;
+    background: $third-light;
     border-radius: 50%;
     text-align: center;
 
     &_active {
-      background: $main-orange;
-      color: $main-white;
+      background: $second;
+      color: $third-lightest;
     }
   }
 }

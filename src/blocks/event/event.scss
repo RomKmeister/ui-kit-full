@@ -5,7 +5,7 @@
   display: flex;
   width: 24rem;
   overflow: hidden;
-  color: $main-white;
+  color: $third-lightest;
   border-radius: 0.25rem;
 
   &__image {
@@ -24,15 +24,15 @@
     
     &_color{
       &_green {
-        background: $main-green;
+        background: $main;
       }
 
       &_orange {
-        background: $main-orange;
+        background: $second;
       }
 
       &_gray {
-        background: $gray-textarea;
+        background: $third-darker;
       }
     }
   }

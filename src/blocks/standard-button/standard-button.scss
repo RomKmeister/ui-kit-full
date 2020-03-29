@@ -6,93 +6,93 @@
   line-height: 1.2;
   font-weight: 900;
   letter-spacing: -0.08rem;
-  color: $main-white;
+  color: $third-lightest;
   border-width: 1px;
   border-style: solid;
   border-radius: 0.25rem;
-  background: $main-white;
+  background: $third-lightest;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
 
-  &_color{
+  &_color {
     &_green {
-      @include standard-button-shadow($main-green);
-      color: $main-green;
-      border-color: $main-green;
+      @include standard-button-shadow($main);
+      color: $main;
+      border-color: $main;
       
       &:hover,
       &:focus {
-        @include standard-button-shadow($main-green-shadow);
-        color: $main-white;
-        background: $main-green;
+        @include standard-button-shadow($main-dark);
+        color: $third-lightest;
+        background: $main;
         outline: 0;
       }
 
       &:active {
-        color: $main-white;
-        background: $main-green;
+        color: $third-lightest;
+        background: $main;
         box-shadow: none;
         outline: 0;
       }
     }
 
     &_orange {
-      @include standard-button-shadow($main-orange);
-      color: $main-orange;
-      border-color: $main-orange;
+      @include standard-button-shadow($second);
+      color: $second;
+      border-color: $second;
     
       &:hover,
       &:focus {
-        @include standard-button-shadow($main-orange-shadow);
-        color: $main-white;
-        background: $main-orange;
+        @include standard-button-shadow($second-darker);
+        color: $third-lightest;
+        background: $second;
         outline: 0;
       }
 
       &:active {
-        color: $main-white;
-        background: $main-orange;
+        color: $third-lightest;
+        background: $second;
         box-shadow: none;
         outline: 0;
       }
     }
 
     &_fullgreen {
-      @include standard-button-shadow($deep-green);
-      border-color: $main-green;
-      background: $main-green;
+      @include standard-button-shadow($main-dark);
+      border-color: $main;
+      background: $main;
       
       &:hover,
       &:focus {
-        @include standard-button-shadow($deep-green);
-        background: $deep-green;
+        @include standard-button-shadow($main-dark);
+        background: $main-dark;
         outline: 0;
       }
 
       &:active {
-        background: $deep-green;
+        background: $main-dark;
         box-shadow: none;
         outline: 0;
       }
     }
 
     &_darkgreen {
-      @include standard-button-shadow($dark-green-shadow);
-      color: $dark-green;
-      border-color: $dark-green;
+      @include standard-button-shadow($main-darkest);
+      color: $main-darker;
+      border-color: $main-darker;
       
       &:hover,
       &:focus {
-        @include standard-button-shadow($dark-green-shadow);
-        color: $main-white;
-        background: $dark-green;
+        @include standard-button-shadow($main-darkest);
+        color: $third-lightest;
+        background: $main-darker;
         outline: 0;
       }
 
       &:active {
-        color: $main-white;
-        background: $dark-green;
+        color: $third-lightest;
+        background: $main-darker;
         box-shadow: none;
         outline: 0;
       }

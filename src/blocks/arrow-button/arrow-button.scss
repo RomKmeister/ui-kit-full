@@ -34,51 +34,51 @@
 
   &_color {
     &_white {
-      background: $main-white;
-      border-color: $main-green;
+      background: $third-lightest;
+      border-color: $main;
 
       &::after {
-        border-color: $main-green;
+        border-color: $main;
       }
 
       &:hover,
       &:focus {
         outline: 0;
-        background: $main-green;
+        background: $main;
 
         &::after {
-        border-color: $main-white;
+        border-color: $third-lightest;
         }
       }
     }
 
     &_green {
-      background: $main-green;
-      border-color: $main-green;
+      background: $main;
+      border-color: $main;
       
       &::after {
-        border-color: $main-white;
+        border-color: $third-lightest;
       }
 
       &:hover,
       &:focus {
         outline: 0;
-        background: $main-white;
+        background: $third-lightest;
 
         &::after {
-        border-color: $main-green;
+        border-color: $main;
         }
       }
     }
   }
 
     &:disabled {
-      background: $main-gray;
-      border-color: $main-gray;
+      background: $third-light;
+      border-color: $third-light;
       cursor: default;
 
       &::after {
-        border-color: $main-white;
+        border-color: $third-lightest;
       }
     }
 }

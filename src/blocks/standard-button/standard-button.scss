@@ -1,5 +1,8 @@
 @import '../../vars.scss';
-@import '../../mixins.scss';
+
+@mixin standard-button-shadow($color) {
+  box-shadow: 0 0.25rem 0 0 $color;
+}
 
 .standard-button {
   position: relative;

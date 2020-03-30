@@ -1,5 +1,9 @@
 @import '../../vars.scss';
-@import '../../mixins.scss';
+
+@mixin arrow-borders () {
+  border-width: 0.25rem;
+  border-style: solid;
+}
 
 .arrow-button {
   @include arrow-borders;

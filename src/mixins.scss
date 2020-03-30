@@ -9,12 +9,3 @@
       url('#{$file}.svg') format('svg');
   }
 }
-
-@mixin standard-button-shadow($color) {
-  box-shadow: 0 0.25rem 0 0 $color;
-}
-
-@mixin arrow-borders () {
-  border-width: 0.25rem;
-  border-style: solid;
-}

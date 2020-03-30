@@ -9,6 +9,24 @@
 
   &__scale {
     animation: show100 2s;
+
+    &_color {
+      &_default {
+        stroke: $third-light;
+      }
+
+      &_green {
+        stroke: $main;
+      }
+
+      &_orange {
+        stroke: $second;
+      }
+
+      &_gray {
+        stroke: $third-dark-chart;
+      }
+    }
   }
 
   &__background {

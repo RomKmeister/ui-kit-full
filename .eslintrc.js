@@ -16,7 +16,6 @@ module.exports =  {
     'max-len': ["error", { "code": 125 }],
     "class-methods-use-this": 0,
     "no-new": 0,
-    "no-underscore-dangle": 0,
-    "no-undef": 0
+    "no-underscore-dangle": 0
   }
 };

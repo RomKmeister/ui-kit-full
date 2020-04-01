@@ -1,5 +1,6 @@
+/* global ymaps */
 /* eslint comma-dangle: ["error", "never"] */
-/* eslint no-undef: 0 */
+
 class Map {
   constructor(element) {
     this.element = element;

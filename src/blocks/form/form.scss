@@ -5,7 +5,7 @@
   flex-direction: column;
 
   &::-webkit-input-placeholder {
-    color: $third;
+    color: $content-primary;
   }
 
   &__item {
@@ -22,14 +22,14 @@
     font-family: "SourceSansPro", Arial, sans-serif;
     border: none;
     border-radius: 0.25rem;
-    background: $third-light;
+    background: $background-default;
   
     &:valid:not(:placeholder-shown) + .form__result {
       display: block;
-      background: $main;
+      background: $primary;
 
         &::before {
-          background: $main;
+          background: $primary;
         }
 
         &::after {
@@ -39,10 +39,10 @@
 
     &:invalid:not(:placeholder-shown) + .form__result {
       display: block;
-      background: $second;
+      background: $secondary;
 
       &::before {
-        background: $second;
+        background: $secondary;
       }
 
       &::after {
@@ -58,7 +58,7 @@
     padding: 0.5rem 0;
     margin-left: 0.5rem;
     font-size: 0.83rem;
-    color: $third-lightest;
+    color: $content-secondary;
     text-align: center;
     text-transform: uppercase;
     border-radius: 0.25rem;
@@ -82,7 +82,7 @@
     font-size: 1.17rem;
     border: none;
     border-radius: 0.25rem;
-    background: $third-light;
+    background: $background-default;
     resize: none;
   }
 

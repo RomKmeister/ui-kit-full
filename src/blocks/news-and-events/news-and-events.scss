@@ -7,7 +7,7 @@
     align-items: flex-start;
     margin-top: 1.952rem;
 
-    @media(max-width: $small) {
+    @media(max-width: $xs) {
       flex-direction: column;
       align-items: center;
     }

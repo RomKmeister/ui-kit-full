@@ -5,7 +5,7 @@
   display: flex;
   width: 24rem;
   overflow: hidden;
-  color: $third-lightest;
+  color: $content-secondary;
   border-radius: 0.25rem;
 
   &__image {
@@ -23,16 +23,16 @@
     z-index: 1;
     
     &_color{
-      &_green {
-        background: $main;
+      &_primary {
+        background: $primary;
       }
 
-      &_orange {
-        background: $second;
+      &_secondary {
+        background: $secondary;
       }
 
-      &_gray {
-        background: $third-darker;
+      &_default {
+        background: $background-default;
       }
     }
   }

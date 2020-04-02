@@ -4,7 +4,7 @@
   display: flex;
   padding: 1% 5%;
   
-  @media(max-width: $biggest) {
+  @media(max-width: $xl) {
     flex-direction: column;
   }
 
@@ -12,7 +12,7 @@
     width: 70%;
     margin: 1rem;
     
-    @media(max-width: $biggest) {
+    @media(max-width: $xl) {
       width: auto;
     }
   }
@@ -25,7 +25,7 @@
     width: 30%;
     margin: 1rem;
     
-    @media(max-width: $biggest) {
+    @media(max-width: $xl) {
       width: auto;
     }
   }
@@ -41,12 +41,12 @@
     align-items: center;
     margin: 1rem;
     
-    @media(max-width: $biggest) {
+    @media(max-width: $xl) {
       flex-direction: row;
       justify-content: space-between;
     }
 
-    @media(max-width: $bigger) {
+    @media(max-width: $large) {
       flex-direction: column;
       justify-content: flex-start;
     }

@@ -6,13 +6,13 @@
     font-family: "SourceSansPro", Arial, sans-serif;
     font-size: 1.17rem;
     font-weight: 400;
-    background: $third-light;
-    color: $third-dark;
+    background: $background-default;
+    color: $content-primary;
     border: none;
     border-radius: 0.25rem;
     
     &:hover {
-      background: $main;
+      background: $primary;
       border: none;
     }
 
@@ -24,7 +24,7 @@
     & .ui-selectmenu-icon {
       padding: 1.25rem 1.5rem;
       background-image: url("images/drop-down-arrow.svg");
-      background-color: $main;
+      background-color: $primary;
       background-position: center center;
       background-repeat: no-repeat;
       border-radius: 0 0.33rem 0.33rem 0;
@@ -62,9 +62,9 @@
     font-family: "SourceSansPro", Arial, sans-serif;
     font-size: 1.16rem;
     font-weight: 400;
-    background-color: $main;
-    border: 0.08rem solid $main;
-    color: $third-lightest;
+    background-color: $primary;
+    border: 0.08rem solid $primary;
+    color: $content-secondary;
     border-radius: 0 0 0.33rem 0.33rem;
 
     & .ui-menu-item-wrapper {
@@ -81,8 +81,8 @@
   }
 
   & .ui-widget-content .ui-state-active {
-    background: $third-light;
-    color: $third-dark;
+    background: $background-default;
+    color: $content-primary;
     border: none;
   }
 

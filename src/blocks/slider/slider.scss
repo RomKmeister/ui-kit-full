@@ -2,7 +2,7 @@
 
 .slider {
   height: 0.42rem;
-  background: $third-light;
+  background: $background-default;
 
   &.ui-widget.ui-widget-content {
     border: 0;
@@ -21,20 +21,20 @@
     transform: translateY(-15%);
     cursor: pointer;
     
-    &_orange,
-    &_orange:active {
-      background: $second;
+    &_secondary,
+    &_secondary:active {
+      background: $secondary;
     }
     
-    &_green,
-    &_green:active {
-      background: $main;
+    &_primary,
+    &_primary:active {
+      background: $primary;
     }
   }
 
   & .ui-slider-range {
-    &_green {
-      background: $main;
+    &_primary {
+      background: $primary;
     }
   }
 
@@ -46,7 +46,7 @@
     font-weight: 900;
     font-size: 0.92rem;
     line-height: 1;
-    color: $third-light-scale;
+    color: $slider-scale;
 
     &_hide {
       display: none;
@@ -64,19 +64,19 @@
     font-weight: 900;
     font-size: 1.08rem;
     line-height: 1.2;
-    color: $third-lightest;
+    color: $content-secondary;
     border-radius: 0.33rem;
     text-align: center;
 
     &_color{
-      &_orange {
-        background: $second;
-        border-color: $second;
+      &_secondary {
+        background: $secondary;
+        border-color: $secondary;
       }
       
-      &_green {
-        background: $main;
-        border-color: $main;
+      &_primary {
+        background: $primary;
+        border-color: $primary;
       }
     }
 

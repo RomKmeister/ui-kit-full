@@ -11,26 +11,26 @@
     animation: show100 2s;
 
     &_color {
-      &_default {
-        stroke: $third-light;
+      &_background {
+        stroke: $background-default;
       }
 
-      &_green {
-        stroke: $main;
+      &_primary {
+        stroke: $primary;
       }
 
-      &_orange {
-        stroke: $second;
+      &_secondary {
+        stroke: $secondary;
       }
 
-      &_gray {
-        stroke: $third-dark-chart;
+      &_chartdefault {
+        stroke: $chart-default;
       }
     }
   }
 
   &__background {
-    fill: $third-lightest;
+    fill: $background-primary;
   }
 }
 

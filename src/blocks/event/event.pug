@@ -4,16 +4,16 @@ mixin event(content)
   - const { color, day, month, title, text, image } = content
   -
     const colors = {
-      green: 'green',
-      orange: 'orange',
-      gray: 'gray'
+      primary: 'primary',
+      secondary: 'primary',
+      default: 'default'
     }
   .event
     img.event__image(src=image, alt="")
-    div(class=`event__block event__block_color_${colors[color] || colors.gray}`)
+    div(class=`event__block event__block_color_${colors[color] || colors.default}`)
       h2.event__date= day
         span.event__month= month
       p.event__title= title 
       p.event__text= text
       .event__button
-        +standard-button({ color: "darkgreen", size: "special", type: "button", title: "Add to calendar" })
+        +standard-button({ color: "primaryDarkest", size: "special", type: "button", title: "Add to calendar" })

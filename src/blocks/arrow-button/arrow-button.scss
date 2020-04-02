@@ -37,52 +37,52 @@
   }
 
   &_color {
-    &_white {
-      background: $third-lightest;
-      border-color: $main;
-
+    &_primary {
+      background: $primary;
+      border-color: $primary;
+      
       &::after {
-        border-color: $main;
+        border-color: $content-secondary;
       }
 
       &:hover,
       &:focus {
         outline: 0;
-        background: $main;
+        background: $background-primary;
 
         &::after {
-        border-color: $third-lightest;
+        border-color: $primary;
         }
       }
     }
 
-    &_green {
-      background: $main;
-      border-color: $main;
-      
+    &_primarysolid {
+      background: $background-primary;
+      border-color: $primary;
+
       &::after {
-        border-color: $third-lightest;
+        border-color: $primary;
       }
 
       &:hover,
       &:focus {
         outline: 0;
-        background: $third-lightest;
+        background: $primary;
 
         &::after {
-        border-color: $main;
+        border-color: $content-secondary;
         }
       }
     }
   }
 
     &:disabled {
-      background: $third-light;
-      border-color: $third-light;
+      background: $background-default;
+      border-color: $background-default;
       cursor: default;
 
       &::after {
-        border-color: $third-lightest;
+        border-color: $content-secondary;
       }
     }
 }

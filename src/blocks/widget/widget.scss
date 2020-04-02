@@ -6,13 +6,13 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  @media(max-width: $small) {
+  @media(max-width: $xs) {
     flex-direction: column;
     align-items: center;
   }
   
   &__item {
-    @media(max-width: $small) {
+    @media(max-width: $xs) {
       margin-bottom: 3rem;
     }
   }

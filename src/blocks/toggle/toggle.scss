@@ -7,7 +7,7 @@
   width: 5rem;
   height: 1.67rem;
   padding: 0.25rem;
-  background: $third-lightest;
+  background: $background-primary;
   border-radius: 1.5rem;
   cursor: pointer;
 
@@ -25,7 +25,7 @@
     padding: 0.17rem 0;
     font-size: 1rem;
     text-transform: uppercase;
-    background: $third-light;
+    background: $background-default;
     border-radius: inherit;
     transition: 0.15s ease-out;
 
@@ -41,13 +41,13 @@
     &:before {
       content: 'off';
       right: 0.92rem;
-      color: $third-lightest;
+      color: $content-secondary;
     }
 
     &:after {
       content: 'on';
       left: 0.92rem;
-      color: $third-lightest;
+      color: $content-secondary;
       opacity: 0;
     }
   }
@@ -69,7 +69,7 @@
     left: 0.58rem;
     width: 1.5rem;
     height: 1.5rem;
-    background: $third-lightest;
+    background: $background-primary;
     border-radius: 50%;
   }
 

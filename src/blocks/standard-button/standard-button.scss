@@ -9,93 +9,93 @@
   line-height: 1.2;
   font-weight: 900;
   letter-spacing: -0.08rem;
-  color: $third-lightest;
+  color: $content-secondary;
   border-width: 1px;
   border-style: solid;
   border-radius: 0.25rem;
-  background: $third-lightest;
+  background: $background-primary;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
 
   &_color {
-    &_green {
-      @include standard-button-shadow($main);
-      color: $main;
-      border-color: $main;
+    &_primary {
+      @include standard-button-shadow($primary);
+      color: $primary;
+      border-color: $primary;
       
       &:hover,
       &:focus {
-        @include standard-button-shadow($main-dark);
-        color: $third-lightest;
-        background: $main;
+        @include standard-button-shadow($primary-dark);
+        color: $content-secondary;
+        background: $primary;
         outline: 0;
       }
 
       &:active {
-        color: $third-lightest;
-        background: $main;
+        color: $content-secondary;
+        background: $primary;
         box-shadow: none;
         outline: 0;
       }
     }
 
-    &_orange {
-      @include standard-button-shadow($second);
-      color: $second;
-      border-color: $second;
+    &_secondary {
+      @include standard-button-shadow($secondary);
+      color: $secondary;
+      border-color: $secondary;
     
       &:hover,
       &:focus {
-        @include standard-button-shadow($second-darker);
-        color: $third-lightest;
-        background: $second;
+        @include standard-button-shadow($secondary-darker);
+        color: $content-secondary;
+        background: $secondary;
         outline: 0;
       }
 
       &:active {
-        color: $third-lightest;
-        background: $second;
+        color: $content-secondary;
+        background: $secondary;
         box-shadow: none;
         outline: 0;
       }
     }
 
-    &_fullgreen {
-      @include standard-button-shadow($main-dark);
-      border-color: $main;
-      background: $main;
+    &_primarysolid {
+      @include standard-button-shadow($primary-dark);
+      border-color: $primary;
+      background: $primary;
       
       &:hover,
       &:focus {
-        @include standard-button-shadow($main-dark);
-        background: $main-dark;
+        @include standard-button-shadow($primary-dark);
+        background: $primary-dark;
         outline: 0;
       }
 
       &:active {
-        background: $main-dark;
+        background: $primary-dark;
         box-shadow: none;
         outline: 0;
       }
     }
 
-    &_darkgreen {
-      @include standard-button-shadow($main-darkest);
-      color: $main-darker;
-      border-color: $main-darker;
+    &_primarydarkest {
+      @include standard-button-shadow($primary-darkest);
+      color: $primary-darker;
+      border-color: $primary-darker;
       
       &:hover,
       &:focus {
-        @include standard-button-shadow($main-darkest);
-        color: $third-lightest;
-        background: $main-darker;
+        @include standard-button-shadow($primary-darkest);
+        color: $content-secondary;
+        background: $primary-darker;
         outline: 0;
       }
 
       &:active {
-        color: $third-lightest;
-        background: $main-darker;
+        color: $content-secondary;
+        background: $primary-darker;
         box-shadow: none;
         outline: 0;
       }

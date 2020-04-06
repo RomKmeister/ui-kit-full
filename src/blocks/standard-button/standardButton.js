@@ -1,10 +1,10 @@
 class StandardButton {
   constructor(element) {
     this.element = element;
-    this.run();
+    this.init();
   }
 
-  run() {
+  init() {
     this._findElements();
     this.$ripple.on('click', this._handleStandardButtonClick.bind(this));
     this.$ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', this._handleStandardButtonAnimationend);

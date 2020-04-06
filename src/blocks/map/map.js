@@ -4,10 +4,10 @@
 class Map {
   constructor(element) {
     this.element = element;
-    this.run();
+    this.init();
   }
 
-  run() {
+  init() {
     const $newMap = this.element.find('.js-map__map');
     ymaps.ready(() => {
       const myMap = new ymaps.Map($newMap[0], {

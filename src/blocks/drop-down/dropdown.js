@@ -1,10 +1,10 @@
 class DropDown {
   constructor(element) {
     this.element = element;
-    this.run();
+    this.init();
   }
 
-  run() {
+  init() {
     const $dropDown = $('.js-drop-down__select');
     $dropDown.selectmenu({
       width: '100%',

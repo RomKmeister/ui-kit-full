@@ -23,10 +23,7 @@
 
     & .ui-selectmenu-icon {
       padding: 1.25rem 1.5rem;
-      background-image: url("images/drop-down-arrow.svg");
-      background-color: $primary;
-      background-position: center center;
-      background-repeat: no-repeat;
+      background: $primary url("images/drop-down-arrow.svg") center center no-repeat;
       border-radius: 0 0.33rem 0.33rem 0;
     }
 

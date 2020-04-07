@@ -7,9 +7,9 @@
 
   &__input {
     flex-grow: 1;
-    padding: 0.3rem 1rem 0.5rem;
+    padding: 0.4rem 1rem 0.5rem;
     font-family: 'SourceSansPro', Arial, sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.17rem;
     background: $background-default;
     border: none;
     border-radius: 0.33rem 0 0 0.33rem;
@@ -21,7 +21,7 @@
   }
 
   &__submit {
-    padding: 0 1.45rem;
+    padding: 0 1.4rem;
     background: #e75735 url(images/search-icon.svg) 0.8rem 0.7rem no-repeat;
     border: none;
     border-radius: 0 0.33rem 0.33rem 0;

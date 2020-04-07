@@ -1,10 +1,10 @@
 class Datepicker {
   constructor(element) {
     this.element = element;
-    this.show();
+    this.init();
   }
 
-  show() {
+  init() {
     this._findElements();
     this.$calendar.datepicker({
       altField: '.js-datepicker__date',

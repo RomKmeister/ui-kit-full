@@ -1,10 +1,10 @@
 class Slider {
   constructor(element) {
     this.element = element;
-    this.run();
+    this.init();
   }
 
-  run() {
+  init() {
     const $sliderBubble = this.element.find('.js-slider__bubble');
     this.element.slider({
       value: this.element.data('value'),

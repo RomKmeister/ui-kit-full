@@ -11,9 +11,9 @@ mixin event(content)
   .event
     img.event__image(src=image, alt="")
     div(class=`event__block event__block_color_${colors[color] || colors.default}`)
-      h2.event__date= day
+      p.event__date= day
         span.event__month= month
-      p.event__title= title 
+      h2.event__title= title 
       p.event__text= text
       .event__button
         +standard-button({ color: "primaryDarkest", size: "special", type: "button", title: "Add to calendar" })

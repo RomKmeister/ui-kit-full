@@ -11,8 +11,9 @@
   &__item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
-    font-family: "SourceSansPro", Arial, sans-serif;
+    margin-bottom: 1.1rem;
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: 900;
   }
 
   &__input-text {
@@ -20,6 +21,7 @@
     padding: 0.33rem 1.08rem 0.42rem;
     font-size: 1.17rem;
     font-family: "SourceSansPro", Arial, sans-serif;
+    font-weight: 400;
     border: none;
     border-radius: 0.25rem;
     background: $background-default;

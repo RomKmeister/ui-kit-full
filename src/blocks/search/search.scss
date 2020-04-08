@@ -10,13 +10,13 @@
     padding: 0.4rem 1rem 0.5rem;
     font-family: 'SourceSansPro', Arial, sans-serif;
     font-size: 1.17rem;
-    background: $background-default;
+    background: $background-primary;
     border: none;
     border-radius: 0.33rem 0 0 0.33rem;
   
     &_empty {
       background: $secondary;
-      color: $content-secondary;
+      color: $white;
     }
   }
 
@@ -25,7 +25,7 @@
     background: #e75735 url(images/search-icon.svg) 0.8rem 0.7rem no-repeat;
     border: none;
     border-radius: 0 0.33rem 0.33rem 0;
-    color: $content-secondary;
+    color: $white;
     cursor: pointer;
   }
 }

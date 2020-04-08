@@ -2,7 +2,7 @@
 
 .slider {
   height: 0.42rem;
-  background: $background-default;
+  background: $background-primary;
 
   &.ui-widget.ui-widget-content {
     border: 0;
@@ -46,7 +46,7 @@
     font-weight: 900;
     font-size: 0.92rem;
     line-height: 1;
-    color: $slider-scale;
+    color: $gray-lightest;
 
     &_hide {
       display: none;
@@ -64,7 +64,7 @@
     font-weight: 900;
     font-size: 1.08rem;
     line-height: 1.2;
-    color: $content-secondary;
+    color: $white;
     border-radius: 0.33rem;
     text-align: center;
 

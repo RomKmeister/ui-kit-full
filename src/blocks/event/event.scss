@@ -5,7 +5,7 @@
   display: flex;
   width: 24rem;
   overflow: hidden;
-  color: $content-secondary;
+  color: $white;
   border-radius: 0.25rem;
 
   &__image {
@@ -32,7 +32,7 @@
       }
 
       &_default {
-        background: $background-default;
+        background: $background-primary;
       }
     }
   }

@@ -6,8 +6,8 @@
     font-family: "SourceSansPro", Arial, sans-serif;
     font-size: 1.17rem;
     font-weight: 400;
-    background: $background-default;
-    color: $content-primary;
+    background: $background-primary;
+    color: $text-secondary;
     border: none;
     border-radius: 0.25rem;
     
@@ -61,7 +61,7 @@
     font-weight: 400;
     background-color: $primary;
     border: 0.08rem solid $primary;
-    color: $content-secondary;
+    color: $white;
     border-radius: 0 0 0.33rem 0.33rem;
 
     & .ui-menu-item-wrapper {
@@ -78,8 +78,8 @@
   }
 
   & .ui-widget-content .ui-state-active {
-    background: $background-default;
-    color: $content-primary;
+    background: $background-primary;
+    color: $text-secondary;
     border: none;
   }
 

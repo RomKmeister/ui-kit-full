@@ -18,7 +18,7 @@
   }
 
   &__background {
-    fill: $background-primary;
+    fill: $white;
   }
 
   &__number {
@@ -31,7 +31,7 @@
     font-size: 3.33rem;
     line-height: 1;
     font-weight: 300;
-    color: $content-chart;
+    color: $gray-lighter;
     border-radius: 50%;
   }
 }

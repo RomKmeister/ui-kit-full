@@ -42,13 +42,13 @@
       border-color: $primary;
       
       &::after {
-        border-color: $content-secondary;
+        border-color: $white;
       }
 
       &:hover,
       &:focus {
         outline: 0;
-        background: $background-primary;
+        background: $white;
 
         &::after {
         border-color: $primary;
@@ -57,7 +57,7 @@
     }
 
     &_primarysolid {
-      background: $background-primary;
+      background: $white;
       border-color: $primary;
 
       &::after {
@@ -70,19 +70,19 @@
         background: $primary;
 
         &::after {
-        border-color: $content-secondary;
+        border-color: $white;
         }
       }
     }
   }
 
     &:disabled {
-      background: $background-default;
-      border-color: $background-default;
+      background: $background-primary;
+      border-color: $background-primary;
       cursor: default;
 
       &::after {
-        border-color: $content-secondary;
+        border-color: $white;
       }
     }
 }

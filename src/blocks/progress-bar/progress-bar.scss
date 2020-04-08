@@ -16,7 +16,7 @@
       flex-grow: 1;
       flex-shrink: 0;
       height: 0.42rem;
-      background: $background-default;
+      background: $background-primary;
     }
 
     &:first-child{
@@ -38,14 +38,14 @@
     font-weight: bold;
     font-size: 1.167rem;
     line-height: 1.9;
-    color: $content-primary;
-    background: $background-default;
+    color: $text-secondary;
+    background: $background-primary;
     border-radius: 50%;
     text-align: center;
 
     &_active {
       background: $secondary;
-      color: $content-secondary;
+      color: $white;
     }
   }
 }

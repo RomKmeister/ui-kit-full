@@ -13,12 +13,12 @@
     margin-left: 1.1rem;
     border-radius: 0.5rem;
     word-break: break-word;
-    color: $content-default;
+    color: $text-primary;
     text-align: center;
 
     &_theme {
       &_default {
-        background: $background-default;
+        background: $background-primary;
       }
       &_primary {
         background: $primary;
@@ -50,7 +50,7 @@
       }
 
       &_primary {
-        color: $content-secondary;
+        color: $white;
       }
     }
   }
@@ -63,11 +63,11 @@
 
     &_theme {
       &__default {
-        color: $content-default;
+        color: $text-primary;
       }
 
       &_primary {
-        color: $content-secondary;
+        color: $white;
       }
     }
   }
@@ -89,11 +89,11 @@
     height: 1.75rem;
     &_theme {
       &_default {
-        fill: $icons;
+        fill: $gray-dark;
       }
 
       &_primary {
-        fill: $content-secondary;
+        fill: $white;
       }
     }
   }

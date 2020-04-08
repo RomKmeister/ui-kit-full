@@ -12,7 +12,7 @@
 
     &_color {
       &_background {
-        stroke: $background-default;
+        stroke: $background-primary;
       }
 
       &_primary {
@@ -24,13 +24,13 @@
       }
 
       &_chartdefault {
-        stroke: $chart-default;
+        stroke: $gray-darker;
       }
     }
   }
 
   &__background {
-    fill: $background-primary;
+    fill: $white;
   }
 }
 

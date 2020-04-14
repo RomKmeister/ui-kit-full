@@ -20,6 +20,7 @@
       &_default {
         background: $background-primary;
       }
+
       &_primary {
         background: $primary;
       }
@@ -43,7 +44,7 @@
     font-family: 'Lato', Arial, sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
-  
+
     &_theme {
       &_default {
         color: $secondary;

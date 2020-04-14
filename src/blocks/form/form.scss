@@ -30,13 +30,13 @@
       display: block;
       background: $primary;
 
-        &::before {
-          background: $primary;
-        }
+      &::before {
+        background: $primary;
+      }
 
-        &::after {
-          content: 'thanks!';
-        }
+      &::after {
+        content: 'thanks!';
+      }
     }
 
     &:invalid:not(:placeholder-shown) + .form__result {

@@ -76,13 +76,13 @@
     }
   }
 
-    &:disabled {
-      background: $background-primary;
-      border-color: $background-primary;
-      cursor: default;
+  &:disabled {
+    background: $background-primary;
+    border-color: $background-primary;
+    cursor: default;
 
-      &::after {
-        border-color: $white;
-      }
+    &::after {
+      border-color: $white;
     }
+  }
 }

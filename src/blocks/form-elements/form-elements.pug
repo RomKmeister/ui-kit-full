@@ -6,17 +6,17 @@ include ../form-widget/form-widget
 include ../user-profiles/user-profiles
 
 mixin form-elements()
-	section.form-elements
-		+title("Form elements")
-		.form-elements__row
-			.form-elements__form
-				+form()
-			.form-elements__right-block
-				+toggles()
-				.form-elements__tick-boxes
-					+tick-boxes()
-		.form-elements__row
-			.form-elements__widget
-				+form-widget()
-			.form-elements__user-profiles
-				+user-profiles()
+  section.form-elements
+    +title("Form elements")
+    .form-elements__row
+      .form-elements__form
+        +form()
+      .form-elements__right-block
+        +toggles()
+        .form-elements__tick-boxes
+          +tick-boxes()
+    .form-elements__row
+      .form-elements__widget
+        +form-widget()
+      .form-elements__user-profiles
+        +user-profiles()

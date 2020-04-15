@@ -1,4 +1,5 @@
 /* global ymaps */
+import pin from './images/map-pin.svg';
 
 class Map {
   constructor(element) {
@@ -17,7 +18,7 @@ class Map {
       const myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
       }, {
         iconLayout: 'default#image',
-        iconImageHref: '../src/blocks/map/images/map-pin.svg',
+        iconImageHref: pin,
         iconImageSize: [41, 56],
         iconImageOffset: [-5, -38],
       });

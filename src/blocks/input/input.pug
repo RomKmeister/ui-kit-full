@@ -6,5 +6,5 @@ mixin input(options)
       email: 'email'
     };
   .input
-    input.input__item(type=${types[type] || types.text}, name=name, placeholder=placeholder, pattern=pattern)
+    input.input__item(type=`${types[type] || types.text}`, name=name, placeholder=placeholder, pattern=pattern)
     .input__result

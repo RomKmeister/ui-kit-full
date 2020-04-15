@@ -1,13 +1,31 @@
+include ../input/input
+include ../textarea/textarea
 include ../standard-button/standard-button
 
 mixin form()
   form.form(name="form", action="")
-    .form__item
-      input.form__input-text(type="text", name="name", placeholder="Your Name" pattern="[A-Za-z0-9А-Яа-яЁё\s]{3,}")
-      .form__result
-    .form__item
-      input.form__input-text(type="email", name="email", placeholder="Your Email")
-      .form__result
-    textarea.form__textarea(name="message", placeholder="Your Message")
+    .form__input
+      +input({
+        type: "text",
+        name: 'name',
+        placeholder: "Your Name",
+        pattern: "[A-Za-z0-9А-Яа-яЁё\s]{3,}"
+      })
+    .form__input
+      +input({
+        type: "email",
+        name: "email",
+        placeholder: "Your Email",
+        pattern: false
+      })
+    +textarea({
+      name: "message", 
+      placeholder: "Your Message"
+    })
     .form__button
-      +standard-button({ color: "primarySolid", size: "big", type: "submit", title: "Submit" })
+      +standard-button({ 
+        color: "primarySolid",
+        size: "big",
+        type: "submit",
+        title: "Submit"
+      })

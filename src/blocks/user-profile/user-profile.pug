@@ -1,7 +1,7 @@
 include ../user-photo/user-photo
 
 mixin user-profile(options)
-  - const { imagePath, image, name, job, theme, links } = options;
+  - const { image, imageAlt, name, job, theme, links } = options;
   - const { facebook, twitter, dribble } = links;
   - 
     const themes = {
@@ -12,7 +12,7 @@ mixin user-profile(options)
   .user-profile
     +user-photo({ image, imageAlt })
     div(class=`user-profile__info user-profile__info_theme_${themes[theme] || themes.default}`)
-      h2(class=`user-profile__name user-profile__name_theme_${themes[theme] || themes.default}`)= name
+      p(class=`user-profile__name user-profile__name_theme_${themes[theme] || themes.default}`)= name
       p(class=`user-profile__job user-profile__job_theme_${themes[theme] || themes.default}`)= job
       ul.user-profile__links
         li.user-profile__item

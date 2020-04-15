@@ -5,4 +5,7 @@ mixin location()
   section.location
     +title("Location")
     .location__map
-      +map()
+      +map({
+        coordinates: [37.787509, -122.444838],
+        address: "1259 California st San Francisco, CA"
+      })

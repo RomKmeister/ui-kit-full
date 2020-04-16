@@ -19,8 +19,8 @@ class StandardButton {
     const $this = $(event.currentTarget);
     const $offset = $this.parent().offset();
 
-    let x = event.pageX - $offset.left;
-    let y = event.pageY - $offset.top;
+    const x = event.pageX - $offset.left;
+    const y = event.pageY - $offset.top;
 
     this.$circle.css({
       top: `${y}px`,

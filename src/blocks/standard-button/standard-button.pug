@@ -16,5 +16,5 @@ mixin standard-button(options)
     };
   - const isType = type ? type : false;
   button(class=`standard-button js-standard-button standard-button_color_${colors[color] || colors.primary} standard-button_size_${sizes[size] || sizes.big}`, type=isType)= title
-    .standard-button__ripple.js-standard-button__ripple
-      span.standard-button__ripple_circle
+    span.standard-button__ripple.js-standard-button__ripple
+      span.standard-button__ripple_circle.js-standard-button__ripple_circle

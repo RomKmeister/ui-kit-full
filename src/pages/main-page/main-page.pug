@@ -22,10 +22,10 @@ block content
           +drop-down({ theme: "custom", placeholder: "Тема", items: ["Концерты", "Театры", "Кино"] })
         .main-page__novelty
           .main-page__tick-box
-            +tick-box({ name:"radio", isChecked: "false" }) 
+            +tick-box(false) 
             p.main-page__label Премьеры
           .main-page__tick-box
-            +tick-box({ name:"radio", isChecked: "true" })
+            +tick-box(true)
             p.main-page__label Все
     main.main-page__right-column
       section.main-page__content
@@ -34,7 +34,7 @@ block content
         .main-page__events
           .main-page__event-item
             +event({
-              color: "green",
+              color: "primary",
               day: "4",
               month: "Фев",
               title: "Ромео и Джульетта",
@@ -43,7 +43,7 @@ block content
             })
           .main-page__event-item
             +event({
-              color: "green",
+              color: "primary",
               day: "7",
               month: "Фев",
               title: "Золотой теленок",
@@ -52,7 +52,7 @@ block content
             })
           .main-page__event-item
             +event({
-              color: "orange",
+              color: "secondary",
               day: "8",
               month: "Фев",
               title: "Art Jazz",
@@ -61,7 +61,7 @@ block content
             })
           .main-page__event-item
             +event({
-              color: "gray",
+              color: "default",
               day: "10",
               month: "Фев",
               title: "Плохие парни",
@@ -70,7 +70,7 @@ block content
             })
           .main-page__event-item
             +event({
-              color: "orange",
+              color: "secondary",
               day: "14",
               month: "Фев",
               title: "Snoop Dogg show",
@@ -79,7 +79,7 @@ block content
             })
           .main-page__event-item
             +event({
-              color: "gray",
+              color: "default",
               day: "15",
               month: "Фев",
               title: "1917",
@@ -88,7 +88,7 @@ block content
             })
           .main-page__event-item
             +event({
-              color: "gray",
+              color: "default",
               day: "16",
               month: "Фев",
               title: "Шахматист",

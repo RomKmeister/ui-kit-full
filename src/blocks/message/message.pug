@@ -14,6 +14,6 @@ mixin message(content)
         .message__camera
       .message__income= income
       form.message__form
-        textarea.message__new= message
+        textarea.message__textarea= message
         .message__button
           +standard-button({ color: "primarySolid", size: "wide", type: "button", title: "Reply" })

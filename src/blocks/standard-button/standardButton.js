@@ -12,12 +12,12 @@ class StandardButton {
 
   _findElements() {
     this.$ripple = this.element.find('.js-standard-button__ripple');
-    this.$circle = this.element.find('.js-standard-button__ripple_circle');
+    this.$circle = this.element.find('.js-standard-button__circle');
   }
 
   _handleStandardButtonClick(event) {
-    const $this = $(event.currentTarget);
-    const $offset = $this.parent().offset();
+    const $target = $(event.currentTarget);
+    const $offset = $target.parent().offset();
 
     const x = event.pageX - $offset.left;
     const y = event.pageY - $offset.top;
@@ -27,7 +27,7 @@ class StandardButton {
       left: `${x}px`,
     });
 
-    $this.addClass('standard-button__ripple_active');
+    $target.addClass('standard-button__ripple_active');
   }
 
   _handleStandardButtonAnimationend(event) {

@@ -27,7 +27,7 @@
     position: absolute;
     top: 5.83rem;
     left: 50%;
-    margin-left: -4.3rem;
+    transform: translateX(-50%);
   }
 
   &__body {

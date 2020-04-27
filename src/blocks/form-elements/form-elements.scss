@@ -14,7 +14,7 @@
   &__form {
     flex-grow: 1;
     margin-top: 1.17rem;
-    margin-right: 3.9%;
+    margin-right: 3%;
 
     @media(max-width: $xs) {
       width: 90%;
@@ -23,7 +23,7 @@
   }
 
   &__right-block {
-    padding: 0 11%;
+    padding: 0 11.5%;
 
     @media(max-width: $xs) {
       width: 90%;
@@ -46,7 +46,7 @@
   }
 
   &__user-profiles {
-    width: 45.5%;
+    width: 51.5%;
     padding-left: 6%;
     margin: 2.7rem 0 0;
 

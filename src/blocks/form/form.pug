@@ -2,8 +2,9 @@ include ../input/input
 include ../textarea/textarea
 include ../standard-button/standard-button
 
-mixin form()
-  form.form(name="form", action="")
+mixin form(options)
+  -const { name, action } = options
+  form.form(name=name, action=action)
     .form__input
       +input({
         type: "text",

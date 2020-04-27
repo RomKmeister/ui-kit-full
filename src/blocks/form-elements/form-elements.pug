@@ -10,7 +10,10 @@ mixin form-elements()
     +title("Form elements")
     .form-elements__row
       .form-elements__form
-        +form()
+        +form({
+          name: "form",
+          action: "need-action.php"
+        })
       .form-elements__right-block
         +toggles()
         .form-elements__tick-boxes

@@ -7,7 +7,11 @@ mixin messaging()
     .messaging__item
       +message({
         title: "Sarah Brown",
+        image: "/../images/user-1.jpg",
         income: "Hey! So are we cool to meet at the art gallery? Say 8pm",
-        message: "Yeah that sounds great. See you then.",
-        image: "/../images/user-1.jpg"
+        form: {
+          name: "form",
+          action: "need-action.php",
+          message: "Yeah that sounds great. See you then.",
+        }
       })

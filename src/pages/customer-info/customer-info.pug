@@ -18,4 +18,7 @@ block content
         p.customer-info__seat 4 ряд 2 место
         p.customer-info__price Цена 500 руб.
       .customer-info__contacts
-        +form()
+        +form({
+          name: "form",
+          action: "order.php"
+        })

@@ -20,21 +20,19 @@
     border: none;
     transform: translateY(-15%);
     cursor: pointer;
-    
-    &_secondary,
-    &_secondary:active {
-      background: $secondary;
-    }
-    
-    &_primary,
-    &_primary:active {
-      background: $primary;
-    }
   }
 
-  & .ui-slider-range {
-    &_primary {
-      background: $primary;
+  &__handle {
+    &_color {
+      &_secondary,
+      &_secondary:active {
+        background: $secondary;
+      }
+      
+      &_primary,
+      &_primary:active {
+        background: $primary;
+      }
     }
   }
 
@@ -92,6 +90,12 @@
 
     &_hidden {
       display: none;
+    }
+  }
+
+  & .ui-slider-range {
+    &_primary {
+      background: $primary;
     }
   }
 }

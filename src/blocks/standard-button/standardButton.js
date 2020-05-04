@@ -17,10 +17,10 @@ class StandardButton {
 
   _handleStandardButtonClick(event) {
     const $target = $(event.currentTarget);
-    const $offset = $target.parent().offset();
+    const offset = $target.parent().offset();
 
-    const x = event.pageX - $offset.left;
-    const y = event.pageY - $offset.top;
+    const x = event.pageX - offset.left;
+    const y = event.pageY - offset.top;
 
     this.$circle.css({
       top: `${y}px`,
@@ -31,7 +31,8 @@ class StandardButton {
   }
 
   _handleStandardButtonAnimationend(event) {
-    $(event.currentTarget).removeClass('standard-button__ripple_active');
+    const $target = $(event.currentTarget);
+    $target.removeClass('standard-button__ripple_active');
   }
 }
 

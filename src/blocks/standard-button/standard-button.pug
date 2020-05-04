@@ -12,7 +12,7 @@ mixin standard-button(options)
       small: "small",
       big: "big",
       wide: "wide",
-      special: "special"
+      medium: "medium"
     };
   - const isType = type ? type : false;
   button(class=`standard-button js-standard-button standard-button_color_${colors[color] || colors.primary} standard-button_size_${sizes[size] || sizes.big}`, type=isType)= title

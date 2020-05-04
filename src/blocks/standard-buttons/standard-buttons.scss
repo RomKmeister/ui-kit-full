@@ -6,6 +6,10 @@
   @media(max-width: $xs) {
     padding: 0 2%;
   }
+
+  &__title {
+    margin-bottom: 5.17rem;
+  }
   
   &__row {
     display: flex;
@@ -13,9 +17,5 @@
     align-items: flex-end;
     flex-wrap: wrap;
     margin: 1.83rem 0 0;
-
-    &_margin_bigger {
-      margin-top: 5.17rem;
-    }
   }
 }

@@ -33,9 +33,9 @@
     &:after {
       position: absolute;
       top: 50%;
-      margin-top: -0.5em;
       line-height: 1;
       transition: inherit;
+      transform: translateY(-50%);
     }
 
     &:before {

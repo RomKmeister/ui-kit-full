@@ -63,11 +63,10 @@
     content: '';
     position: absolute;
     top: 50%;
-    left: -0.16rem;
+    left: -0.32rem;
     width: 0.42rem;
     height: 0.42rem;
-    margin-top: -0.16rem;
-    transform: rotate(45deg);
+    transform: rotate(45deg) translateY(-50%);
     }
   }
 }

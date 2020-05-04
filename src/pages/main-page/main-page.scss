@@ -1,8 +1,8 @@
 @import '../../vars.scss';
 
 .main-page {
-  height: 100%;
   display: flex;
+  flex: 1 0 auto;
   padding: 1% 5%;
   
   @media(max-width: $small) {
@@ -88,7 +88,7 @@
     }
   }
 
-  &__event-item {
+  &__event {
     margin: 1.67rem 1.67rem 0 0;
     
     @media(max-width: $small) {

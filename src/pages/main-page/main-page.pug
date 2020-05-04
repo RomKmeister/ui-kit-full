@@ -19,7 +19,7 @@ block content
         .main-page__date
           +datepicker()
         .main-page__type
-          +drop-down({ theme: "custom", placeholder: "Тема", items: ["Концерты", "Театры", "Кино"] })
+          +drop-down({ theme: "custom", placeholder: "Все", items: ["Концерты", "Театры", "Кино"] })
         .main-page__novelty
           .main-page__tick-box
             +tick-box(false) 
@@ -32,7 +32,7 @@ block content
         .main-page__top-bar
           h1.main-page__title Мероприятия
         .main-page__events
-          .main-page__event-item
+          .main-page__event
             +event({
               color: "primary",
               day: "4",
@@ -41,7 +41,7 @@ block content
               text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
               image: "/../images/romeo.jpg"
             })
-          .main-page__event-item
+          .main-page__event
             +event({
               color: "primary",
               day: "7",
@@ -50,7 +50,7 @@ block content
               text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
               image: "images/telenok.jpg"
             })
-          .main-page__event-item
+          .main-page__event
             +event({
               color: "secondary",
               day: "8",
@@ -59,7 +59,7 @@ block content
               text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
               image: "images/jazz.jpg"
             })
-          .main-page__event-item
+          .main-page__event
             +event({
               color: "default",
               day: "10",
@@ -68,7 +68,7 @@ block content
               text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
               image: "images/badboys.jpg"
             })
-          .main-page__event-item
+          .main-page__event
             +event({
               color: "secondary",
               day: "14",
@@ -77,7 +77,7 @@ block content
               text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
               image: "images/snoop.jpg"
             })
-          .main-page__event-item
+          .main-page__event
             +event({
               color: "default",
               day: "15",
@@ -86,7 +86,7 @@ block content
               text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
               image: "images/1917.jpg"
             })
-          .main-page__event-item
+          .main-page__event
             +event({
               color: "default",
               day: "16",

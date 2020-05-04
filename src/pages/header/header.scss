@@ -1,11 +1,17 @@
+@import '../../vars.scss';
+
 .header {
   display: flex;
   align-items: baseline;
-  width: 100%;
+  flex-grow: 1;
   padding: 1% 5%;
-  background: #4eb7a8;
+  background: $primary;
   
   &__logo {
     font-size: 2rem;
+  }
+
+  &__menu {
+    margin: 0 4.17rem;
   }
 }

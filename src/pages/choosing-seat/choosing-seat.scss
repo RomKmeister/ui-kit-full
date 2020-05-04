@@ -1,6 +1,7 @@
 .choosing-seat {
   display: flex;
   justify-content: center;
+  flex: 1 0 auto;
   
   &__step {
     display: flex;
@@ -13,7 +14,7 @@
     margin-top: 2rem;
   }
   
-  &__add-seat {
+  &__additional-seat {
     margin-top: 1rem;
   }
     

@@ -22,7 +22,7 @@ block content
         .event-item__actor
           +user-profile({
             image: "images/romeo-actor.jpg",
-            imageAlt: "", name: "Андрей Симонькин",
+            imageAlt: "Андрей Симонькин", name: "Андрей Симонькин",
             job: "Ромео",
             theme: "gray",
             links: {
@@ -34,7 +34,7 @@ block content
         .event-item__actor
           +user-profile({
             image: "images/juliet.jpg",
-            imageAlt: "",
+            imageAlt: "Евгения Родина",
             name: "Евгения Родина",
             job: "Джульетта",
             theme: "gray",
@@ -53,5 +53,5 @@ block content
         .event-item__chart
           +pie-chart("90")
           p Оценка зрителей
-      .event-item__button
+      .event-item__purchase
         +standard-button({color: "green", size: "wide", type: "button", title: "Купить билет"})

@@ -10,16 +10,16 @@ block title
   title Спектакль
   
 block content
-  main.event-item
-    section.event-item__left-column
-      img.event-item__poster(src="images/romeo.jpg")
-      .event-item__video
+  main.performance
+    section.performance__left-column
+      img.performance__poster(src="images/romeo.jpg")
+      .performance__video
         +video("https://www.youtube.com/embed/swcG66soqps")
-    section.event-item__right-column
-      h1.event-item__title Ромео и Джульетта
-      p.event-item__description Если задуматься, в знаменитой истории Ромео и Джульетты нет ничего слащавого. Ничего от конфетно-открыточных историй на День Святого Валентина. Страстное влечение, краткий период тайного счастья &mdash; и неотвратимый смертельный финал. Герои пытаются бороться с роком &mdash; но каждый шаг лишь приближает развязку: законы трагедии неумолимы. Этой любви не суждена долгая жизнь.
-      .event-item__actors
-        .event-item__actor
+    section.performance__right-column
+      h1.performance__title Ромео и Джульетта
+      p.performance__description Если задуматься, в знаменитой истории Ромео и Джульетты нет ничего слащавого. Ничего от конфетно-открыточных историй на День Святого Валентина. Страстное влечение, краткий период тайного счастья &mdash; и неотвратимый смертельный финал. Герои пытаются бороться с роком &mdash; но каждый шаг лишь приближает развязку: законы трагедии неумолимы. Этой любви не суждена долгая жизнь.
+      .performance__actors
+        .performance__actor
           +user-profile({
             image: "images/romeo-actor.jpg",
             imageAlt: "Андрей Симонькин", name: "Андрей Симонькин",
@@ -31,7 +31,7 @@ block content
               dribble: "user-link.html",
             }
           })
-        .event-item__actor
+        .performance__actor
           +user-profile({
             image: "images/juliet.jpg",
             imageAlt: "Евгения Родина",
@@ -44,14 +44,14 @@ block content
               dribble: "user-link.html",
             }
           })
-        .event-item__show-all
+        .performance__all-actors
           +standard-button({ color: "primary", size: "wide", type: "button", title: "Все актеры" })
-      .event-item__charts
-        .event-item__chart
+      .performance__charts
+        .performance__chart
           +pie-chart("70")
           p Оценка критиков
-        .event-item__chart
+        .performance__chart
           +pie-chart("90")
           p Оценка зрителей
-      .event-item__purchase
+      .performance__purchase
         +standard-button({color: "primary", size: "wide", type: "button", title: "Купить билет"})

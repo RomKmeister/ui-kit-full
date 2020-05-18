@@ -1,4 +1,5 @@
-mixin footer()
+mixin footer(data)
+  - const { logo, year } = data;
   footer.footer
-    .footer__logo Logo
-    .footer__year (C) 2019
+    .footer__logo= logo
+    .footer__year= `(C) ${year}`

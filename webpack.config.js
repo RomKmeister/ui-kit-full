@@ -70,8 +70,8 @@ module.exports = {
       template: 'src/pages/main-page/main-page.pug',
     }),
     new HtmlWebpackPlugin({
-      filename: 'event-item.html',
-      template: 'src/pages/event-item/event-item.pug',
+      filename: 'performance.html',
+      template: 'src/pages/performance/performance.pug',
     }),
     new HtmlWebpackPlugin({
       filename: 'choosing-seat.html',

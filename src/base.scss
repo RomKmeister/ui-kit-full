@@ -1,14 +1,12 @@
 @import './vars';
 @import './mixins';
 
-
-@include font-face('Lato', 900, 'normal','fonts/Lato-Black');
-@include font-face('Lato', 700, 'normal','fonts/Lato-Bold');
-@include font-face('Lato', 400, 'normal','fonts/Lato-Regular');
-@include font-face('Lato', 300, 'normal','fonts/Lato-Light');
-@include font-face('SourceSansPro', 400, 'normal','fonts/SourceSansPro-Regular');
-@include font-face('SourceSansPro', 300, 'normal','fonts/SourceSansPro-Light');
-
+@include font-face('Lato', 900, 'normal','fonts/lato-black');
+@include font-face('Lato', 700, 'normal','fonts/lato-bold');
+@include font-face('Lato', 400, 'normal','fonts/lato-regular');
+@include font-face('Lato', 300, 'normal','fonts/lato-light');
+@include font-face('SourceSansPro', 400, 'normal','fonts/source-sans-pro-regular');
+@include font-face('SourceSansPro', 300, 'normal','fonts/source-sans-pro-light');
 
 *, *::before, *::after {
   box-sizing: inherit;

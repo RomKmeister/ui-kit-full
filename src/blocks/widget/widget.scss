@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   &__item {
     @media(max-width: $xs) {
       margin-bottom: 3rem;

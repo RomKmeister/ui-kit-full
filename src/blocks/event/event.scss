@@ -21,7 +21,7 @@
     font-family: 'Lato', Arial, sans-serif;
     font-weight: 300;
     z-index: 1;
-    
+
     &_color{
       &_primary {
         background: $primary;
@@ -50,7 +50,7 @@
   }
 
   &__title {
-    margin: 2.5rem 0 0; 
+    margin: 2.5rem 0 0;
     font-weight: 900;
     font-size: 1rem;
     line-height: 1.2;

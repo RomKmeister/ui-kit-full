@@ -13,7 +13,7 @@ mixin event(content)
     div(class=`event__block event__block_color_${colors[color] || colors.default}`)
       p.event__date= day
         span.event__month= month
-      h2.event__title= title 
+      h2.event__title= title
       p.event__text= text
       .event__button
         +standard-button({ color: "primaryDarkest", size: "medium", type: "button", title: "Add to calendar" })

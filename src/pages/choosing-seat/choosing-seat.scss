@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   flex: 1 0 auto;
-  
+
   &__step {
     display: flex;
     flex-direction: column;
@@ -13,11 +13,11 @@
   &__seat {
     margin-top: 2rem;
   }
-  
+
   &__additional-seat {
     margin-top: 1rem;
   }
-    
+
   &__next-step {
     margin-top: 6rem;
     margin-left: auto;

@@ -59,13 +59,13 @@
           }
         }
       }
-  
+
       &-header {
         background: $secondary-dark;
         border: none;
         border-radius: 0;
       }
- 
+
       &-prev .ui-corner-all {
         background-image: none;
       }
@@ -73,10 +73,10 @@
       &-year {
         display: none;
       }
-  
+
       &-calendar {
         margin: 0;
-  
+
         & thead {
           font-family: 'Lato', Arial, sans-serif;
           font-weight: 900;
@@ -86,11 +86,11 @@
           text-transform: uppercase;
         }
       }
-  
+
       & th {
         padding: 0.9rem 0 0.6rem;
       }
-  
+
       & td {
         padding: 0;
         border: 0.17rem solid $white;
@@ -159,7 +159,7 @@
 
         &-disabled {
           opacity: 1;
-        
+
           & .ui-state-default {
             color: $white;
           }
@@ -182,7 +182,7 @@
     color: $text-secondary;
     background: $background-primary;
     border-radius: 0 0 0.25rem 0.25rem;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     text-align: left;
     cursor: pointer;
   }

@@ -24,7 +24,7 @@
       @include standard-button-shadow($primary);
       color: $primary;
       border-color: $primary;
-      
+
       &:hover,
       &:focus {
         @include standard-button-shadow($primary-dark);
@@ -45,7 +45,7 @@
       @include standard-button-shadow($secondary);
       color: $secondary;
       border-color: $secondary;
-    
+
       &:hover,
       &:focus {
         @include standard-button-shadow($secondary-darker);
@@ -66,7 +66,7 @@
       @include standard-button-shadow($primary-dark);
       border-color: $primary;
       background: $primary;
-      
+
       &:hover,
       &:focus {
         @include standard-button-shadow($primary-dark);
@@ -85,7 +85,7 @@
       @include standard-button-shadow($primary-darkest);
       color: $primary-darker;
       border-color: $primary-darker;
-      
+
       &:hover,
       &:focus {
         @include standard-button-shadow($primary-darkest);
@@ -102,7 +102,7 @@
       }
     }
   }
-  
+
   &_size{
     &_small {
       padding: 0.33rem 1.2rem;

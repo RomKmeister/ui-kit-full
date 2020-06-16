@@ -10,22 +10,22 @@ mixin form-widget()
         action: "",
         searchValue: "",
         placeholder: "Search",
-        emptyResult: false 
+        emptyResult: false
       })
     .form-widget__empty-search
       +search({
         action: "",
         searchValue: "I’ve not found what I’m looking for...",
         placeholder: "",
-        emptyResult: true 
+        emptyResult: true
       })
     .form-widget__drop-down
       +drop-down({
         placeholder: "Choose An Option",
         items: [
-          "This is option 1", 
-          "This is option 2", 
-          "This is option 3", 
+          "This is option 1",
+          "This is option 2",
+          "This is option 3",
           "This is option 4"
         ]
       })

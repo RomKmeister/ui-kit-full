@@ -11,8 +11,8 @@ mixin message(content)
         +user-photo({ image: image, imageAlt: "Sarah Brown" })
     .message__body
       .message__icons
-        .message__bubble
-        .message__camera
+        button.message__bubble
+        button.message__camera
       .message__income= income
       form.message__form(name=name, action=action)
         textarea.message__textarea= message

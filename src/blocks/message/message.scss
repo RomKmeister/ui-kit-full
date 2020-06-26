@@ -38,16 +38,22 @@
     margin: 0 0.42rem;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
   }
-  
+
   &__bubble {
     padding: 1rem;
     background: url('images/bubble.svg') 0 0 no-repeat;
+    border: none;
+    cursor: pointer;
+
   }
 
   &__camera {
     padding: 1rem;
     background: url('images/camera.svg') 0 0 no-repeat;
+    border: none;
+    cursor: pointer;
   }
 
   &__income {

@@ -40,22 +40,34 @@
 
       &-prev {
           margin-top: 0.7rem;
-          width: 3.8em;
+          margin-left: 0.7rem;
+          width: 2.8em;
+          cursor: pointer;
 
           &-hover {
             top: 2px;
             left: 2px;
           }
+
+          & span {
+            margin-top: -0.5rem;
+          }
         }
 
         &-next {
           margin-top: 0.7rem;
-          width: 3.8em;
-          right: 0;
+          width: 2.8em;
+          right: 0.5rem;
+          cursor: pointer;
 
           &-hover {
             top: 2px;
-            right: 0px;
+            right: 0.5rem;
+            cursor: pointer;
+          }
+
+          & span {
+            margin-top: -6px;
           }
         }
       }
@@ -110,9 +122,9 @@
     }
 
     .ui-icon {
+      width: 0.8rem;
+      height: 0.8rem;
       background-image: none;
-      width: 0.66rem;
-      height: 0.66rem;
       cursor: pointer;
 
       &-circle-triangle-w {

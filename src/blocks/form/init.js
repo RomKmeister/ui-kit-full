@@ -1,8 +1,8 @@
 import Form from './form';
 
 $(() => {
-  const $dropDown = $('.js-form');
-  $dropDown.each((index, item) => {
+  const $form = $('.js-form');
+  $form.each((index, item) => {
     new Form($(item));
   });
 });

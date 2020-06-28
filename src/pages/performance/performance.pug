@@ -1,7 +1,7 @@
 extends ../template/template.pug
 
 block include
-  include ../../blocks/video/video
+  include ../../blocks/player/player
   include ../../blocks/user-profile/user-profile
   include ../../blocks/pie-chart/pie-chart
   include ../../blocks/standard-button/standard-button
@@ -13,8 +13,6 @@ block content
   main.performance
     section.performance__left-column
       img.performance__poster(src="images/romeo.jpg")
-      .performance__video
-        +video("https://www.youtube.com/embed/swcG66soqps")
     section.performance__right-column
       h1.performance__title Ромео и Джульетта
       p.performance__description Если задуматься, в знаменитой истории Ромео и Джульетты нет ничего слащавого. Ничего от конфетно-открыточных историй на День Святого Валентина. Страстное влечение, краткий период тайного счастья &mdash; и неотвратимый смертельный финал. Герои пытаются бороться с роком &mdash; но каждый шаг лишь приближает развязку: законы трагедии неумолимы. Этой любви не суждена долгая жизнь.

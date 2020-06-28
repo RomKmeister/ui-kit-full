@@ -5,7 +5,7 @@ class Form {
   }
 
   preventSending() {
-    this.element[0].addEventListener('click', (event) => event.preventDefault())
+    this.element[0].addEventListener('click', (event) => event.preventDefault());
   }
 }
 

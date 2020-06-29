@@ -12,6 +12,7 @@
   height: 4.17rem;
   border-radius: 50%;
   cursor: pointer;
+  outline: 0;
 
   &::after {
     content: '';
@@ -45,14 +46,18 @@
         border-color: $white;
       }
 
-      &:hover,
-      &:focus {
-        outline: 0;
+      &:hover {
         background: $white;
 
         &::after {
         border-color: $primary;
         }
+      }
+
+      &:focus,
+      &:active {
+        outline: 0;
+        box-shadow: 0 0 1px 2px $gray-darker;
       }
     }
 
@@ -64,14 +69,18 @@
         border-color: $primary;
       }
 
-      &:hover,
-      &:focus {
+      &:hover {
         outline: 0;
         background: $primary;
 
         &::after {
         border-color: $white;
         }
+      }
+      &:focus,
+      &:active {
+        outline: 0;
+        box-shadow: 0 0 1px 2px $gray-darker;
       }
     }
   }

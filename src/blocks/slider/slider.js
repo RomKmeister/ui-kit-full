@@ -18,7 +18,7 @@ class Slider {
       create: () => {
         $sliderBubble.text(this.element.data('value'));
       },
-      slide: (event, ui) => {
+      slide: (_, ui) => {
         $sliderBubble.text(ui.value);
       },
     });

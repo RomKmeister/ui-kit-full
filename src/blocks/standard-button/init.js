@@ -3,7 +3,7 @@ import StandardButton from './standardButton';
 $(() => {
   const $button = $('.js-standard-button');
 
-  $button.each((index, item) => {
+  $button.each((_, item) => {
     new StandardButton($(item));
   });
 });

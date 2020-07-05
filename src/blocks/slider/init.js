@@ -3,7 +3,7 @@ import Slider from './slider';
 $(() => {
   const $slider = $('.js-slider');
 
-  $slider.each((index, item) => {
+  $slider.each((_, item) => {
     new Slider($(item));
   });
 });

@@ -4,7 +4,7 @@ import Datepicker from './datepicker';
 $(() => {
   const $calendar = $('.datepicker');
 
-  $calendar.each((index, item) => {
+  $calendar.each((_, item) => {
     new Datepicker($(item));
   });
 });
